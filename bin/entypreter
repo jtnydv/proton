@@ -21,6 +21,8 @@
 # federal, and international laws. Developers assume no liability and are not
 # responsible for any misuse or damage caused by this program.
 
+printf '\033]2;Entypreter Rootkit\a'
+
 #blue start 
 	BS="-e \033[1;34m"
 #color end
