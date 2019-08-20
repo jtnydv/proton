@@ -83,6 +83,7 @@ Module | Description
 --------|------------
 implant/elevate/bypassuac_eventvwr | Uses enigma0x3's eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.
 implant/elevate/bypassuac_sdclt | Uses enigma0x3's sdclt.exe exploit to bypass UAC on Windows 10.
+implant/fun/cranberry | Maxes volume and opens The Cranberries YouTube in a hidden window.
 implant/fun/voice | Plays a message over text-to-speech.
 implant/gather/clipboard | Retrieves the current content of the user clipboard.
 implant/gather/enum_domain_info | Retrieve information about the Windows domain.
