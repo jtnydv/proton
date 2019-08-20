@@ -67,7 +67,7 @@
     session and allow you to use implants.
 
 Module | Description
---------|---|------------
+--------|------------
 stager/js/mshta | Serves payloads using MSHTA.exe HTML Applications (default).
 stager/js/regsvr | Serves payloads using regsvr32.exe COM+ scriptlets.
 stager/js/wmic | Serves payloads using WMIC XSL.
