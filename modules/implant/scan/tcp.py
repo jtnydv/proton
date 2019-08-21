@@ -56,10 +56,10 @@ class ScanTCPImplant(core.implant.Implant):
     STATE = "implant/scan/tcp"
 
     def load(self):
-        self.options.register("RHOSTS", "", "name/IP of the remotes")
-        self.options.register("RPORTS", "22,80,135,139,443,445,3389", "ports to scan")
-        self.options.register("TIMEOUT", "2", "longer is more accurate")
-        self.options.register("CHECKLIVE", "true", "check if host is up before checking ports", enum=["true", "false"])
+        self.options.register("RHOSTS", "", "Name/IP of the remotes.")
+        self.options.register("RPORTS", "22,80,135,139,443,445,3389", "Ports to scan.")
+        self.options.register("TIMEOUT", "2", "Longer is more accurate.")
+        self.options.register("CHECKLIVE", "true", "Check if host is up before checking ports.", enum=["true", "false"])
 
     def job(self):
         return ScanTCPJob
