@@ -81,7 +81,7 @@ class TashLibShellcodeJob(core.job.Job):
 class TashLibShellcodeImplant(core.implant.Implant):
 
     NAME = "Mimikatz via TashLib"
-    DESCRIPTION = "Executes arbitrary shellcode using the TashLib COM object"
+    DESCRIPTION = "Executes arbitrary shellcode using the TashLib COM object."
     AUTHORS = ["entynetproject", "Aleph-Naught-" "gentilwiki"]
     STATE = "implant/inject/mimikatz_tashlib"
 
