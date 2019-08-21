@@ -7,18 +7,18 @@ class ThunderstruckJob(core.job.Job):
         self.display()
 
     def display(self):
-        self.results = "Completed"
+        self.results = "Completed!"
         self.shell.print_plain(self.data)
 
 class CranberryImplant(core.implant.Implant):
 
     NAME = "Thunderstruck"
-    DESCRIPTION = "Opens hidden IE to the Thunderstruck YouTube video"
+    DESCRIPTION = "Opens hidden IE to the Thunderstruck YouTube video."
     AUTHORS = ["entynetproject"]
     STATE = "implant/fun/cranberry"
 
     def load(self):
-        self.options.register("VIDEOURL", "https://www.youtube.com/watch?v=6Ejga4kJUts", "video to play")
+        self.options.register("VIDEOURL", "https://www.youtube.com/watch?v=6Ejga4kJUts", "Video to play.")
 
     def run(self):
 
