@@ -38,11 +38,11 @@ class SDotNet2JSImplant(core.implant.Implant):
     STATE = "implant/inject/shellcode_dotnet2js"
 
     def load(self):
-        self.options.register("DLLCOMMANDS", "", "string to pass to dll if needed", required=False)
-        self.options.register("SC_HEX", "", "relative path to shellcode/dll hex or paste hex string", required=True)
-        self.options.register("SC_B64", "", "shellcode in base64", advanced=True)
-        self.options.register("DLLOFFSET", "0", "Offset to the reflective loader", advanced=True)
-        self.options.register("PID", "0", "process ID to inject into (0 = current process)", required=True)
+        self.options.register("DLLCOMMANDS", "", "String to pass to dll if needed.", required=False)
+        self.options.register("SC_HEX", "", "Relative path to shellcode/dll hex or paste hex string.", required=True)
+        self.options.register("SC_B64", "", "ShellCode in base64.", advanced=True)
+        self.options.register("DLLOFFSET", "0", "Offset to the reflective loader.", advanced=True)
+        self.options.register("PID", "0", "Process ID to inject into (0 = current process).", required=True)
 
     def job(self):
         return SDotNet2JSJob
