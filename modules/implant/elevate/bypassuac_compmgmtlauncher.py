@@ -15,7 +15,7 @@ class CompMgmtLauncherJob(core.job.Job):
         self.display()
 
     def display(self):
-        self.results = "Completed"
+        self.results = "Completed!"
         #self.shell.print_plain(self.data)
 
 class CompMgmtLauncherImplant(core.implant.Implant):
