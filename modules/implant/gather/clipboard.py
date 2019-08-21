@@ -14,7 +14,7 @@ class ClipboardJob(core.job.Job):
 class ClipboardImplant(core.implant.Implant):
 
     NAME = "Scrape Clipboard"
-    DESCRIPTION = "Gets the contents of the clipboard"
+    DESCRIPTION = "Gets the contents of the clipboard."
     AUTHORS = ["RiskSense, Inc."]
     STATE = "implant/gather/clipboard"
 
