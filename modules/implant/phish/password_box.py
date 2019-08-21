@@ -14,12 +14,12 @@ class PasswordBoxJob(core.job.Job):
 class PasswordBoxImplant(core.implant.Implant):
 
     NAME = "Password Box"
-    DESCRIPTION = "Try to phish a user"
+    DESCRIPTION = "Try to phish a user."
     AUTHORS = ["entynetproject"]
     STATE = "implant/phish/password_box"
 
     def load(self):
-        self.options.register("Message", "You must enter your password to continue...", "Displayed to user")
+        self.options.register("Message", "You must enter your password to continue...", "Displayed to user.")
 
     def job(self):
         return PasswordBoxJob
