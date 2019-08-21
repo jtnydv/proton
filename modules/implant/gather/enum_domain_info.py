@@ -199,7 +199,7 @@ class EnumDomainInfoImplant(core.implant.Implant):
     STATE = "implant/gather/enum_domain_info"
 
     def load(self):
-        self.options.register("DIRECTORY", "%TEMP%", "writeable directory on session", required=False)
+        self.options.register("DIRECTORY", "%TEMP%", "Writeable directory on session.", required=False)
 
     def job(self):
         return EnumDomainInfoJob
