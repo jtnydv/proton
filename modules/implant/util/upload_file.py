@@ -31,11 +31,11 @@ class UploadFileImplant(core.implant.Implant):
 
     def load(self):
 
-        self.options.register("LFILE", "", "local file to upload")
-        #self.options.register("FILE", "", "file name once uploaded")
-        #self.options.register("EXEC", "false", "execute file?", enum=["true", "false"])
-        #self.options.register("OUTPUT", "false", "get output of exec?", enum=["true", "false"])
-        self.options.register("DIRECTORY", "%TEMP%", "writeable directory", required=False)
+        self.options.register("LFILE", "", "Local file to upload.")
+        #self.options.register("FILE", "", "File name once uploaded.")
+        #self.options.register("EXEC", "false", "Execute file?", enum=["true", "false"])
+        #self.options.register("OUTPUT", "false", "Get output of exec?", enum=["true", "false"])
+        self.options.register("DIRECTORY", "%TEMP%", "Writeable directory.", required=False)
 
     def job(self):
         return UploadFileJob
