@@ -26,8 +26,8 @@ class CompMgmtLauncherImplant(core.implant.Implant):
     STATE = "implant/elevate/bypassuac_compmgmtlauncher"
 
     def load(self):
-        self.options.register("PAYLOAD", "", "run listeners for a list of IDs.")
-        self.options.register("PAYLOAD_DATA", "", "the actual data.", hidden=True)
+        self.options.register("PAYLOAD", "", "Run listeners for a list of IDs.")
+        self.options.register("PAYLOAD_DATA", "", "The actual data.", hidden=True)
 
     def job(self):
         return CompMgmtLauncherJob
