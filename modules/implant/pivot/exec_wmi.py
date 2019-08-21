@@ -17,12 +17,12 @@ class SWbemServicesImplant(core.implant.Implant):
     STATE = "implant/pivot/exec_wmi"
 
     def load(self):
-        self.options.register("CMD", "hostname", "command to run")
-        self.options.register("RHOST", "", "name/IP of the remote")
-        self.options.register("SMBUSER", "", "username for login")
-        self.options.register("SMBPASS", "", "password for login")
-        self.options.register("SMBDOMAIN", ".", "domain for login")
-        self.options.register("CREDID", "", "cred id from creds")
+        self.options.register("CMD", "hostname", "Command to run.")
+        self.options.register("RHOST", "", "Name/IP of the remote.")
+        self.options.register("SMBUSER", "", "Username for login.")
+        self.options.register("SMBPASS", "", "Password for login.")
+        self.options.register("SMBDOMAIN", ".", "Domain for login.")
+        self.options.register("CREDID", "", "Cred ID from creds.")
 
     def job(self):
         return SWbemServicesJob
