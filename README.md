@@ -100,7 +100,7 @@ implant/persist/add_user | Create a local/domain user.
 implant/persist/registry | Add an Entypreter payload to the registry.
 implant/persist/schtasks | Add an Entypreter payload as a Scheduled Task.
 implant/persist/wmi | Add an Entypreter payload as a WMI subscription.
-implant/phishing/password_box | Prompt a user to enter their password.
+implant/phish/password_box | Prompt a user to enter their password.
 implant/pivot/stage_wmi | Hook a session on another machine using WMI.
 implant/pivot/exec_psexec | Run a command on another machine using psexec from sysinternals.
 implant/scan/tcp | Uses HTTP to scan open TCP ports on the target session LAN.
