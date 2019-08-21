@@ -97,7 +97,7 @@ class DotNet2JSJob(core.job.Job):
 class DotNet2JSImplant(core.implant.Implant):
 
     NAME = "Shellcode via DotNet2JS"
-    DESCRIPTION = "Executes arbitrary shellcode using the DotNet2JS technique"
+    DESCRIPTION = "Executes arbitrary shellcode using the DotNet2JS technique."
     AUTHORS = ["entynetproject", "Aleph-Naught-" "gentilwiki", "tiraniddo"]
     STATE = "implant/inject/mimikatz_dotnet2js"
 
