@@ -30,7 +30,7 @@ class DynWrapXShellcodeJob(core.job.Job):
 class DynWrapXShellcodeImplant(core.implant.Implant):
 
     NAME = "Shellcode via Dynamic Wrapper X"
-    DESCRIPTION = "Executes arbitrary ShellCode using the Dynamic Wrapper X COM object."
+    DESCRIPTION = "Executes arbitrary shellcode using the Dynamic Wrapper X COM object."
     AUTHORS = ["entynetproject"]
     STATE = "implant/inject/shellcode_dynwrapx"
 
@@ -38,7 +38,7 @@ class DynWrapXShellcodeImplant(core.implant.Implant):
         self.options.register("DIRECTORY", "%TEMP%", "Writeable directory on session.", required=False)
 
         self.options.register("SHELLCODE", "90c3", "In ASCII hex format (e.g.: 31c0c3).", required=True)
-        self.options.register("SHELLCODEDECCSV", "", "Decimal CSV ShellCode.", hidden=True)
+        self.options.register("SHELLCODEDECCSV", "", "Decimal CSV shellcode.", hidden=True)
 
         self.options.register("DYNWRAPXDLL", "data/bin/dynwrapx.dll", "Relative path to dynwrapx.dll.", required=True, advanced=True)
         self.options.register("DYNWRAPXMANIFEST", "data/bin/dynwrapx.manifest", "Relative path to dynwrapx.manifest.", required=True, advanced=True)
