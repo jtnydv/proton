@@ -46,7 +46,7 @@ class Session(object):
         self.update_active()
 
         self.shell.print_good(
-            "session %d: Staging new connection (%s)" % (self.id, self.ip))
+            "Session %d: Staging new connection (%s)" % (self.id, self.ip))
 
         self.shell.update_restore = True
 
@@ -114,7 +114,7 @@ class Session(object):
             self.shell.print_warning(repr(e))
 
         self.shell.print_good(
-            "session %d: %s @ %s -- %s" % (self.id, self.user, self.computer, self.os))
+            "Session %d: %s @ %s -- %s" % (self.id, self.user, self.computer, self.os))
 
         if self.shell.continuesession:
             self.shell.continuesession = ""
