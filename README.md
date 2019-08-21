@@ -103,7 +103,6 @@ implant/persist/wmi | Add an Entypreter payload as a WMI subscription.
 implant/phish/password_box | Prompt a user to enter their password.
 implant/pivot/stage_wmi | Hook a session on another machine using WMI.
 implant/pivot/exec_psexec | Run a command on another machine using psexec from sysinternals.
-implant/scan/tcp | Uses HTTP to scan open TCP ports on the target session LAN.
 implant/util/download_file | Downloads a file from the target session.
 implant/util/multi_module | Run a number of implants in succession.
 implant/util/upload_file | Uploads a file from the listening server to the target sessions.
