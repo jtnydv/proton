@@ -8,9 +8,9 @@ class HashDumpSAMImplant(core.implant.Implant):
     STATE = "implant/gather/hashdump_sam"
 
     def load(self):
-        self.options.register("LPATH", "/tmp/", "local file save path")
-        self.options.register("RPATH", "%TEMP%", "remote file save path")
-        self.options.register("GETSYSHIVE", "false", "Retrieve the system hive? (slower, but more reliable)",enum=["true", "false"])
+        self.options.register("LPATH", "/tmp/", "Local file save path.")
+        self.options.register("RPATH", "%TEMP%", "Remote file save path.")
+        self.options.register("GETSYSHIVE", "false", "Retrieve the system hive? (slower, but more reliable).",enum=["true", "false"])
 
     def job(self):
         return HashDumpSAMJob
