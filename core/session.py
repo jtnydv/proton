@@ -53,7 +53,7 @@ class Session(object):
 
     def parse_user_info(self, data):
         try:
-            self.shell.print_verbose("Function: session::parse_user_info() - %s" % data)
+            self.shell.print_verbose("session::parse_user_info() - %s" % data)
 
             if self.os != "" or self.user != "" or self.computer != "" or self.elevated != self.ELEVATED_UNKNOWN:
                 return False
@@ -141,17 +141,17 @@ class Session(object):
         jobs = [job for job in self.shell.jobs if job.session_id == self.id]
         for job in jobs:
             if job.key == job_key:
-                self.shell.print_verbose("Function: session::get_job() - fetched job_key = %s" % (job_key))
+                self.shell.print_verbose("session::get_job() - fetched job_key = %s" % (job_key))
                 return job
 
-        self.shell.print_verbose("Function: session::get_job() - NOT FOUND job_key = %s" % (job_key))
+        self.shell.print_verbose("session::get_job() - NOT FOUND job_key = %s" % (job_key))
         return None
 
     def get_created_job(self):
         jobs = [job for job in self.shell.jobs if job.session_id == self.id]
         for job in jobs:
             if job.completed == Job.CREATED:
-                self.shell.print_verbose("Function: session::get_created_job - fetched job.key = %s" % (job.key))
+                self.shell.print_verbose("session::get_created_job - fetched job.key = %s" % (job.key))
                 return job
 
         return None
