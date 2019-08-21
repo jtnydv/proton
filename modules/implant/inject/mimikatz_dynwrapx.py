@@ -83,7 +83,7 @@ class DynWrapXShellcodeJob(core.job.Job):
 class DynWrapXShellcodeImplant(core.implant.Implant):
 
     NAME = "Shellcode via Dynamic Wrapper X"
-    DESCRIPTION = "Executes arbitrary shellcode using the Dynamic Wrapper X COM object"
+    DESCRIPTION = "Executes arbitrary shellcode using the Dynamic Wrapper X COM object."
     AUTHORS = ["entynetproject", "Aleph-Naught-" "gentilwiki"]
     STATE = "implant/inject/mimikatz_dynwrapx"
 
