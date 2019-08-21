@@ -17,7 +17,7 @@ class ExcelReflectImplant(core.implant.Implant):
     STATE = "implant/inject/reflectdll_excel"
 
     def load(self):
-        self.options.register("DLLPATH", "", "the DLL to inject", required=True)
+        self.options.register("DLLPATH", "", "The DLL to inject.", required=True)
 
     def job(self):
         return ExcelReflectJob
