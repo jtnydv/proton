@@ -3,7 +3,7 @@ import importlib
 import core.plugin
 import copy
 
-DESCRIPTION = "Reload all Entypreter modules."
+DESCRIPTION = "Reload all Entypreter module."
 
 def autocomplete(shell, line, text, state):
     return None
