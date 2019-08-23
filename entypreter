@@ -144,7 +144,7 @@ if __name__ == "__main__":
     parser.add_argument("--autorun", help="A file containing commands to autorun at startup.")
     parser.add_argument("-o", action="store_true", help="Launch Entypreter Rootkit safety.")
     parser.add_argument("--restore", help="An Entypreter restore json file.")
-    parser.add_argument("-u","--update", help="Update Entypreter Rootkit.")
+    parser.add_argument("-u","--update",action="store_true",help="Update Entypreter Rootkit.")
     args = parser.parse_args()
     autorun = open(args.autorun).read().split("\n") if args.autorun else []
     if args.restore:
