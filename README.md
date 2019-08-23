@@ -62,10 +62,8 @@
             CERTPATH                       no      Certificate for TLS communications.
             MODULE                         no      Module to run once session is staged.
         
-    (entypreter: sta/js/mshta)# set SRVHOST 0.0.0.0
-    [+] SRVHOST => 0.0.0.0
-    (entypreter: sta/js/mshta)# set SRVPORT 9999
-    [+] SRVPORT => 9999
+    (entypreter: sta/js/mshta)# set SRVHOST <lhost>
+    (entypreter: sta/js/mshta)# set SRVPORT <lport>
     (entypreter: sta/js/mshta)# run
     
 ## Using entypreter implant
