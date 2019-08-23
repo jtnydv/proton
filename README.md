@@ -33,13 +33,14 @@
 > entypreter -h
 
     usage: entypreter [-h] [--autorun AUTORUN] [-o] [--restore RESTORE]
-
+                      [--update UPDATE]
     optional arguments:
       -h, --help         show this help message and exit
       --autorun AUTORUN  A file containing commands to autorun at startup.
       -o                 Launch Entypreter Rootkit safety.
       --restore RESTORE  An Entypreter restore json file.
-
+      --update UPDATE    Update Entypreter Rootkit.
+      
 ***
 
 # Stagers and implants
