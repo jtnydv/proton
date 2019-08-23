@@ -80,7 +80,6 @@
             DIRECTORY   %TEMP%              no      Writeable directory for output.
             SESSION     ALL                 yes     The session to target.
  
-
     (entypreter: imp/man/exec_cmd)# set CMD ipconfig
     (entypreter: imp/man/exec_cmd)# run
     
