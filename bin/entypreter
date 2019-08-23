@@ -34,7 +34,7 @@ printf '\033]2;Entypreter Rootkit\a'
 #white start
         WHS="\033[0;97m"
 
-if [[ "$1" = "--update" ]]
+if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
 sleep 1
 echo ""$BS"[*] "$WHS"Installing update..."$CE""
