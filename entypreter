@@ -155,6 +155,7 @@ if __name__ == "__main__":
 
     if args.update:
         os.system("cd && cd entypreter/bin && chmod +x entypreter && ./entypreter --update")
+        exit()
         
     if banner() or args.o:
         try:
