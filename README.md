@@ -61,10 +61,10 @@
 > entypreter
 
     (entypreter: sta/js/mshta)# use implant/manage/exec_cmd
-    (entypreter: implant/manage/exec_cmd)# info
-    (entypreter: implant/manage/exec_cmd)# set CMD ipconfig
-    (entypreter: implant/manage/exec_cmd)# set session <session>
-    (entypreter: implant/manage/exec_cmd)# run
+    (entypreter: imp/man/exec_cmd)# info
+    (entypreter: imp/man/exec_cmd)# set CMD ipconfig
+    (entypreter: imp/man/exec_cmd)# set session <session>
+    (entypreter: imp/man/exec_cmd)# run
     
 ***
 
