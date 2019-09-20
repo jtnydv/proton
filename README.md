@@ -18,13 +18,23 @@
    
 ***
 
-# The entypreter installation
+# Getting started
+
+## Installation
 
 > cd entypreter
 
 > chmod +x install.sh
 
 > ./install.sh
+
+## Uninstallation
+
+> cd entypreter
+
+> chmod +x uninstall.sh
+
+> ./uninstall.sh
 
 ***
 
