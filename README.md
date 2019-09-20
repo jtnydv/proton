@@ -20,7 +20,7 @@
 
 # Getting started
 
-## Installation
+## The entypreter installation
 
 > cd entypreter
 
@@ -28,7 +28,7 @@
 
 > ./install.sh
 
-## Uninstallation
+## The entypreter uninstallation
 
 > cd entypreter
 
