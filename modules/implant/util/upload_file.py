@@ -26,7 +26,7 @@ class UploadFileImplant(core.implant.Implant):
 
     NAME = "Upload File"
     DESCRIPTION = "Uploads a local file the remote system."
-    AUTHORS = ["RiskSense, Inc."]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/util/upload_file"
 
     def load(self):

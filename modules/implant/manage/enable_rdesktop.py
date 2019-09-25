@@ -15,7 +15,7 @@ class EnableRDesktopImplant(core.implant.Implant):
 
     NAME = "Enable Remote Desktop"
     DESCRIPTION = "Enables RDP on the target system."
-    AUTHORS = ["RiskSense, Inc."]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/manage/enable_rdesktop"
 
     def load(self):

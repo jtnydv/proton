@@ -8,7 +8,7 @@ class DownloadFileImplant(core.implant.Implant):
 
     NAME = "Download File"
     DESCRIPTION = "Downloads a remote file off the target system."
-    AUTHORS = ["RiskSense, Inc."]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/util/download_file"
 
     def load(self):

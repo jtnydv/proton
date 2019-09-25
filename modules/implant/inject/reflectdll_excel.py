@@ -13,7 +13,7 @@ class ExcelReflectImplant(core.implant.Implant):
 
     NAME = "Reflective DLL via Excel"
     DESCRIPTION = "Executes an arbitrary reflective DLL."
-    AUTHORS = ["RiskSense, Inc."]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/inject/reflectdll_excel"
 
     def load(self):
