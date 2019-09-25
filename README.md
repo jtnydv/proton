@@ -126,7 +126,7 @@ Usage of Entypreter for attacking targets without prior mutual consent is illega
 
 # Entypreter apache license
 
-    Copyright (C) 2016 - 2018 Entynetproject, Inc.
+    Copyright (C) 2016 - 2018 Entynetproject
 
     Licensed under the Apache License, Version 2.0 (the "License"); you may not
     use the software except in compliance with the License.
