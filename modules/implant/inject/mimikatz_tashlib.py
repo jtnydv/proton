@@ -82,7 +82,7 @@ class TashLibShellcodeImplant(core.implant.Implant):
 
     NAME = "Mimikatz via TashLib"
     DESCRIPTION = "Executes arbitrary shellcode using the TashLib COM object."
-    AUTHORS = ["entynetproject", "Aleph-Naught-" "gentilwiki"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/inject/mimikatz_tashlib"
 
     def load(self):
