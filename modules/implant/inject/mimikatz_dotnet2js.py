@@ -98,7 +98,7 @@ class DotNet2JSImplant(core.implant.Implant):
 
     NAME = "Shellcode via DotNet2JS"
     DESCRIPTION = "Executes arbitrary shellcode using the DotNet2JS technique."
-    AUTHORS = ["entynetproject", "Aleph-Naught-" "gentilwiki", "tiraniddo"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/inject/mimikatz_dotnet2js"
 
     def load(self):
