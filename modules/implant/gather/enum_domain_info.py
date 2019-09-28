@@ -195,7 +195,7 @@ class EnumDomainInfoImplant(core.implant.Implant):
 
     NAME = "Enumerate Domain Info"
     DESCRIPTION = "Enumerates information about the domain."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/gather/enum_domain_info"
 
     def load(self):
