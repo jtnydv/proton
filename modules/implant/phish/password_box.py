@@ -15,7 +15,7 @@ class PasswordBoxImplant(core.implant.Implant):
 
     NAME = "Password Box"
     DESCRIPTION = "Try to phish a user."
-    AUTHORS = ["entynetproject"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/phish/password_box"
 
     def load(self):
