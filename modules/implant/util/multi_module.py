@@ -6,7 +6,7 @@ class MultiModuleImplant(core.implant.Implant):
 
     NAME = "Multi Module Execution"
     DESCRIPTION = "Run multiple modules in succession."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/util/multi_module"
 
     def load(self):
