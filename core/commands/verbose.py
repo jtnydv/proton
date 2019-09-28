@@ -16,4 +16,4 @@ def execute(shell, cmd):
         else:
             shell.verbose = False
 
-    shell.print_status("Verbose mode: %s" % ("On" if shell.verbose else "Off"))
+    shell.print_status("Verbose mode: %s" % ("on" if shell.verbose else "off"))
