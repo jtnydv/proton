@@ -22,7 +22,7 @@ class FodHelperImplant(core.implant.Implant):
 
     NAME = "Bypass UAC FodHelper"
     DESCRIPTION = "Bypass UAC via registry hijack for fodhelper.exe. Drops no files to disk."
-    AUTHORS = ["TheNaterz", "winscriptingblog"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/elevate/bypassuac_fodhelper"
 
     def load(self):
