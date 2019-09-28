@@ -79,7 +79,7 @@ class RegistryImplant(core.implant.Implant):
 
     NAME = "Add Registry Payload"
     DESCRIPTION = "Adds an entypreter stager payload in the registry."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/persist/registry"
 
     def load(self):
