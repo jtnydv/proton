@@ -85,7 +85,7 @@ class AddUserImplant(core.implant.Implant):
 
     NAME = "Add User"
     DESCRIPTION = "Adds a either a local or domain user."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/persist/add_user"
 
     def load(self):
