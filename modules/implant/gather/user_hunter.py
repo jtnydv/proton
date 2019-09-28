@@ -55,7 +55,7 @@ class UserHunterImplant(core.implant.Implant):
 
     NAME = "User Hunter"
     DESCRIPTION = "Identifies and locates all logged in users."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/gather/user_hunter"
 
     def load(self):
