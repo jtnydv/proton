@@ -31,7 +31,7 @@ class DynWrapXShellcodeImplant(core.implant.Implant):
 
     NAME = "Shellcode via Dynamic Wrapper X"
     DESCRIPTION = "Executes arbitrary shellcode using the Dynamic Wrapper X COM object."
-    AUTHORS = ["entynetproject"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/inject/shellcode_dynwrapx"
 
     def load(self):
