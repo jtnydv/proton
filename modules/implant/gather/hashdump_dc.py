@@ -5,7 +5,7 @@ class HashDumpDCImplant(core.implant.Implant):
 
     NAME = "Domain Hash Dump"
     DESCRIPTION = "Dumps the NTDS.DIT off the target domain controller."
-    AUTHORS = ["entynetproject", "Aleph-Naught-"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/gather/hashdump_dc"
 
     def load(self):
