@@ -4,7 +4,7 @@ class HashDumpSAMImplant(core.implant.Implant):
 
     NAME = "SAM Hash Dump"
     DESCRIPTION = "Dumps the SAM hive off the target system."
-    AUTHORS = ["entynetproject"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/gather/hashdump_sam"
 
     def load(self):
