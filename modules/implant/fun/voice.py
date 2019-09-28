@@ -18,7 +18,7 @@ class VoiceImplant(core.implant.Implant):
     STATE = "implant/fun/voice"
 
     def load(self):
-        self.options.register("MESSAGE", "I can't do that Dave", "Message to speak.")
+        self.options.register("MESSAGE", "You are hacked!", "Message to speak.")
 
     def job(self):
         return VoiceJob
