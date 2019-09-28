@@ -100,7 +100,7 @@ class WMIPersistImplant(core.implant.Implant):
 
     NAME = "WMI Persistence"
     DESCRIPTION = "Creates persistence using a WMI subscription."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/persist/wmi"
 
     def load(self):
