@@ -25,7 +25,7 @@ class LootFinderImplant(core.implant.Implant):
 
     NAME = "Find loot on the target box"
     DESCRIPTION = "Finds loot on the target box"
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/gather/loot_finder"
 
     def load(self):
