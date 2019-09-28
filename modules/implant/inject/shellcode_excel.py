@@ -15,7 +15,7 @@ class ExcelShellcodeImplant(core.implant.Implant):
 
     NAME = "Shellcode via Excel"
     DESCRIPTION = "Executes arbitrary shellcode using Excel COM objects."
-    AUTHORS = ["entynetproject"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/inject/shellcode_excel"
 
     def load(self):
