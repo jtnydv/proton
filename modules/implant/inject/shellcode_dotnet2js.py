@@ -34,7 +34,7 @@ class SDotNet2JSImplant(core.implant.Implant):
 
     NAME = "Shellcode via DotNet2JS"
     DESCRIPTION = "Executes arbitrary shellcode using the DotNet2JS technique. Inject shellcode into a host process via createremotethread as a new thread."
-    AUTHORS = ["entynetproject", "TheNaterz", "tiraniddo", "psmitty"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/inject/shellcode_dotnet2js"
 
     def load(self):
