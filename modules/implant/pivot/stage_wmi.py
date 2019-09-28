@@ -15,7 +15,7 @@ class SWbemServicesImplant(core.implant.Implant):
 
     NAME = "WMI SWbemServices"
     DESCRIPTION = "Stages another system."
-    AUTHORS = ["entynetproject"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/pivot/stage_wmi"
 
     def load(self):
