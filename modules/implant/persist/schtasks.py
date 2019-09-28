@@ -101,7 +101,7 @@ class SchTasksImplant(core.implant.Implant):
 
     NAME = "Add Scheduled Task Payload"
     DESCRIPTION = "Establishes persistence via a scheduled task."
-    AUTHORS = ["TheNaterz"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/persist/schtasks"
 
     def load(self):
