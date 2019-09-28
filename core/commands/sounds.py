@@ -24,4 +24,4 @@ def execute(shell, cmd):
         else:
             shell.sounds = {}
 
-    shell.print_status("Sounds: %s" % ("On" if shell.sounds else "Off"))
+    shell.print_status("Sounds: %s" % ("on" if shell.sounds else "off"))
