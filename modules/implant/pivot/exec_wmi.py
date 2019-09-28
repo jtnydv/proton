@@ -13,7 +13,7 @@ class SWbemServicesImplant(core.implant.Implant):
 
     NAME = "WMI SWbemServices"
     DESCRIPTION = "Executes a command on another system."
-    AUTHORS = ["entynetproject"]
+    AUTHORS = ["Entynetproject"]
     STATE = "implant/pivot/exec_wmi"
 
     def load(self):
