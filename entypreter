@@ -154,7 +154,7 @@ if __name__ == "__main__":
         restore = {}
 
     if args.update:
-        os.system("cd && cd entypreter/bin && chmod +x entypreter && ./entypreter --update")
+        os.system("cd bin && chmod +x entypreter && ./entypreter --update")
         exit()
         
     if banner() or args.o:
