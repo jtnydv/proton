@@ -173,12 +173,12 @@ if __name__ == "__main__":
         
     if banner() or args.o:
         try:
-            banner = open("~/entypreter/data/logo2.txt", "rb").read().decode("unicode_escape")
+            banner = open("~/entypreter/data/logo.txt", "rb").read().decode("unicode_escape")
         except:
             print("")
     else:
         try:
-            banner = open("~/entypreter/data/logo2.txt", "rb").read().decode("unicode_escape")
+            banner = open("~/entypreter/data/logo.txt", "rb").read().decode("unicode_escape")
         except:
             print("")
 
