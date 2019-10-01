@@ -35,7 +35,7 @@ git clone https://github.com/entynetproject/entypreter.git
 fi
 """)
 
-os.chdir("~/entypreter")
+os.chdir(os.path.expanduser("~/entypreter"))
 
 __version_info__ = "v5.1" # Permanent Alpha
 __version__ = "5.1"
