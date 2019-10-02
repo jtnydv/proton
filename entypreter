@@ -23,6 +23,8 @@
 
 import os
 
+printf '\033]2;The Entypreter Rootkit\a'
+
 __version_info__ = "v5.1" # Permanent Alpha
 __version__ = "5.1"
 __license__ = "Apache 2.0"
@@ -154,17 +156,17 @@ if __name__ == "__main__":
         restore = {}
 
     if args.update:
-        os.system("cd ~/entypreter && cd bin && chmod +x entypreter && ./entypreter --update")
+        os.system("&& cd bin && chmod +x entypreter && ./entypreter --update")
         exit()
         
     if banner() or args.o:
         try:
-            banner = open("~/entypreter/data/logo.txt", "rb").read().decode("unicode_escape")
+            banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
         except:
             print("")
     else:
         try:
-            banner = open("~/entypreter/data/logo.txt", "rb").read().decode("unicode_escape")
+            banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
         except:
             print("")
 
