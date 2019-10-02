@@ -23,7 +23,7 @@
 
 import os
 
-printf '\033]2;The Entypreter Rootkit\a'
+os.system("printf '\033]2;The Entypreter Rootkit\a'")
 
 __version_info__ = "v5.1" # Permanent Alpha
 __version__ = "5.1"
