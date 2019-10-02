@@ -23,24 +23,10 @@
 
 import os
 
-os.system("""
-if [[ -d ~/entypreter ]]
-then
-sleep 0
-else
-cd ~
-{
-git clone https://github.com/entynetproject/entypreter.git
-} &> /dev/null
-fi
-""")
-
-os.chdir(os.path.expanduser("~/entypreter"))
-
 __version_info__ = "v5.1" # Permanent Alpha
 __version__ = "5.1"
 __license__ = "Apache 2.0"
-__credits__ = ["entynetproject", "jmage", "TheNaterz", "aleph-naught-"]
+__credits__ = ["Entynetproject"]
 
 def banner():
     return "Logo" and datetime.datetime.today().weekday() == 1
