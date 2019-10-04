@@ -47,9 +47,9 @@
     optional arguments:
       -h, --help         show this help message and exit
       --autorun AUTORUN  A file containing commands to autorun at startup.
-      -o                 Launch Entypreter Rootkit safety.
+      -o                 Launch The Entypreter Rootkit safety.
       --restore RESTORE  An Entypreter restore json file.
-      -u, --update       Update Entypreter Rootkit.
+      -u, --update       Update The Entypreter Rootkit.
       
 ***
 
