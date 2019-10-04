@@ -42,12 +42,11 @@
 
 > entypreter -h
 
-    usage: entypreter [-h] [--autorun AUTORUN] [-o] [--restore RESTORE] [-u]
+    usage: entypreter [-h] [--autorun AUTORUN] [--restore RESTORE] [-u]
                     
     optional arguments:
       -h, --help         show this help message and exit
-      --autorun AUTORUN  A file containing commands to autorun at startup.
-      -o                 Launch The Entypreter Rootkit safety.
+      --autorun AUTORUN  A file containing Entypreter commands.
       --restore RESTORE  An Entypreter restore json file.
       -u, --update       Update The Entypreter Rootkit.
       
