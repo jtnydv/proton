@@ -144,7 +144,6 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--autorun", help="A file containing commands to autorun at startup.")
-    parser.add_argument("-o", action="store_true", help="Launch Entypreter Rootkit safety.")
     parser.add_argument("--restore", help="An Entypreter restore json file.")
     parser.add_argument("-u","--update",action="store_true",help="Update Entypreter Rootkit.")
     args = parser.parse_args()
@@ -159,7 +158,7 @@ if __name__ == "__main__":
         os.system("cd bin && chmod +x entypreter && ./entypreter --update")
         exit()
         
-    if banner() or args.o:
+    if banner():
         try:
             banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
         except:
