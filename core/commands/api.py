@@ -11,11 +11,10 @@ def autocomplete(shell, line, text, state):
 def help(shell):
     shell.print_plain("")
     shell.print_plain("Turning on the REST Server:")
-    shell.print_plain("api on (--user USERNAME --pass PASSWORD --port PORT)")
-    shell.print_plain("Username and password defaults to 'entypreter'. Port defaults to 9990.")
+    shell.print_plain("usage: api on --user USERNAME --pass PASSWORD --port PORT")
     shell.print_plain("")
     shell.print_plain("Turning off the REST Server:")
-    shell.print_plain("api off")
+    shell.print_plain("usage: api off")
     shell.print_plain("")
 
 def execute(shell, cmd):
