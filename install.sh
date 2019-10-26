@@ -186,5 +186,6 @@ fi
 
 {
 pip3 install setuptools
+cd ~/entypreter
 pip3 install -r requirements.txt
 } &> /dev/null
