@@ -42,7 +42,7 @@ ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's
 if [[ "$ASESR" != "" ]]
 then 
 sleep 1
-echo -e ""$RS"[-] "$WHS"Installation failed!"$CE""
+echo -e ""$RS"[-] "$WHS"Download failed!"$CE""
 sleep 1
 exit
 fi
