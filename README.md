@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
   <a href="https://github.com/entynetproject/entypreter">
-    <img src="https://img.shields.io/badge/modules-24-red.svg">
+    <img src="https://img.shields.io/badge/implants-40-red.svg">
  </a>
   <a href="https://github.com/entynetproject/entypreter/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/entypreter.svg">
