@@ -5,9 +5,7 @@
     | -_|   || _| | | . |  _| -_|| _| -_|  _|
     |___|_|_|_| |_  |  _|_| |___|_| |___|_|  
                 |___|_|                      
-
-</a>
-<h4 align="center">Details</h4>                
+             
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
