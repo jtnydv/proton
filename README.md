@@ -6,6 +6,32 @@
     |___|_|_|_| |_  |  _|_| |___|_| |___|_|  
                 |___|_|                      
 
+</a>
+<h4 align="center">Details</h4>                
+<p align="center">
+  <a href="http://entynetproject.simplesite.com/">
+    <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
+  </a> 
+  <a href="https://github.com/entynetproject/entypreter/releases">
+    <img src="https://img.shields.io/github/release/entynetproject/entypreter.svg">
+  </a>
+  <a href="https://wikipedia.org/wiki/Python_(programming_language)">
+    <img src="https://img.shields.io/badge/language-python-blue.svg">
+ </a>
+  <a href="https://github.com/entynetproject/entypreter">
+    <img src="https://img.shields.io/badge/modules-24-red.svg">
+ </a>
+  <a href="https://github.com/entynetproject/entypreter/issues?q=is%3Aissue+is%3Aclosed">
+      <img src="https://img.shields.io/github/issues/entynetproject/entypreter.svg">
+  </a>
+  <a href="https://github.com/entynetproject/entypreter/wiki">
+      <img src="https://img.shields.io/badge/wiki%20-entypreter-lightgrey.svg">
+ </a>
+  <a href="https://twitter.com/entynetproject">
+    <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
+ </a>
+</p>
+
 ***
 
 # About entypreter rootkit
