@@ -100,6 +100,7 @@ else
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 pkg update
 pkg -y install python
+pkg -y install termux-exec
 fi
 fi
 
@@ -175,6 +176,7 @@ else
 echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
 pkg update
 pkg -y install python
+pkg -y install termux-exec
 fi
 fi
 
