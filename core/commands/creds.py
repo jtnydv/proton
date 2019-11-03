@@ -407,7 +407,7 @@ def execute(shell, cmd):
         elif splitted[1] == "-d":
             if shell.domain_info:
                 if len(splitted) < 3:
-                    shell.print_good("Gathered domains")
+                    shell.print_good("Gathered domains:")
                     for d in shell.domain_info:
                         shell.print_plain("\tLong: "+d[0]+", Short: "+d[1])
                 else:
@@ -425,7 +425,7 @@ def execute(shell, cmd):
             creds_edit_shell(shell)
 
         else:
-            shell.print_error("Unknown option '"+splitted[1]+"'")
+            shell.print_error("Unknown option '"+splitted[1]+"'.")
     else:
         if shell.creds:
             print_creds(shell)
