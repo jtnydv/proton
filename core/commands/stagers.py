@@ -24,8 +24,8 @@ def print_all_payloads(shell):
             shell.print_plain(formats.format(stager.payload_id, stager.hostname, stager.port, stager.module))
 
     shell.print_plain("")
-    shell.print_plain('Use "stagers %s" to print a payload' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "stagers -k %s" to kill a payload' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers %s" to print a payload.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers -k %s" to kill a payload.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
     shell.print_plain("")
 
 def print_payload(shell, id):
@@ -39,7 +39,7 @@ def print_payload(shell, id):
             #shell.print_plain("")
             return
 
-    shell.print_error("No payload %s." % id)
+    shell.print_error("No active stager %s." % id)
 
 def kill_listener(shell, id):
     for stager in shell.stagers:
@@ -70,7 +70,7 @@ def kill_listener(shell, id):
                         stager.http.server_close()
                         stager.killed = True
 
-                        shell.print_good("Stager %s killed!" % id)
+                        shell.print_good("Stager %s: Killed!" % id)
                         return
                     else:
                         return
@@ -89,7 +89,7 @@ def kill_listener(shell, id):
                 stager.http.server_close()
                 stager.killed = True
 
-                shell.print_good("Stager %s killed!" % id)
+                shell.print_good("Stager %s: Killed!" % id)
                 return
 
     shell.print_error("No active stager %s." % id)
