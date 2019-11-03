@@ -10,12 +10,12 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use %s to sort on a column name" % (shell.colors.colorize("creds --sort column", shell.colors.BOLD)))
-    shell.print_plain("Use %s for full credential details" % (shell.colors.colorize("creds -a", shell.colors.BOLD)))
-    shell.print_plain("Use %s for specific user credentials (add --like for partial names)" % (shell.colors.colorize("creds -u user1,user2,user3,...", shell.colors.BOLD)))
-    shell.print_plain("Use %s for domain admin credentials" % (shell.colors.colorize("creds -d domain", shell.colors.BOLD)))
-    shell.print_plain("Use %s to write credentials to a file" % (shell.colors.colorize("creds -x", shell.colors.BOLD)))
-    shell.print_plain("Use %s to edit credentials" % (shell.colors.colorize("creds --edit", shell.colors.BOLD)))
+    shell.print_plain("Use %s to sort on a column name." % (shell.colors.colorize("creds --sort column", shell.colors.BOLD)))
+    shell.print_plain("Use %s for full credential details." % (shell.colors.colorize("creds -a", shell.colors.BOLD)))
+    shell.print_plain("Use %s for specific user credentials (add --like for partial names)." % (shell.colors.colorize("creds -u user1,user2,user3,...", shell.colors.BOLD)))
+    shell.print_plain("Use %s for domain admin credentials." % (shell.colors.colorize("creds -d domain", shell.colors.BOLD)))
+    shell.print_plain("Use %s to write credentials to a file." % (shell.colors.colorize("creds -x", shell.colors.BOLD)))
+    shell.print_plain("Use %s to edit credentials." % (shell.colors.colorize("creds --edit", shell.colors.BOLD)))
     shell.print_plain("")
     shell.print_plain("NOTE: A listing that ends in [+] means extra information is available.")
     shell.print_plain("")
