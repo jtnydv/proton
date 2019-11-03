@@ -22,7 +22,7 @@ def help(shell):
 
 def print_domains(shell):
     shell.print_plain("")
-    shell.print_plain("Available Domains:")
+    shell.print_plain("Available domains:")
     for domain in shell.domain_info:
         shell.print_plain("\tFQDN: "+domain[0]+" | NetBIOS: "+domain[1])
     shell.print_plain("")
@@ -36,7 +36,7 @@ def print_domain_detailed(shell, domain_key):
 
 def print_domain_admins(shell, domain_key):
     if not "Domain Admins" in shell.domain_info[domain_key]:
-        shell.print_error("Domain Admins not gathered for target domain. Please run implant/gather/enum_domain_info")
+        shell.print_error("Domain Admins not gathered for target domain. Please run implant/gather/enum_domain_info.")
         return
 
     das = list(shell.domain_info[domain_key]["Domain Admins"])
@@ -69,7 +69,7 @@ def print_domain_admins(shell, domain_key):
 
 def print_domain_users(shell, domain_key):
     if not "Domain Users" in shell.domain_info[domain_key]:
-        shell.print_error("Domain Users not gathered for target domain. Please run implant/gather/enum_domain_info")
+        shell.print_error("Domain Users not gathered for target domain. Please run implant/gather/enum_domain_info.")
         return
 
     users = shell.domain_info[domain_key]["Domain Users"]
@@ -102,7 +102,7 @@ def print_domain_users(shell, domain_key):
 
 def print_domain_password_policy(shell, domain_key):
     if not "Password Policy" in shell.domain_info[domain_key]:
-        shell.print_error("Password Policy not gathered for target domain. Please run implant/gather/enum_domain_info")
+        shell.print_error("Password Policy not gathered for target domain. Please run implant/gather/enum_domain_info.")
         return
 
     shell.print_plain("")
@@ -123,7 +123,7 @@ def print_domain_password_policy(shell, domain_key):
 
 def print_domain_controllers(shell, domain_key):
     if not "Domain Controllers" in shell.domain_info[domain_key]:
-        shell.print_error("Domain Controllers not gathered for target domain. Please run implant/gather/enum_domain_info")
+        shell.print_error("Domain Controllers not gathered for target domain. Please run implant/gather/enum_domain_info.")
         return
 
     shell.print_plain("")
@@ -135,7 +135,7 @@ def print_domain_controllers(shell, domain_key):
 
 def print_domain_computers(shell, domain_key):
     if not "Domain Computers" in shell.domain_info[domain_key]:
-        shell.print_error("Domain Computers not gathered for target domain. Please run implant/gather/enum_domain_info")
+        shell.print_error("Domain Computers not gathered for target domain. Please run implant/gather/enum_domain_info.")
         return
 
     shell.print_plain("")
