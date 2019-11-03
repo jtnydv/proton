@@ -21,7 +21,7 @@ def print_repeatjob(shell, id):
 
 def print_all_repeatjobs(shell):
     if not shell.repeatjobs:
-        shell.print_error("No repeating jobs")
+        shell.print_error("No repeating jobs.")
         return
 
     formats = "\t{0:<4}{1:<40}{2:<7}{3:<5}{4:<7}"
