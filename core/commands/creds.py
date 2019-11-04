@@ -28,7 +28,7 @@ def print_creds(shell, sortcol="Normal", domain="", search=""):
     if domain:
         domains = [j for i in shell.domain_info for j in i]
         if not domain.lower() in domains:
-            shell.print_warning("\nDomain information not gathered, results may not be complete")
+            shell.print_warning("\nDomain information not gathered, results may not be complete.")
 
     formats = "\t{0:9}{1:17}{2:<20}{3:<20}{4:<25}{5:<42}"
 
@@ -140,7 +140,7 @@ def print_creds_das(shell, domain):
     alt_domain = [i for i in domain_key if i != domain][0]
 
     if not "Domain Admins" in shell.domain_info[domain_key]:
-        shell.print_error("Domain Admins not gathered for target domain. Please run implant/gather/enum_domain_info")
+        shell.print_error("Domain Admins not gathered for target domain. Please run implant/gather/enum_domain_info.")
         return
 
     das = shell.domain_info[domain_key]["Domain Admins"]
@@ -425,11 +425,11 @@ def creds_edit_shell(shell):
                     return
 
             else:
-                shell.print_error("Not a real section")
+                shell.print_error("Not a real section.")
                 return
 
         else:
-            shell.print_error("Not a valid Cred ID")
+            shell.print_error("Not a valid Cred ID.")
             return
 
         shell.update_restore = True
@@ -492,13 +492,13 @@ def execute(shell, cmd):
 
         elif splitted[1] == "-D":
             if len(splitted) < 3:
-                shell.print_error("Need to provide a domain")
+                shell.print_error("Need to provide a domain.")
             else:
                 print_creds(shell, "Normal", splitted[2])
 
         elif splitted[1] == "--search":
             if len(splitted) < 3:
-                shell.print_error("Need to provide text to search for")
+                shell.print_error("Need to provide text to search for.")
             else:
                 print_creds(shell, "Normal", "", splitted[2])
 
@@ -508,4 +508,4 @@ def execute(shell, cmd):
         if shell.creds:
             print_creds(shell)
         else:
-            shell.print_error("No credentials have been gathered yet")
+            shell.print_error("No credentials have been gathered yet.")
