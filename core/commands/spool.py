@@ -1,6 +1,6 @@
 import os
 
-DESCRIPTION = "write output to a file"
+DESCRIPTION = "Write output to a file."
 
 def autocomplete(shell, line, text, state):
     options = filepaths(text)
@@ -8,9 +8,9 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use %s to spool to /tmp/koadic.spool" % (shell.colors.colorize("spool on", shell.colors.BOLD)))
-    shell.print_plain("Use %s to spool to a defined file" % (shell.colors.colorize("spool FILEPATH", shell.colors.BOLD)))
-    shell.print_plain("Use %s to stop spooling" % (shell.colors.colorize("spool off", shell.colors.BOLD)))
+    shell.print_plain("Use %s to spool to /tmp/entypreter.spool." % (shell.colors.colorize("spool on", shell.colors.BOLD)))
+    shell.print_plain("Use %s to spool to a defined file." % (shell.colors.colorize("spool FILEPATH", shell.colors.BOLD)))
+    shell.print_plain("Use %s to stop spooling." % (shell.colors.colorize("spool off", shell.colors.BOLD)))
     shell.print_plain("")
 
 def filepaths(text):
@@ -48,8 +48,8 @@ def execute(shell, cmd):
     if len(splitted) > 1:
         option = splitted[1]
         if option == 'on':
-            shell.spool = '/tmp/koadic.spool'
-            shell.print_status("Spooling to /tmp/koadic.spool...")
+            shell.spool = '/tmp/entypreter.spool'
+            shell.print_status("Spooling to /tmp/entypreter.spool...")
         elif option == 'off':
             if shell.spool:
                 shell.spool = False
