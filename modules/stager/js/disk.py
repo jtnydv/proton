@@ -3,7 +3,7 @@ import core.stager
 class DiskStager(core.stager.Stager):
 
     NAME = "JScript Disk Stager"
-    DESCRIPTION = "Listens for new sessions, using disk for payloads"
+    DESCRIPTION = "Listens for new sessions, using disk for payloads."
     AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
