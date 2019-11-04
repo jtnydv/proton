@@ -1,4 +1,4 @@
-DESCRIPTION = "shows info about stagers"
+DESCRIPTION = "Shows info about stagers."
 
 def autocomplete(shell, line, text, state):
     pass
@@ -8,7 +8,7 @@ def help(shell):
 
 def print_all_payloads(shell):
     if len(shell.stagers) == 0 or len([stager for keypair in [endpoint for port,endpoint in shell.stagers.items()] for endpoint, stager in keypair.items() if not stager.killed]) == 0:
-        shell.print_error("No payloads yet.")
+        shell.print_error("No active stagers yet.")
         return
 
     shell.print_plain("")
@@ -23,9 +23,9 @@ def print_all_payloads(shell):
         shell.print_plain(formats.format(stager.payload.id, stager.hostname, stager.port, stager.endpoint, stager.module))
 
     shell.print_plain("")
-    shell.print_plain('Use "listeners %s" to print a payload' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "listeners -o %s" to print a listener\'s options' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "listeners -k %s" to kill a payload' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers %s" to print a payload.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers -o %s" to print a stager\'s options.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers -k %s" to kill a payload.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
     shell.print_plain("")
 
 def print_payload(shell, id):
@@ -72,7 +72,7 @@ def print_listener_options(shell, id):
             shell.print_plain("")
             return
 
-    shell.print_error(f"No payload {id}")
+    shell.print_error(f"No such stager: {id}")
 
 def kill_listener(shell, id):
     import os
@@ -84,9 +84,9 @@ def kill_listener(shell, id):
                 sessions = [session for skey, session in shell.sessions.items() if int(session.stager.payload.id) == int(id) and not session.killed]
                 if len(sessions) > 0:
 
-                    shell.print_warning("Warning: This listener still has live zombies attached:")
+                    shell.print_warning("Warning: This stager still has live zombies attached:")
                     shell.print_plain("   Zombie IDs: " + ", ".join([str(s.id) for s in sessions]))
-                    shell.print_warning("If this listener dies, then they will die.")
+                    shell.print_warning("If this stager dies, then they will die.")
 
                     try:
                         import readline
@@ -116,7 +116,7 @@ def kill_listener(shell, id):
                                 del shell.stagers[port]
 
 
-                            shell.print_good("Listener %s killed!" % id)
+                            shell.print_good("Stager: %s Killed!" % id)
                             return
                         else:
                             return
@@ -139,10 +139,10 @@ def kill_listener(shell, id):
                         del shell.servers[port]
                         del shell.stagers[port]
 
-                    shell.print_good("Listener %s killed!" % id)
+                    shell.print_good("Stager: %s Killed!" % id)
                     return
 
-    shell.print_error("No payload %s." % id)
+    shell.print_error("No such stager: %s." % id)
 
 
 def execute(shell, cmd):
@@ -160,7 +160,7 @@ def execute(shell, cmd):
                 print_listener_options(shell, id)
                 return
             else:
-                shell.print_error("Unknown option '%s'" % flag)
+                shell.print_error("Unknown option '%s'." % flag)
                 return
         else:
             print_payload(shell, id)
