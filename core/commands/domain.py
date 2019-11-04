@@ -235,5 +235,6 @@ def execute(shell, cmd):
             print_opti_info(shell, splitted[1])
         else:
             print_domains(shell)
+            help(shell)
     else:
         shell.print_error("No domain information gathered. Please run implant/gather/enum_domain_info.")
