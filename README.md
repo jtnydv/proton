@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
   <a href="https://github.com/entynetproject/entypreter">
-    <img src="https://img.shields.io/badge/implants-40-red.svg">
+    <img src="https://img.shields.io/badge/implants-44-red.svg">
  </a>
   <a href="https://github.com/entynetproject/entypreter/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/entypreter.svg">
@@ -111,7 +111,7 @@ implant/elevate/bypassuac_fodhelper | Bypass UAC via registry hijack for fodhelp
 implant/elevate/bypassuac_sdclt | Uses enigma0x3's sdclt.exe exploit to bypass UAC on Windows 10.
 implant/elevate/bypassuac_slui | Bypass UAC via registry hijack for slui.exe.
 implant/elevate/system_createservice | Elevate from administrative session to SYSTEM via SC.exe.
-implant/fun/youtube | Maxes volume and opens The Cranberries YouTube in a hidden window.
+implant/fun/youtube | Maxes volume and opens the specified YouTube video in a hidden window.
 implant/fun/voice | Plays a message over text-to-speech.
 implant/gather/clipboard | Retrieves the current content of the user clipboard.
 implant/gather/comsvcs_lsass | Utilizes comsvcs.dll to create a MiniDump of LSASS, parses with pypykatz.
@@ -129,7 +129,7 @@ implant/inject/shellcode_excel | Runs arbitrary shellcode payload (if Excel is i
 implant/manage/enable_rdesktop | Enables remote desktop on the target.
 implant/manage/exec_cmd | Run an arbitrary command on the target, and optionally receive the output.
 implant/persist/add_user | Adds a either a local or domain user.
-implant/persist/registry | Adds a Koadic stager payload in the registry.
+implant/persist/registry | Adds an Entypreter stager payload in the registry.
 implant/persist/schtasks | Establishes persistence via a scheduled task.
 implant/persist/wmi | Creates persistence using a WMI subscription.
 implant/phishing/password_box | Prompt a user to enter their password.
