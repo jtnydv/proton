@@ -28,11 +28,6 @@ def print_all_jobs(shell):
 
         shell.print_plain(formats.format(job.id, job.status_string(), zombie, job.name))
 
-
-    shell.print_plain("")
-
-
-
 def execute(shell, cmd):
 
     splitted = cmd.split()
