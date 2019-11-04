@@ -1,7 +1,7 @@
 import datetime
 import core.session
 
-DESCRIPTION = "lists hooked targets"
+DESCRIPTION = "List hooked zombies."
 
 def autocomplete(shell, line, text, state):
     return None
@@ -76,7 +76,7 @@ def execute(shell, cmd):
                 print_session(shell, session)
                 return
     except ValueError:
-        shell.print_error("Expected int or valid ip/domain")
+        shell.print_error("Expected int or valid ip/domain.")
 
     shell.print_error("Unable to find that session.")
 
