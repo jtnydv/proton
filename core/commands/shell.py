@@ -1,4 +1,4 @@
-DESCRIPTION = "command shell to interact with a zombie"
+DESCRIPTION = "Open zombie's CMD shell."
 
 def autocomplete(shell, line, text, state):
     if len(line.split()) > 1:
@@ -22,16 +22,16 @@ def help(shell):
 
 def get_prompt(shell, id, ip, cwd, isreadline = True):
         return "%s%s: %s%s" % (shell.colors.colorize("[", [shell.colors.NORMAL], isreadline),
-                                 shell.colors.colorize("koadic", [shell.colors.BOLD], isreadline),
+                                 shell.colors.colorize("entypreter", [shell.colors.BOLD], isreadline),
                                  shell.colors.colorize("ZOMBIE %s (%s)" % (id, ip), [shell.colors.CYAN], isreadline),
                                  shell.colors.colorize(" - %s]> " % (cwd), [shell.colors.NORMAL], isreadline))
 
 def cmdshell_help(shell):
-    shell.print_plain("\tdownload PATH  - download a file off of the target")
-    shell.print_plain("\tupload LPATH   - upload a local relatively pathed file to the target in the current directory")
-    shell.print_plain("\tcd [/d] PATH   - this operates mostly how you would expect")
-    shell.print_plain("\tDRIVE_LETTER:  - change the shell to the defined drive letter (e.g. D:)")
-    shell.print_plain("\texit / quit    - leave this shell and return to Koadic")
+    shell.print_plain("\tdownload PATH  - Download a file off of the target.")
+    shell.print_plain("\tupload LPATH   - Upload a local relatively pathed file to the target in the current directory.")
+    shell.print_plain("\tcd [/d] PATH   - This operates mostly how you would expect.")
+    shell.print_plain("\tDRIVE_LETTER:  - Change the shell to the defined drive letter (e.g. D:).")
+    shell.print_plain("\texit / quit    - Leave this shell and return to Entypreter.")
 
 def run_cmdshell(shell, session):
     import copy
@@ -64,7 +64,7 @@ def run_cmdshell(shell, session):
     curdrive = startdrive
     drivepathmap = {}
 
-    shell.print_status("Press '?' for extra commands")
+    shell.print_status("Press '?' for extra commands.")
 
     while True:
         shell.state = exec_cmd_name
