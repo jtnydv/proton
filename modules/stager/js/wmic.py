@@ -4,11 +4,7 @@ class WMICStager(core.stager.Stager):
 
     NAME = "JScript WMIC Stager"
     DESCRIPTION = "Listens for new sessions, using WMIC for payloads"
-    AUTHORS = [
-            'subTee', # discovery
-            'mattifestation', #discovery
-            'entynetproject' # stager
-            ]
+    AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
 
