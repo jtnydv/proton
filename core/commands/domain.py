@@ -9,15 +9,15 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use %s for a useful overview of gathered domain details." % (shell.colors.colorize("domain DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s for full domain details." % (shell.colors.colorize("domain -a DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s for domain admins." % (shell.colors.colorize("domain -d DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s for domain users." % (shell.colors.colorize("domain -u DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s for domain password policy." % (shell.colors.colorize("domain -p DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s for domain controllers." % (shell.colors.colorize("domain -c DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s for domain computers." % (shell.colors.colorize("domain -m DOMAIN", shell.colors.BOLD)))
-    shell.print_plain("Use %s to run implant/gather/enum_domain_info on a session." % (shell.colors.colorize("domain -z session_ID", shell.colors.BOLD)))
-    shell.print_plain("Use %s to export domain information." % (shell.colors.colorize("domain -x [DOMAIN]", shell.colors.BOLD)))
+    shell.print_plain("Use "domain %s" for a useful overview of gathered domain details." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -a %s" for full domain details." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -d %s" for domain admins." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -u %s" for domain users." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -p %s" for domain password policy." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -c %s" for domain controllers." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -m %s" for domain computers." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -z %s" to run implant/gather/enum_domain_info on a zombie." % (shell.colors.colorize("ZOMBIE_ID", shell.colors.BOLD)))
+    shell.print_plain("Use "domain -x %s" to export domain information." % (shell.colors.colorize("DOMAIN", shell.colors.BOLD)))
     shell.print_plain("")
 
 def print_domains(shell):
