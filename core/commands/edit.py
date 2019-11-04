@@ -5,9 +5,9 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use edit %s to edit the current module's python file." % (shell.colors.colorize("py/python", shell.colors.BOLD)))
-    shell.print_plain("Use edit %s to edit the current module's associated javascript file (if applicable)." % (shell.colors.colorize("js/javascript", shell.colors.BOLD)))
-    shell.print_plain("Use edit %s to edit the current module's associated vbscript file (if applicable)." % (shell.colors.colorize("vbs/vbscript", shell.colors.BOLD)))
+    shell.print_plain("Use "edit %s" to edit the current module's python file." % (shell.colors.colorize("py/python", shell.colors.BOLD)))
+    shell.print_plain("Use "edit %s" to edit the current module's associated javascript file (if applicable)." % (shell.colors.colorize("js/javascript", shell.colors.BOLD)))
+    shell.print_plain("Use "edit %s" to edit the current module's associated vbscript file (if applicable)." % (shell.colors.colorize("vbs/vbscript", shell.colors.BOLD)))
     shell.print_plain("")
     shell.print_plain("NOTE: Uses $EDITOR env variable, otherwise will fallback to vi.")
     shell.print_plain("")
