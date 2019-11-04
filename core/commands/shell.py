@@ -17,13 +17,13 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use %s to interact with a particular session." % (shell.colors.colorize("shell session_ID", shell.colors.BOLD)))
+    shell.print_plain("Use %s to interact with a particular zombie." % (shell.colors.colorize("shell session_ID", shell.colors.BOLD)))
     shell.print_plain("")
 
 def get_prompt(shell, id, ip, cwd, isreadline = True):
         return "%s%s: %s%s" % (shell.colors.colorize("[", [shell.colors.NORMAL], isreadline),
                                  shell.colors.colorize("entypreter", [shell.colors.BOLD], isreadline),
-                                 shell.colors.colorize("Session %s (%s)" % (id, ip), [shell.colors.CYAN], isreadline),
+                                 shell.colors.colorize("Zombie %s (%s)" % (id, ip), [shell.colors.CYAN], isreadline),
                                  shell.colors.colorize(" - %s]> " % (cwd), [shell.colors.NORMAL], isreadline))
 
 def run_cmdshell(shell, session):
@@ -141,7 +141,7 @@ def run_cmdshell(shell, session):
             shell.print_plain(shell.clean_prompt)
             return
         finally:
-            plugin.options.set("session", old_session)
+            plugin.options.set("ZOMBIE", old_session)
             plugin.options.set("CMD", old_cmd)
             plugin.options.set("DIRECTORY", old_dir)
             plugin.options.set("OUTPUT", old_out)
