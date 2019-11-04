@@ -12,7 +12,7 @@ class JScriptStager(Stager):
 
     NAME = "JScript Stager"
     DESCRIPTION = "Listens for new sessions, using JScript for payloads"
-    AUTHORS = ['entynetproject']
+    AUTHORS = ['Entynetproject']
 
     def load(self):
         self.options.register("HTAPATH", "/home.hta", "mshta.exe stage", advanced = True)
