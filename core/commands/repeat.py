@@ -4,7 +4,11 @@ def autocomplete(shell, line, text, state):
     pass
 
 def help(shell):
-    pass
+    shell.print_plain("")
+    shell.print_plain('Use "repeat %s" to print the set options of a repeating job.' % shell.colors.colorize("JOB_ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "repeat -k %s" to kill a repeating job.' % shell.colors.colorize("JOB_ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "repeat -K" to kill all repeating jobs.')
+    shell.print_plain("")
 
 def print_repeatjob(shell, id):
     if id in shell.repeatjobs:
