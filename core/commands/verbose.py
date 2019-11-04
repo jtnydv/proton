@@ -1,4 +1,4 @@
-DESCRIPTION = "Turn verbosity on/off: verbose (on|off)."
+DESCRIPTION = "Turn verbosity on/off."
 
 def autocomplete(shell, line, text, state):
     return None
@@ -11,6 +11,10 @@ def execute(shell, cmd):
 
     if len(splitted) > 1:
         sw = splitted[1].lower()
+        if sw == "":
+            shell.print_plain("")
+            shell.print_plain("Usage: verbose [on|off]")
+            shell.print_plain("")
         if sw == "1" or sw == "true" or sw == "on":
             shell.verbose = True
         else:
