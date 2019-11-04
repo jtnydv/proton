@@ -5,7 +5,7 @@ class MSHTAStager(core.stager.StagerWizard):
 
     NAME = "JScript RegSvr Stager"
     DESCRIPTION = "Listens for new sessions, using COM+ RegSvr for payloads."
-    AUTHORS = [ 'Entynetproject']
+    AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
 
@@ -20,4 +20,3 @@ class MSHTAStager(core.stager.StagerWizard):
         self.forktemplate = self.stagetemplate
         self.forkcmd = self.stagecmd
         self.workload = "js"
-

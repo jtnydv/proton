@@ -22,7 +22,7 @@ class SWbemServicesImplant(core.implant.Implant):
         self.options.register("SMBUSER", "", "Username for login.")
         self.options.register("SMBPASS", "", "Password for login.")
         self.options.register("SMBDOMAIN", ".", "Domain for login.")
-        self.options.register("CREDID", "", "Cred ID from creds.")
+        self.options.register("CREDID", "", "Cred id from creds.")
 
     def job(self):
         return SWbemServicesJob
@@ -45,6 +45,6 @@ class SWbemServicesImplant(core.implant.Implant):
                 self.shell.print_warning("Cred has no Domain!")
 
         payloads = {}
-        payloads["js"] = self.loader.load_script("data/implant/pivot/exec_wmi.js", self.options)
+        payloads["js"] = "data/implant/pivot/exec_wmi.js"
 
         self.dispatch(payloads, self.job)

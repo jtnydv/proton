@@ -24,7 +24,7 @@ class CompDefaultImplant(core.implant.Implant):
 
     NAME = "Bypass UAC CompDefaults"
     DESCRIPTION = "Bypass UAC via registry hijack for ComputerDefaults.exe. Drops no files to disk."
-    AUTHORS = ["Entynetproject"]
+    AUTHORS = ['Entynetproject']
     STATE = "implant/elevate/bypassuac_compdefaults"
 
     def load(self):
