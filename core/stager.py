@@ -24,13 +24,13 @@ class StagerWizard(core.plugin.Plugin):
             s.close()
 
         # general, non-hidden, non-advanced options
-        self.options.register('SRVHOST', hostname, 'Where the stager should call home', alias = 'LHOST')
-        self.options.register('SRVPORT', self.port, 'The port to listen for stagers on', alias = 'LPORT')
-        self.options.register('EXPIRES', '', 'MM/DD/YYYY to stop calling home', required = False)
-        self.options.register('KEYPATH', '',  'Private key for TLS communications', required = False, file = True)
-        self.options.register('CERTPATH', '', 'Certificate for TLS communications', required = False, file = True)
-        self.options.register('ENDPOINT', self.random_string(5), 'URL path for callhome operations', required = True)
-        self.options.register('MODULE', '', 'Module to run once zombie is staged', required = False)
+        self.options.register('SRVHOST', hostname, 'Where the stager should call home.', alias = 'LHOST')
+        self.options.register('SRVPORT', self.port, 'The port to listen for stagers on.', alias = 'LPORT')
+        self.options.register('EXPIRES', '', 'MM/DD/YYYY to stop calling home.', required = False)
+        self.options.register('KEYPATH', '',  'Private key for TLS communications.', required = False, file = True)
+        self.options.register('CERTPATH', '', 'Certificate for TLS communications.', required = False, file = True)
+        self.options.register('ENDPOINT', self.random_string(5), 'URL path for callhome operations.', required = True)
+        self.options.register('MODULE', '', 'Module to run once zombie is staged.', required = False)
         self.options.register('ONESHOT', 'false', 'Oneshot.', boolean = True)
         self.options.register('AUTOFWD', 'true', 'Automatically fix forwarded connection URLs.', boolean=True, required=True)
 
@@ -68,7 +68,7 @@ class StagerWizard(core.plugin.Plugin):
     def run(self):
 
         if self.options.get('ONESHOT') == 'true' and not self.options.get('MODULE'):
-            self.shell.print_error('A ONESHOT Zombie needs a MODULE')
+            self.shell.print_error('A ONESHOT Zombie needs a MODULE.')
             return
 
         srvport = int(str(self.options.get('SRVPORT')).strip())
@@ -120,7 +120,7 @@ class StagerWizard(core.plugin.Plugin):
             traceback.print_exc()
             return False
         except:
-            self.shell.print_error('Failed to spawn stager')
+            self.shell.print_error('Failed to spawn stager.')
             raise
             return False
 
