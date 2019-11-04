@@ -43,7 +43,7 @@ def run_cmdshell(shell, session):
     old_clean_prompt = shell.clean_prompt
     old_state = shell.state
 
-    old_session = plugin.options.get("session")
+    old_session = plugin.options.get("ZOMBIE")
     old_dir = plugin.options.get("DIRECTORY")
     old_out = plugin.options.get("OUTPUT")
     old_cmd = plugin.options.get("CMD")
@@ -57,7 +57,7 @@ def run_cmdshell(shell, session):
         shell.state = exec_cmd_name
         shell.prompt = get_prompt(shell, id, ip, emucwd, True)
         shell.clean_prompt = get_prompt(shell, id, ip, emucwd, False)
-        plugin.options.set("session", id)
+        plugin.options.set("ZOMBIE", id)
         plugin.options.set("DIRECTORY", "%TEMP%")
         plugin.options.set("OUTPUT", "true")
 
@@ -70,28 +70,28 @@ def run_cmdshell(shell, session):
                 if cmd.lower() in ['exit','quit']:
                     return
                 elif cmd.split()[0].lower() == 'download' and len(cmd.split()) > 1:
-                    old_download_session = download_file_plugin.options.get("session")
+                    old_download_session = download_file_plugin.options.get("ZOMBIE")
                     old_download_rfile = download_file_plugin.options.get("RFILE")
-                    download_file_plugin.options.set("session", id)
+                    download_file_plugin.options.set("ZOMBIE", id)
                     rfile = emucwd
                     if rfile[-1] != "\\":
                         rfile += "\\"
                     rfile += " ".join(cmd.split(" ")[1:])
                     download_file_plugin.options.set("RFILE", rfile)
                     download_file_plugin.run()
-                    download_file_plugin.options.set("session", old_download_session)
+                    download_file_plugin.options.set("ZOMBIE", old_download_session)
                     download_file_plugin.options.set("RFILE", old_download_rfile)
                     continue
                 elif cmd.split()[0].lower() == 'upload' and len(cmd.split()) > 1:
-                    old_upload_session = upload_file_plugin.options.get("session")
+                    old_upload_session = upload_file_plugin.options.get("ZOMBIE")
                     old_upload_lfile = upload_file_plugin.options.get("LFILE")
                     old_upload_dir = upload_file_plugin.options.get("DIRECTORY")
-                    upload_file_plugin.options.set("session", id)
+                    upload_file_plugin.options.set("ZOMBIE", id)
                     lfile = cmd.split()[1]
                     upload_file_plugin.options.set("LFILE", lfile)
                     upload_file_plugin.options.set("DIRECTORY", emucwd)
                     upload_file_plugin.run()
-                    upload_file_plugin.options.set("session", old_upload_session)
+                    upload_file_plugin.options.set("ZOMBIE", old_upload_session)
                     upload_file_plugin.options.set("LFILE", old_upload_lfile)
                     upload_file_plugin.options.set("DIRECTORY", old_upload_dir)
                     continue
@@ -162,6 +162,6 @@ def execute(shell, cmd):
                     run_cmdshell(shell, session)
                     return
 
-        shell.print_error("Session #%s not found." % (target))
+        shell.print_error("Zombie #%s not found." % (target))
     else:
-        shell.print_error("You must provide a session number as an argument.")
+        shell.print_error("You must provide a zombie number as an argument.")

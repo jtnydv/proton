@@ -18,7 +18,7 @@ def print_all_jobs(shell):
 
     shell.print_plain("")
 
-    shell.print_plain(formats.format("ID", "STATUS", "session", "NAME"))
+    shell.print_plain(formats.format("ID", "STATUS", "ZOMBIE", "NAME"))
     shell.print_plain(formats.format("-"*4,  "-"*9, "-"*10, "-"*20))
     for job in shell.jobs:
         if job.session_id != -1:
