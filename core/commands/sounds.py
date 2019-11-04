@@ -1,4 +1,4 @@
-DESCRIPTION = "Turn sounds on/off: sound (on|off)."
+DESCRIPTION = "Turn sounds on/off."
 
 def autocomplete(shell, line, text, state):
     return None
@@ -17,6 +17,10 @@ def execute(shell, cmd):
 
     if len(splitted) > 1:
         sw = splitted[1].lower()
+        if sw == "":
+            shell.print_plain("")
+            shell.print_plain("Usage: sounds [on|off]")
+            shell.print_plain("")
         if sw == "1" or sw == "true" or sw == "on":
             from core.sounds import sounds
             shell.sounds = sounds
