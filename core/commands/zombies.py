@@ -139,8 +139,8 @@ def print_all_sessions(shell, all_sessions):
         shell.print_plain(formats.format(str(session.id)+elevated, session.ip, alive, seen))
 
     shell.print_plain("")
-    shell.print_plain('Use "sessions %s" for detailed information about a session.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "sessions %s" for sessions on a particular host.' % shell.colors.colorize("IP", [shell.colors.BOLD]))
-    shell.print_plain('Use "sessions %s" for sessions on a particular Windows domain.' % shell.colors.colorize("DOMAIN", [shell.colors.BOLD]))
-    shell.print_plain('Use "sessions killed" for sessions that have been manually killed.')
+    shell.print_plain('Use "zombies %s" for detailed information about a session.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "zombies %s" for sessions on a particular host.' % shell.colors.colorize("IP", [shell.colors.BOLD]))
+    shell.print_plain('Use "zombies %s" for sessions on a particular Windows domain.' % shell.colors.colorize("DOMAIN", [shell.colors.BOLD]))
+    shell.print_plain('Use "zombies killed" for sessions that have been manually killed.')
     shell.print_plain("")
