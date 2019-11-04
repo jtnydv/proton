@@ -20,3 +20,4 @@ def execute(shell, cmd):
             shell.verbose = False
             shell.print_status("Verbosity: %s" % ("on" if shell.verbose else "off"))
     
+    help(shell)
