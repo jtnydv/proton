@@ -4,7 +4,7 @@ class DiskStager(core.stager.Stager):
 
     NAME = "JScript Disk Stager"
     DESCRIPTION = "Listens for new sessions, using disk for payloads"
-    AUTHORS = ['entynetproject']
+    AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
 
