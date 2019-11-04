@@ -27,7 +27,7 @@ class PsExecLiveImplant(core.implant.Implant):
         self.options.register("SMBUSER", "", "Username for login.")
         self.options.register("SMBPASS", "", "Password for login.")
         self.options.register("SMBDOMAIN", ".", "Domain for login.")
-        self.options.register("CREDID", "", "Cred id from creds.")
+        self.options.register("CREDID", "", "Cred ID from creds.")
         #self.options.register("PAYLOAD", "", "payload to stage")
         self.options.register("RPATH", "\\\\\\\\live.sysinternals.com@SSL\\\\tools\\\\", "Path to psexec.exe.")
         self.options.register("DIRECTORY", "%TEMP%", "Writeable directory for output.", required=False)
