@@ -20,8 +20,8 @@ class ThunderstruckJob(core.job.Job):
 
 class ThunderstruckImplant(core.implant.Implant):
 
-    NAME = "Thunderstruck"
-    DESCRIPTION = "Opens hidden IE to the Thunderstruck YouTube video."
+    NAME = "YouTube"
+    DESCRIPTION = "Opens hidden IE to the specified YouTube video."
     AUTHORS = ["Entynetproject"]
     STATE = "implant/fun/thunderstruck"
 
