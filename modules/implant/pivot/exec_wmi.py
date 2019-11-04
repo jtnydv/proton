@@ -22,7 +22,7 @@ class SWbemServicesImplant(core.implant.Implant):
         self.options.register("SMBUSER", "", "Username for login.")
         self.options.register("SMBPASS", "", "Password for login.")
         self.options.register("SMBDOMAIN", ".", "Domain for login.")
-        self.options.register("CREDID", "", "Cred id from creds.")
+        self.options.register("CREDID", "", "Cred ID from creds.")
 
     def job(self):
         return SWbemServicesJob

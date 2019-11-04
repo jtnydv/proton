@@ -17,7 +17,7 @@ class EventVwrJob(core.job.Job):
         self.display()
 
     def display(self):
-        self.results = "Completed"
+        self.results = "Completed!"
         #self.shell.print_plain(self.data)
 
 class EventVwrImplant(core.implant.Implant):

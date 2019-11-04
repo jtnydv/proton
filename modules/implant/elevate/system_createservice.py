@@ -17,7 +17,7 @@ class CreateServiceJob(core.job.Job):
         self.display()
 
     def display(self):
-        self.results = "Completed"
+        self.results = "Completed!"
 
 class CreateServiceImplant(core.implant.Implant):
 

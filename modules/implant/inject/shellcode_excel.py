@@ -4,7 +4,7 @@ import string
 
 class ExcelShellcodeJob(core.job.Job):
     def done(self):
-        self.results = "Completed"
+        self.results = "Completed!"
         self.display()
 
     def display(self):
