@@ -4,7 +4,7 @@ class BitsadminStager(core.stager.Stager):
 
     NAME = "JScript Bitsadmin Stager"
     DESCRIPTION = "Listens for new sessions, using JScript Bitsadmin for payloads"
-    AUTHORS = ['entynetproject']
+    AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
 
