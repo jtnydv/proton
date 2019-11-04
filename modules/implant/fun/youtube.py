@@ -40,6 +40,6 @@ class ThunderstruckImplant(core.implant.Implant):
 
         payloads = {}
         #payloads["vbs"] = self.loader.load_script("data/implant/fun/thunderstruck.vbs", self.options)
-        payloads["js"] = "data/implant/fun/thunderstruck.js"
+        payloads["js"] = "data/implant/fun/youtube.js"
 
         self.dispatch(payloads, ThunderstruckJob)
