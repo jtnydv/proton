@@ -79,14 +79,14 @@
 # The entypreter modules
 
     INFO: There are to kinds of The Entypreter Rootkit 
-    modules - stagers and implants. Entypreter stagers 
-    hook target session and allow you to use implants. 
-    Entypreter implants starts jobs on remote session.
+    modules - stagers and implants. Entypreter stagers hook 
+    zombie target and allow you to use implants. Entypreter 
+    implants starts jobs on remote zombie target.
     
-## The entypreter stagers
+## Entypreter stagers
 
-    INFO: Entypreter stagers hook target 
-    session and allow you to use implants.
+    INFO: Entypreter stagers hook target zombie 
+    targets and allow you to use implants.
 
 Module | Description
 --------|------------
@@ -97,10 +97,10 @@ stager/js/rundll32_js | Serves payloads using rundll32.exe.
 stager/js/disk | Serves payloads using files on disk.
 stager/js/bitsadmin | Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.
 
-## The entypreter implants
+## Entypreter implants
 
     INFO: Entypreter implants starts 
-    jobs on remote session.
+    jobs on a remote zombie target.
 
 Module | Description
 --------|------------
