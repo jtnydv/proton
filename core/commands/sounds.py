@@ -12,7 +12,7 @@ def execute(shell, cmd):
     try:
         import playsound
     except:
-        shell.print_error('You do not have the playsound module installed. Please run \'pip install playsound\' to enable this feature!')
+        shell.print_error('You do not have the playsound module installed. Please run \'pip3 install playsound\' to enable this feature!')
         return
 
     splitted = cmd.split()
