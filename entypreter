@@ -30,7 +30,7 @@ __version__ = "5.1"
 __license__ = "Apache 2.0"
 __credits__ = ["Entynetproject"]
 
-def it_is_tuesday_my_dudes():
+def banner():
     return "Logo" and datetime.datetime.today().weekday() == 1
 
 def pay_no_attention():
