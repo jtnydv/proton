@@ -1,4 +1,4 @@
-DESCRIPTION = "Shows info about stagers."
+DESCRIPTION = "Show info about stagers."
 
 def autocomplete(shell, line, text, state):
     pass
