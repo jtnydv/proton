@@ -59,7 +59,7 @@ def filepaths(text):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Usage: set <option>")
+    shell.print_plain("Usage: set <option> <value>")
     shell.print_plain("")
 
 def execute(shell, cmd):
