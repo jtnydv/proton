@@ -4,7 +4,9 @@ def autocomplete(shell, line, text, state):
     return None
 
 def help(shell):
-    pass
+    shell.print_plain("")
+    shell.print_plain("Usage: verbose [on|off]")
+    shell.print_plain("")
 
 def execute(shell, cmd):
     splitted = cmd.split()
