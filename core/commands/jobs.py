@@ -20,9 +20,6 @@ def print_all_jobs(shell):
 
     shell.print_plain(formats.format("ID", "STATUS", "ZOMBIE", "NAME"))
     shell.print_plain(formats.format("-"*4,  "-"*9, "-"*10, "-"*20))
-    shell.print_plain("")
-    shell.print_plain("Use jobs %s to view job results (if any)." % (shell.colors.colorize("JOB_ID", shell.colors.BOLD)))
-    shell.print_plain("")
     for jkey, job in shell.jobs.items():
         if job.session_id != -1:
             zombie = "%s (%d)" % (job.ip, job.session_id)
@@ -46,3 +43,6 @@ def execute(shell, cmd):
         return
 
     print_all_jobs(shell)
+    shell.print_plain("")
+    shell.print_plain("Use jobs %s to view job results (if any)." % (shell.colors.colorize("JOB_ID", shell.colors.BOLD)))
+    shell.print_plain("")
