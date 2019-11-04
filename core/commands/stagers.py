@@ -4,7 +4,11 @@ def autocomplete(shell, line, text, state):
     pass
 
 def help(shell):
-    pass
+    shell.print_plain("")
+    shell.print_plain('Use "stagers %s" to print a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers -o %s" to print a stager\'s options.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers -k %s" to kill a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
+    shell.print_plain("")
 
 def print_all_payloads(shell):
     if len(shell.stagers) == 0 or len([stager for keypair in [endpoint for port,endpoint in shell.stagers.items()] for endpoint, stager in keypair.items() if not stager.killed]) == 0:
@@ -23,9 +27,9 @@ def print_all_payloads(shell):
         shell.print_plain(formats.format(stager.payload.id, stager.hostname, stager.port, stager.endpoint, stager.module))
 
     shell.print_plain("")
-    shell.print_plain('Use "stagers %s" to print a payload.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers %s" to print a stager.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
     shell.print_plain('Use "stagers -o %s" to print a stager\'s options.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "stagers -k %s" to kill a payload.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers -k %s" to kill a stager.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
     shell.print_plain("")
 
 def print_payload(shell, id):
