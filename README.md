@@ -80,13 +80,13 @@
 
     INFO: There are to kinds of The Entypreter Rootkit 
     modules - stagers and implants. Entypreter stagers hook 
-    zombie target and allow you to use implants. Entypreter 
-    implants starts jobs on remote zombie target.
+    target zombies and allow you to use implants. Entypreter 
+    implants starts jobs on remote target zombie.
     
 ## Entypreter stagers
 
-    INFO: Entypreter stagers hook target zombie 
-    targets and allow you to use implants.
+    INFO: Entypreter stagers hook target 
+    zombie and allow you to use implants.
 
 Module | Description
 --------|------------
