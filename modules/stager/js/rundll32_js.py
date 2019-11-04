@@ -4,7 +4,7 @@ class RunDLL32JSStager(core.stager.Stager):
 
     NAME = "JScript rundll32.exe JavaScript Stager"
     DESCRIPTION = "Listens for new sessions, using JavaScript for payloads"
-    AUTHORS = ['entynetproject']
+    AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
 
