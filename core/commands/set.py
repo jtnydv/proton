@@ -58,7 +58,9 @@ def filepaths(text):
     return res
 
 def help(shell):
-    pass
+    shell.print_plain("")
+    shell.print_plain("Usage: set <option>")
+    shell.print_plain("")
 
 def execute(shell, cmd):
     env = shell.plugins[shell.state]
@@ -74,7 +76,7 @@ def execute(shell, cmd):
             if len(splitted) > 2:
                 value = cmd.split(None, 2)[2]
                 if not env.options.set(key, value):
-                    shell.print_error("That value is invalid!")
+                    shell.print_error("That option is invalid!")
                     return
 
             shell.print_good("%s => %s" % (key, value))
