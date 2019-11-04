@@ -4,7 +4,7 @@ class MSHTAStager(core.stager.Stager):
 
     NAME = "JScript MSHTA Stager"
     DESCRIPTION = "Listens for new sessions, using JScript MSHTA for payloads"
-    AUTHORS = ['entynetproject']
+    AUTHORS = ['Entynetproject']
 
     WORKLOAD = "js"
 
