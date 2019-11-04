@@ -5,7 +5,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use "info -a" for advanced options.")
+    shell.print_plain('Use "info -a" for advanced options.')
     shell.print_plain("")
 
 def execute(shell, cmd):
@@ -40,5 +40,5 @@ def execute(shell, cmd):
         shell.print_plain(formats.format(option.name, value, prettybool, option.description))
 
     shell.print_plain("")
-    shell.print_plain("Use "info -a" for advanced options.")
+    shell.print_plain('Use "info -a" for advanced options.')
     shell.print_plain("")
