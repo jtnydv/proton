@@ -23,7 +23,7 @@ class ThunderstruckImplant(core.implant.Implant):
     NAME = "YouTube"
     DESCRIPTION = "Opens hidden IE to the specified YouTube video."
     AUTHORS = ["Entynetproject"]
-    STATE = "implant/fun/thunderstruck"
+    STATE = "implant/fun/youtube"
 
     def load(self):
         self.options.register("VIDEOURL", "https://www.youtube.com/watch?v=v2AC41dglnM", "YouTube video to play.")
