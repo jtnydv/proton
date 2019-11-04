@@ -5,7 +5,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Usage: kill #")
+    shell.print_plain("Usage: kill <number>")
     shell.print_plain("       kill all")
     shell.print_plain("       kill dead")
     shell.print_plain("")
