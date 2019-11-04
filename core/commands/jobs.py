@@ -5,7 +5,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("Use "jobs %s" to view job results (if any)." % (shell.colors.colorize("JOB_ID", shell.colors.BOLD)))
+    shell.print_plain('Use "jobs %s" to view job results (if any).' % (shell.colors.colorize("JOB_ID", shell.colors.BOLD)))
     shell.print_plain("")
 
 def print_job(shell, id):
@@ -40,7 +40,7 @@ def execute(shell, cmd):
     if shell.jobs:
         print_all_jobs(shell)
         shell.print_plain("")
-        shell.print_plain("Use "jobs %s" to view job results (if any)." % (shell.colors.colorize("ID", shell.colors.BOLD)))
+        shell.print_plain('Use "jobs %s" to view job results (if any).' % (shell.colors.colorize("ID", shell.colors.BOLD)))
         shell.print_plain("")
     else:
         shell.print_error("No active jobs yet.")
