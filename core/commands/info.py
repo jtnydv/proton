@@ -40,3 +40,5 @@ def execute(shell, cmd):
         shell.print_plain(formats.format(option.name, value, prettybool, option.description))
 
     shell.print_plain("")
+    shell.print_plain("Use "info -a" for advanced options.")
+    shell.print_plain("")
