@@ -65,6 +65,8 @@ def run_cmdshell(shell, session):
             import readline
             readline.set_completer(None)
             cmd = shell.get_command(shell.prompt)
+            if shell.spool:
+                shell.spool_log(shell.clean_prompt, cmd)
 
             if len(cmd) > 0:
                 if cmd.lower() in ['exit','quit']:
