@@ -31,8 +31,8 @@ class StagerWizard(core.plugin.Plugin):
         self.options.register('CERTPATH', '', 'Certificate for TLS communications.', required = False, file = True)
         self.options.register('ENDPOINT', self.random_string(5), 'URL path for callhome operations.', required = True)
         self.options.register('MODULE', '', 'Module to run once zombie is staged.', required = False)
-        self.options.register('ONESHOT', 'false', 'Oneshot.', boolean = True)
-        self.options.register('AUTOFWD', 'true', 'Automatically fix forwarded connection URLs.', boolean=True, required=True)
+        self.options.register('ONESHOT', 'false', 'Make this stager oneshot stager.', boolean = True)
+        self.options.register('AUTOFWD', 'true', 'Automatically fix forwarded URLs.', boolean=True, required=True)
 
         # names of query string properties
         jobname = sessionname = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
@@ -40,7 +40,7 @@ class StagerWizard(core.plugin.Plugin):
             sessionname = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
         self.options.register('JOBNAME', jobname, 'Name for jobkey cookie.', advanced = True)
         self.options.register('SESSIONNAME', sessionname, 'Name for session cookie.', advanced = True)
-        self.options.register('OBFUSCATE', 'xor', 'Obfuscate payloads with defined technique (\'\', xor) (blank = no obfuscation).', advanced = True, enum = ['', 'xor'])
+        self.options.register('OBFUSCATE', 'xor', 'Obfuscate payloads with defined technique.', advanced = True, enum = ['', 'xor'])
 
         # query strings
         self.options.register('_JOBPATH_', '', 'The job path.', hidden = True)
