@@ -25,6 +25,8 @@ def print_all_payloads(shell):
     for stager in sorted([stager for keypair in [endpoint for port,endpoint in shell.stagers.items()] for endpoint, stager in keypair.items() if not stager.killed], key=lambda s:s.payload.id):
         payload = stager.get_payload_data().decode()
         shell.print_plain(formats.format(stager.payload.id, stager.hostname, stager.port, stager.endpoint, stager.module))
+        
+    shell.print_plain("")
 
 def print_payload(shell, id):
     for port in shell.stagers:
