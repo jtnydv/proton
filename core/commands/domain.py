@@ -64,7 +64,7 @@ def print_domain_admins(shell, domain_key):
         shell.print_plain(formats.format(da_row[0], da_row[1], da_row[2], da_row[3]))
 
     shell.print_plain("")
-    shell.print_plain("* = credentials in cred store")
+    shell.print_plain("* = credentials in cred store.")
     shell.print_plain("")
 
 def print_domain_users(shell, domain_key):
@@ -97,7 +97,7 @@ def print_domain_users(shell, domain_key):
         shell.print_plain(formats.format(user_row[0], user_row[1], user_row[2], user_row[3]))
 
     shell.print_plain("")
-    shell.print_plain("* = credentials in cred store")
+    shell.print_plain("* = credentials in cred store.")
     shell.print_plain("")
 
 def print_domain_password_policy(shell, domain_key):
@@ -151,7 +151,7 @@ def print_opti_info(shell, domain):
 
     domains = [j for i in shell.domain_info for j in i]
     if not domain.lower() in domains:
-        shell.print_error("Supplied domain not known")
+        shell.print_error("Supplied domain not known.")
         return
     domain_key = [i for i in shell.domain_info if domain.lower() in i][0]
 
@@ -209,7 +209,7 @@ def execute(shell, cmd):
             domain = splitted[2]
             domains = [j for i in shell.domain_info for j in i]
             if not domain.lower() in domains:
-                shell.print_error("Supplied domain not known")
+                shell.print_error("Supplied domain not known.")
                 return
             domain_key = [i for i in shell.domain_info if domain.lower() in i][0]
 
@@ -228,7 +228,7 @@ def execute(shell, cmd):
             elif splitted[1] == "-x":
                 export_domain_info(shell, domain_key)
             else:
-                shell.print_error("Unknown option '"+splitted[1]+"'")
+                shell.print_error("Unknown option '"+splitted[1]+"'.")
         elif len(splitted) > 1 and splitted[1] == "-x":
             export_domain_info(shell)
         elif len(splitted) > 1:
