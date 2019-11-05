@@ -38,3 +38,5 @@ def execute(shell, cmd):
         prettybool = "yes" if option.required else "no"
         value = str(option.value)[0:16] + "..." if len(str(option.value)) > 16 else str(option.value)
         shell.print_plain(formats.format(option.name, value, prettybool, option.description))
+        
+    shell.print_plain("")
