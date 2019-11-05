@@ -14,6 +14,10 @@ def print_job(shell, id):
             job.display()
 
 def print_all_jobs(shell):
+    if len(shell.jobs) == 0 or len([job for keypair in [endpoint for port,endpoint in shell.jobs.items()] for endpoint, job in keypair.items() if not job.killed]) == 0:
+        shell.print_error("No active jobs yet.")
+        return
+    
     formats = "\t{0:<5}{1:<10}{2:<20}{3:<40}"
 
     shell.print_plain("")
