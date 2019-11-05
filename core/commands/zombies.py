@@ -8,7 +8,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain('Use "zombies %s" for detailed information about a session.' % shell.colors.colorize("ZOMBIE_ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "zombies %s" for detailed information about a zombie.' % shell.colors.colorize("ZOMBIE_ID", [shell.colors.BOLD]))
     shell.print_plain('Use "zombies %s" for sessions on a particular host.' % shell.colors.colorize("ZOMBIE_IP", [shell.colors.BOLD]))
     shell.print_plain('Use "zombies %s" for sessions on a particular Windows domain.' % shell.colors.colorize("ZOMBIE_DOMAIN", [shell.colors.BOLD]))
     shell.print_plain('Use "zombies killed" for sessions that have been manually killed.')
@@ -123,7 +123,7 @@ def print_session(shell, session):
     print_data(shell, "OS", session.os)
     print_data(shell, "OSBuild", session.build)
     print_data(shell, "OSArch", session.arch)
-    print_data(shell, "Elevated", "YES!" if session.elevated == core.session.Session.ELEVATED_TRUE else "No")
+    print_data(shell, "Elevated", "YES!" if session.elevated == core.session.Session.ELEVATED_TRUE else "NO!")
     shell.print_plain("")
     print_data(shell, "User Agent", session.user_agent)
     print_data(shell, "Session Key", session.key)
