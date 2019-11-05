@@ -507,6 +507,5 @@ def execute(shell, cmd):
     else:
         if shell.creds:
             print_creds(shell)
-            help(shell)
         else:
             shell.print_error("No credentials have been gathered yet.")
