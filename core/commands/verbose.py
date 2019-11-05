@@ -19,5 +19,6 @@ def execute(shell, cmd):
         if sw == "0" or sw == "false" or sw == "off":
             shell.verbose = False
             shell.print_status("Verbosity: %s" % ("on" if shell.verbose else "off"))
-    
-    help(shell)
+            
+    else:
+        help(shell)
