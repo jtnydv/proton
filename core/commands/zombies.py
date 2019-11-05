@@ -140,3 +140,5 @@ def print_all_sessions(shell, all_sessions):
         seen = datetime.datetime.fromtimestamp(session.last_active).strftime('%Y-%m-%d %H:%M:%S')
         elevated = '*' if session.elevated == core.session.Session.ELEVATED_TRUE else ''
         shell.print_plain(formats.format(str(session.id)+elevated, session.ip, alive, seen))
+        
+    shell.print_plain("")
