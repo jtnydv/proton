@@ -195,7 +195,7 @@ def execute(shell, cmd):
 
     if len(splitted) > 1 and splitted[1] == "-z":
         if len(splitted) < 3:
-            shell.print_error("Need to provide a session ID!")
+            shell.print_error("Need to provide a zombie ID!")
             return
         plugin = shell.plugins["implant/gather/enum_domain_info"]
         old_session = plugin.options.get("ZOMBIE")
