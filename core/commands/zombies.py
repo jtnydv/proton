@@ -90,6 +90,9 @@ def print_data(shell, title, data):
     shell.print_plain(formats.format(shell.colors.colorize(title + ":", [shell.colors.BOLD]), data))
 
 def print_jobs(shell, session):
+    if len(shell.jobs) == 0 or len([job for keypair in [endpoint for port,endpoint in shell.jobs.items()] for endpoint, job in keypair.items() if not job.killed]) == 0:
+        shell.print_error("No active jobs yet.")
+        return
 
     formats = "\t{0:<5}{1:<32}{2:<10}{3:<8}"
     shell.print_plain(formats.format("JOB", "NAME", "STATUS", "ERRNO"))
