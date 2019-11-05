@@ -40,6 +40,7 @@ def execute(shell, cmd):
     if len(splitted) > 1:
         id = splitted[1]
         kill_zombie(shell, id)
+        shell.print_good("Zombie %d: Killed!" % id)
         return
 
     help(shell)
