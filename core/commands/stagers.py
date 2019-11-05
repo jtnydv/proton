@@ -26,12 +26,6 @@ def print_all_payloads(shell):
         payload = stager.get_payload_data().decode()
         shell.print_plain(formats.format(stager.payload.id, stager.hostname, stager.port, stager.endpoint, stager.module))
 
-    shell.print_plain("")
-    shell.print_plain('Use "stagers %s" to print a stager.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "stagers -o %s" to print a stager\'s options.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "stagers -k %s" to kill a stager.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain("")
-
 def print_payload(shell, id):
     for port in shell.stagers:
         for endpoint in shell.stagers[port]:
