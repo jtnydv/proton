@@ -130,7 +130,7 @@ def print_session(shell, session):
 
 def print_all_sessions(shell, all_sessions):
     if len(shell.sessions) == 0 or len([session for keypair in [endpoint for port,endpoint in shell.sessions.items()] for endpoint, session in keypair.items() if not session.killed]) == 0:
-        shell.print_error("No active stagers yet.")
+        shell.print_error("No zombies hooked yet.")
         return
     
     formats = "\t{0:<5}{1:<16}{2:<8}{3:16}"
