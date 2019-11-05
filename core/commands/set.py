@@ -82,3 +82,5 @@ def execute(shell, cmd):
             shell.print_good("%s => %s" % (key, value))
         else:
             shell.print_error("Option '%s' not found." % (key))
+    else:
+        help(shell)
