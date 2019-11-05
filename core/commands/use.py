@@ -45,3 +45,6 @@ def execute(shell, cmd):
 
         shell.previous = shell.state
         shell.state = module
+        
+    else:
+        help(shell)
