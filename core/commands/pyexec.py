@@ -12,6 +12,6 @@ def execute(shell, cmd):
     if len(splitted) > 1:
         code = " ".join(cmd.split(" ")[1:])
         exec(code)
-        else:
-            help(shell)
+    else:
+        help(shell)
     
