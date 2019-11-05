@@ -140,10 +140,3 @@ def print_all_sessions(shell, all_sessions):
         seen = datetime.datetime.fromtimestamp(session.last_active).strftime('%Y-%m-%d %H:%M:%S')
         elevated = '*' if session.elevated == core.session.Session.ELEVATED_TRUE else ''
         shell.print_plain(formats.format(str(session.id)+elevated, session.ip, alive, seen))
-
-    shell.print_plain("")
-    shell.print_plain('Use "zombies %s" for detailed information about a session.' % shell.colors.colorize("ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "zombies %s" for sessions on a particular host.' % shell.colors.colorize("IP", [shell.colors.BOLD]))
-    shell.print_plain('Use "zombies %s" for sessions on a particular Windows domain.' % shell.colors.colorize("DOMAIN", [shell.colors.BOLD]))
-    shell.print_plain('Use "zombies killed" for sessions that have been manually killed.')
-    shell.print_plain("")
