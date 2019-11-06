@@ -48,10 +48,8 @@ def execute(shell, cmd):
     if len(splitted) > 1:
         option = splitted[1]
         if option == 'on':
-            if os.path.exists("spool") == False:
-                os.mkdir("spool")
-            shell.spool = './spool/entypreter.spool'
-            shell.print_status("Spooling to ./spool/entypreter.spool...")
+            shell.spool = '/tmp/entypreter.spool'
+            shell.print_status("Spooling to /tmp/entypreter.spool...")
         elif option == 'off':
             if shell.spool:
                 shell.spool = False
