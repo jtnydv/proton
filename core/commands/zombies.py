@@ -90,7 +90,7 @@ def print_data(shell, title, data):
     shell.print_plain(formats.format(shell.colors.colorize(title + ":", [shell.colors.BOLD]), data))
 
 def print_jobs(shell, session):
-    if shell.jobs == "":
+    if shell.jobs == {}:
         shell.print_error("No active jobs yet.")
         return
 
