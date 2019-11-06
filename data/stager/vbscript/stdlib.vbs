@@ -8,7 +8,7 @@ dim workpath : workpath = stager & "~WORKPATH~"
 dim jobpath : jobpath = stager & "~JOBPATH~"
 dim reportpath : reportpath = stager & "~REPORTPATH~"
 
-dim sessionkey : sessionkey = "~SESSIONKEY~"
+dim zombiekey : zombiekey = "~ZOMBIEKEY~"
 dim jobkey : jobkey = "~JOBKEY~"
 
 sub KoNoFocus
@@ -119,7 +119,7 @@ function KoHttpPost(endpoint, data, headers)
         http.open "POST", endpoint, false
     end if
 
-    http.setRequestHeader "sessionkey", sessionkey
+    http.setRequestHeader "zombiekey", zombiekey
 
     if VarType(headers) >= vbArray then
         count = 1
