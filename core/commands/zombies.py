@@ -132,7 +132,7 @@ def print_session(shell, session):
     shell.print_plain("")
 
 def print_all_sessions(shell, all_sessions):
-    if shell.sessions == "":
+    if shell.sessions == {}:
         shell.print_error("No zombies hooked yet.")
         return
     
