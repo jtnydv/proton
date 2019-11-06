@@ -8,8 +8,8 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain('Use "spool on" to spool to /tmp/entypreter.spool.')
-    shell.print_plain('Use "spool %s" to spool to a defined file.' % (shell.colors.colorize("spool FILEPATH", shell.colors.BOLD)))
+    shell.print_plain('Use "spool on" to spool to ./spool/entypreter.spool.')
+    shell.print_plain('Use "spool %s" to spool to a defined file.' % (shell.colors.colorize("FILEPATH", shell.colors.BOLD)))
     shell.print_plain('Use "spool off" to stop spooling.')
     shell.print_plain("")
 
@@ -48,8 +48,10 @@ def execute(shell, cmd):
     if len(splitted) > 1:
         option = splitted[1]
         if option == 'on':
-            shell.spool = '/tmp/entypreter.spool'
-            shell.print_status("Spooling to /tmp/entypreter.spool...")
+            if os.path.exists("spool") == False:
+                os.mkdir("spool")
+            shell.spool = './spool/entypreter.spool'
+            shell.print_status("Spooling to ./spool/entypreter.spool...")
         elif option == 'off':
             if shell.spool:
                 shell.spool = False
