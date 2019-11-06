@@ -14,7 +14,7 @@ def print_job(shell, id):
             job.display()
 
 def print_all_jobs(shell):
-    if shell.jobs == "":
+    if shell.jobs == {}:
         shell.print_error("No active jobs yet.")
         return
     
