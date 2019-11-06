@@ -11,7 +11,6 @@ def help(shell):
     shell.print_plain('Use "zombies %s" for detailed information about a zombie.' % shell.colors.colorize("ZOMBIE_ID", [shell.colors.BOLD]))
     shell.print_plain('Use "zombies %s" for zombies on a particular host.' % shell.colors.colorize("ZOMBIE_IP", [shell.colors.BOLD]))
     shell.print_plain('Use "zombies %s" for zombies on a particular Windows domain.' % shell.colors.colorize("ZOMBIE_DOMAIN", [shell.colors.BOLD]))
-    shell.print_plain('Use "zombies killed" for zombies that have been manually killed.')
     shell.print_plain("")
 
 def execute(shell, cmd):
@@ -27,13 +26,6 @@ def execute(shell, cmd):
                 cur_sessions.append(session)
         print_all_sessions(shell, cur_sessions)
         return
-
-    # Zombie details for killed zombies
-    if splitted[1] == "killed":
-        cur_sessions = []
-        for session in all_sessions:
-            if session.killed:
-                cur_sessions.append(session)
 
         if len(cur_sessions) == 1:
             print_session(shell, cur_sessions[0])
