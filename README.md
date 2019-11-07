@@ -1,8 +1,6 @@
 # Proton Framework (Windows Post Exploitation Framework)
 
 <h4 align="center"><img src="https://user-images.githubusercontent.com/54115104/68429726-b4af7380-01bf-11ea-96d2-8e19b3945380.png"> 
-<h4 align="center"><img src="https://user-images.githubusercontent.com/54115104/68430856-f3462d80-01c1-11ea-8dbf-3d5fdf45af33.jpeg" hight="10"> 
-
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
