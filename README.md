@@ -1,9 +1,8 @@
 # Proton Framework (Post Exploitation Framework)
 
 <h4 align="center"><img src="https://user-images.githubusercontent.com/54115104/68429726-b4af7380-01bf-11ea-96d2-8e19b3945380.png"> 
-  </a>
-  </a>
-
+<h4 align="center"><img src="">
+  
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
