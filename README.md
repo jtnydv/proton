@@ -1,11 +1,11 @@
 # Proton Framework (Post Exploitation Framework)
 
-             _                   _           
-     ___ ___|||_ _ _ ___ ___ ___|||_ ___ ___ 
-    | -_|   || _| | | . |  _| -_|| _| -_|  _|
-    |___|_|_|_| |_  |  _|_| |___|_| |___|_|  
-                |___|_|                      
-             
+                 _           
+     ___ ___ ___| |_ ___ ___ 
+    | . |  _| . |  _| . |   |
+    |  _|_| |___|_| |___|_|_|
+    |_|                      
+
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
