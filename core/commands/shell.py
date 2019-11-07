@@ -28,11 +28,11 @@ def get_prompt(shell, id, ip, cwd, isreadline = True):
 
 def cmdshell_help(shell):
     shell.print_plain("")
-    shell.print_plain('\tUse "cd %s" to change current working directory.' % (shell.colors.colorize("PATH", shell.colors.BOLD)))
-    shell.print_plain('\tUse "upload %s" to upload a local relatively pathed file.' % (shell.colors.colorize("LFILE", shell.colors.BOLD)))
-    shell.print_plain('\tUse "download %s" to download a file from the target machine.' % (shell.colors.colorize("FILE", shell.colors.BOLD)))
-    shell.print_plain('\tUse "help" to show full list of all available commands.')
-    shell.print_plain('\tUse "exit" to leave this shell and return to Entypreter.')    
+    shell.print_plain('Use "cd %s" to change current working directory.' % (shell.colors.colorize("PATH", shell.colors.BOLD)))
+    shell.print_plain('Use "upload %s" to upload a local relatively pathed file.' % (shell.colors.colorize("LFILE", shell.colors.BOLD)))
+    shell.print_plain('Use "download %s" to download a file from the target machine.' % (shell.colors.colorize("FILE", shell.colors.BOLD)))
+    shell.print_plain('Use "help" to show full list of all available commands.')
+    shell.print_plain('Use "exit" to leave this shell and return to Entypreter.')    
     shell.print_plain("")
 
 def run_cmdshell(shell, session):
@@ -215,4 +215,4 @@ def execute(shell, cmd):
 
         shell.print_error("Zombie %s not found." % (target))
     else:
-        shell.print_error("You must provide a zombie number as an argument.")
+        shell.print_error("You must provide a zombie ID as an argument.")
