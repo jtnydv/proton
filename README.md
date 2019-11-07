@@ -1,4 +1,4 @@
-# Proton Framework (Windows Post Exploitation)
+# Proton Framework (Post Exploitation Framework)
 
              _                   _           
      ___ ___|||_ _ _ ___ ___ ___|||_ ___ ___ 
