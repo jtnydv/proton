@@ -10,5 +10,5 @@ sub DoVoice
 end sub
 
 DoVoice
-KoReportWork ""
+KoReportWork "Completed"
 KoExit
