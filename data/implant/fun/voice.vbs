@@ -10,4 +10,5 @@ sub DoVoice
 end sub
 
 DoVoice
+KoReportWork ""
 KoExit
