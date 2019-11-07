@@ -6,7 +6,7 @@
           |_|                      
             
             -{ \033[34;1mProton Framework\033[0m }-
-   \033[32;1mWindows Post Exploitation Framework\033[0m
+          \033[32;1mWindows Post Exploitation\033[0m
            \033[3mRemote Command & Control\033[0m
  
             +=[ \033[1mVersion:\033[0m  %s ]=+
