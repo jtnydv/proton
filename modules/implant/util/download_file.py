@@ -7,7 +7,7 @@ import os
 class DownloadFileImplant(core.implant.Implant):
 
     NAME = "Download File"
-    DESCRIPTION = "Downloads a remote file off the target system."
+    DESCRIPTION = "Downloads a file from the target machine."
     AUTHORS = ["Entynetproject"]
     STATE = "implant/util/download_file"
 
