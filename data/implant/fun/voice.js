@@ -7,7 +7,7 @@ try
         entypreter.WS.SendKeys(String.fromCharCode(0xAF));
     }
     voiceObj.Speak("~MESSAGE~");
-    entypreter.work.report();
+    entypreter.work.report("");
 }
 catch (e)
 {
