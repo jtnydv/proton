@@ -20,8 +20,8 @@ def execute(shell, cmd):
     splitted = cmd.split()
 
     if len(splitted) > 1:
-        username = "entypreter"
-        password = "entypreter"
+        username = "proton"
+        password = "proton"
         port = "9990"
         remote = False
         secure = []
