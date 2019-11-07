@@ -27,11 +27,13 @@ def get_prompt(shell, id, ip, cwd, isreadline = True):
                                  shell.colors.colorize(" - %s]> " % (cwd), [shell.colors.NORMAL], isreadline))
 
 def cmdshell_help(shell):
-    shell.print_plain("\tcd       PATH   Change current working directory.")
-    shell.print_plain("\tupload   LPATH  Upload a local relatively pathed file.")
-    shell.print_plain("\tdownload PATH   Download a file from the target machine.")
-    shell.print_plain("\thelp            Show full list of all available commands.")
-    shell.print_plain("\texit            Leave this shell and return to Entypreter.")
+    shell.print_plain("")
+    shell.print_plain('\tUse "cd %s" to change current working directory.' % (shell.colors.colorize("PATH", shell.colors.BOLD)))
+    shell.print_plain('\tUse "upload %s" to upload a local relatively pathed file.' % (shell.colors.colorize("LFILE", shell.colors.BOLD)))
+    shell.print_plain('\tUse "download %s" to download a file from the target machine.' % (shell.colors.colorize("FILE", shell.colors.BOLD)))
+    shell.print_plain('\tUse "help" to show full list of all available commands.')
+    shell.print_plain('\tUse "exit" to leave this shell and return to Entypreter.')    
+    shell.print_plain("")
 
 def run_cmdshell(shell, session):
     import copy
