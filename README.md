@@ -74,6 +74,8 @@
 
 # Proton framework modules
 
+![modules](https://user-images.githubusercontent.com/54115104/68437699-b9315780-01d2-11ea-860e-b9916bae1de0.png)
+
     INFO: There are to kinds of Proton Framework 
     modules - stagers and implants. Proton stagers hook 
     target zombies and allow you to use implants. Proton 
