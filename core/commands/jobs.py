@@ -39,8 +39,12 @@ def execute(shell, cmd):
     splitted = cmd.split()
 
     if len(splitted) > 1:
-        id = splitted[1]
-        print_job(shell, id)
-        return
-
+        try:
+            id = splitted[1]
+            print_job(shell, id)
+            return
+        except ValueError:
+            shell.print_error("Expected valid job ID.")
+            return
+        
     print_all_jobs(shell)
