@@ -27,9 +27,9 @@ def get_prompt(shell, id, ip, cwd, isreadline = True):
                                  shell.colors.colorize(" - %s]> " % (cwd), [shell.colors.NORMAL], isreadline))
 
 def cmdshell_help(shell):
-    shell.print_plain("\tcd       PATH   This operates mostly how you would expect.")
+    shell.print_plain("\tcd       PATH   Change current working directory.")
     shell.print_plain("\tupload   LPATH  Upload a local relatively pathed file.")
-    shell.print_plain("\tdownload PATH   Download a file off of the target.")
+    shell.print_plain("\tdownload PATH   Download a file from the target machine.")
     shell.print_plain("\thelp            Show full list of all available commands.")
     shell.print_plain("\texit            Leave this shell and return to Entypreter.")
 
