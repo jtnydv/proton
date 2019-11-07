@@ -130,14 +130,14 @@ implant/persist/add_user | Adds a either a local or domain user.
 implant/persist/registry | Adds a Proton stager payload in the registry.
 implant/persist/schtasks | Establishes persistence via a scheduled task.
 implant/persist/wmi | Creates persistence using a WMI subscription.
-implant/phishing/password_box | Prompt a user to enter their password.
+implant/phish/password_box | Prompt a user to enter their password.
 implant/pivot/exec_psexec | Run a command on another machine using psexec from sysinternals.
 implant/pivot/exec_wmi | Executes a command on another system.
 implant/pivot/stage_wmi | Hook a zombie on another machine using WMI.
 implant/scan/tcp | Uses HTTP to scan open TCP ports on the target zombie LAN.
-implant/utils/download_file | Downloads a file from the target zombie.
-implant/utils/multi_module | Run a number of implants in succession.
-implant/utils/upload_file | Uploads a file from the listening server to the target zombies.
+implant/util/download_file | Downloads a file from the target zombie.
+implant/util/multi_module | Run a number of implants in succession.
+implant/util/upload_file | Uploads a file from the listening server to the target zombies.
 
 ***
 
