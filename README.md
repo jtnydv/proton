@@ -34,7 +34,7 @@
 
 # About proton framework
 
-    INFO: Proton Framework is a Windows post exploitation rootkit similar to other penetration 
+    INFO: Proton Framework is a Windows post exploitation framework similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is that The 
     Proton Rootkit does most of its operations using Windows Script Host (a.k.a. JScript/VBScript), 
     with compatibility in the core to support a default installation of Windows 2000 with no service 
