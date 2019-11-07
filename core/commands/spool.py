@@ -49,13 +49,16 @@ def execute(shell, cmd):
         option = splitted[1]
         if option == 'on':
             shell.spool = '/tmp/entypreter.spool'
-            shell.print_status("Spooling to /tmp/entypreter.spool...")
+            shell.spoolstatus = True
+            shell.print_status("Spooling: %s" % ("on" if shell.spoolstatus else "off"))
         elif option == 'off':
             if shell.spool:
-                shell.spool = False
-                shell.print_status("Spooling stopped...")
+                shell.spoolstatus = False
+                shell.print_status("Spooling: %s" % ("on" if shell.spoolstatus else "off"))
         else:
             shell.spool = option
+            shell.spoolstatus = True
+            shell.print_status("Spooling: %s" % ("on" if shell.spoolstatus else "off"))
             shell.print_status("Spooling to "+option+"...")
     else:
         help(shell)
