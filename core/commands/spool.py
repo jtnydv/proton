@@ -51,6 +51,7 @@ def execute(shell, cmd):
             shell.spool = '/tmp/entypreter.spool'
             shell.spoolstatus = True
             shell.print_status("Spooling: %s" % ("on" if shell.spoolstatus else "off"))
+            shell.print_status("Spooling to /tmp/entypreter.spool...")
         elif option == 'off':
             if shell.spool:
                 shell.spoolstatus = False
