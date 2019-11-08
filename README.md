@@ -1,6 +1,10 @@
 # Proton Framework (Remote Command & Control)
 
-<h4 align="center"><img src="https://user-images.githubusercontent.com/54115104/68431380-1cb38900-01c3-11ea-9e71-24dfc5a0bd8e.jpeg"> 
+                                                 _           
+                                     ___ ___ ___| |_ ___ ___ 
+                                    | . |  _| . |  _| . |   |
+                                    |  _|_| |___|_| |___|_|_|
+                                    |_|                      
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
