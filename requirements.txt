@@ -1,3 +1,4 @@
+setuptools
 impacket
 pycrypto
 pyasn1
