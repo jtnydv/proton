@@ -1,6 +1,6 @@
 import time
 
-DESCRIPTION = "Proton Framework delay in seconds."
+DESCRIPTION = "Proton Framework delay in milliseconds."
 
 def autocomplete(shell, line, text, state):
     return None
