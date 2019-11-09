@@ -1,6 +1,6 @@
 import time
 
-DESCRIPTION = "Proton Framework delay in milliseconds."
+DESCRIPTION = "Proton Framework delay in seconds."
 
 def autocomplete(shell, line, text, state):
     return None
@@ -15,7 +15,6 @@ def execute(shell, cmd):
     
     if len(splitted) > 1:
         seconds = " ".join(cmd.split(" ")[1:])
-        milisecs = seconds / 1000
-        time.sleep(int(milisecs))
+        time.sleep(int(seconds))
     else:
         help(shell)
