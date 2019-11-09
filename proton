@@ -136,6 +136,7 @@ if __name__ == "__main__":
         autorun = open(args.proton).read().split("\n") if args.proton else []
         except:
             shell.print_error("ProtonScript program file not in "+pwd)
+            
     if args.restore:
         import json
         try:
