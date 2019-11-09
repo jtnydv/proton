@@ -4,18 +4,23 @@
                                      |  _  |___ ___| |_ ___ ___|   __|___ ___|_|___| |_ 
                                      |   __|  _| . |  _| . |   |__   |  _|  _| | . |  _|
                                      |__|  |_| |___|_| |___|_|_|_____|___|_| |_|  _|_|  
-                                                                               |_|      
+                                                                               |_|  
+***
+
+# About ProtonScript
 
     INFO: ProtonScript is a Proton Framework programming language
     used to quickly execute Proton commands in the Proton Framework.
-    
+   
+***
+
 ## Getting started
 
 ## System requirements
 
 **Proton Framework** required to write and execute ProtonScript.
 
-## Installing ProtonScript IDE
+## ProtonScript installation
 
 > cd proton/script
 
@@ -23,13 +28,15 @@
 
 > ./install.sh
 
-## Uninstalling ProtonScript IDE
+## ProtonScript uninstallation
 
 > cd proton/script
 
 > chmod +x uninstall.sh
 
 > ./uninstall.sh
+
+***
 
 # Writing ProtonScript program
 
@@ -50,5 +57,7 @@ RUN #executing disk stager
 > pscript -e main.p
 
 > proton -p main.p
+
+***
     
 # Thats all!
