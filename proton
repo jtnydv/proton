@@ -133,7 +133,8 @@ if __name__ == "__main__":
     parser.add_argument("-u","--update",action="store_true",help="Update Proton Framework.")
     args = parser.parse_args()
     psio = open('/tmp/proton.path')
-    autorun = open(psio + "/" + args.proton).read().split("\n") if args.proton else []
+    opendialog = psio + "/" + args.proton
+    autorun = open(opendialog).read().split("\n") if args.proton else []
             
     if args.restore:
         import json
