@@ -144,7 +144,7 @@ if __name__ == "__main__":
         try:
             restore = json.loads(open(args.restore).read())
         except:
-                print("Proton restore json file not in "+pwd+".")
+                print(\033[1;31m+"[-]"+\033[0m+"Proton restore json file not in "+pwd+".")
                 import sys
                 sys.exit()
     else:
