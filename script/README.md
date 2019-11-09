@@ -14,7 +14,7 @@
    
 ***
 
-## Getting started
+# Getting started
 
 ## ProtonScript installation
 
