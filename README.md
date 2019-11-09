@@ -66,13 +66,17 @@
 
 > proton -h
 
-    usage: proton [-h] [--autorun AUTORUN] [--restore RESTORE] [-u]
-                    
-    optional arguments:
-      -h, --help         show this help message and exit
-      --autorun AUTORUN  A file containing Proton commands.
-      --restore RESTORE  A Proton restore json file.
-      -u, --update       Update Proton Framework.
+```
+usage: proton [-h] [-p FILE] [-r FILE] [-u]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p FILE, --proton FILE
+                        A ProtonScript program.
+  -r FILE, --restore FILE
+                        A Proton restore json file.
+  -u, --update          Update Proton Framework.
+```
       
 ***
 
