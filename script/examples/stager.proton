@@ -1,6 +1,6 @@
 #include <psio>
 
 USE disk
-SET SRVHOST 0.0.0.0
-SET SRVPORT 0000
+SET SRVHOST ip
+SET SRVPORT port
 RUN
