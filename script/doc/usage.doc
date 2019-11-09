@@ -1,4 +1,4 @@
-'''
+```
 BASIC PROTONSCRIPT USAGE
 
 ————————————————————————
@@ -8,4 +8,4 @@ use MODULE
 set OPTION VALUE
 
 unset OPTION
-'''
+```
