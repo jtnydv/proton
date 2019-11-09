@@ -135,7 +135,7 @@ if __name__ == "__main__":
     
     if args.proton:
         import os.path
-        if os.path.exist("/usr/local/bin/pscript"):
+        if (os.path.exists("/usr/local/bin/pscript")):
             import time
             time.sleep(0)
         try:
