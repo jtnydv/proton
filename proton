@@ -22,6 +22,7 @@
 # are not responsible for any misuse or damage caused by this program.
 
 import os
+shell = core.shell.Shell(banner, __version__)
 
 os.system("printf '\033]2;Proton Framework\a'")
 pwd = os.getcwd()
@@ -163,6 +164,5 @@ if __name__ == "__main__":
 
     pay_no_attention()
     seriously_nothing_shady_here()
-    shell = core.shell.Shell(banner, __version__)
     shell.run(autorun, restore)
             
