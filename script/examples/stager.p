@@ -3,4 +3,4 @@
 USE disk
 SET SRVHOST ip
 SET SRVPORT port
-RUN
+RUN default
