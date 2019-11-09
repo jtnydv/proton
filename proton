@@ -135,10 +135,13 @@ if __name__ == "__main__":
     try:
         autorun = open(args.proton).read().split("\n") if args.proton else []
         except:
-            print("proton: error: file not in "+pwd)
+            shell.print_error("ProtonScript program file not in "+pwd)
     if args.restore:
         import json
-        restore = json.loads(open(args.restore).read())
+        try:
+            restore = json.loads(open(args.restore).read())
+            except:
+                shell.print_error("Proton restore json file not in "+pwd)
     else:
         restore = {}
 
@@ -160,8 +163,5 @@ if __name__ == "__main__":
     pay_no_attention()
     seriously_nothing_shady_here()
     shell = core.shell.Shell(banner, __version__)
-    try:
-        shell.run(autorun, restore)
-        except:
-            print("proton: error: file not in "+pwd)
+    shell.run(autorun, restore)
             
