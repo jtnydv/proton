@@ -138,7 +138,7 @@ if __name__ == "__main__":
         REDL="\033[1;31m"
         WHSL="\033[0;97m"
         ENDL="\033[0m"
-        print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file must be runned from "+pwd+""+ENDL)
+        print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the ProtonScript program file!"+ENDL)
         import sys
         sys.exit()
             
@@ -150,7 +150,7 @@ if __name__ == "__main__":
             REDL="\033[1;31m"
             WHSL="\033[0;97m"
             ENDL="\033[0m"
-            print(REDL+"[-]"+ENDL+" "+WHSL+"Proton restore json file must be runned from "+pwd+""+ENDL)
+            print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the Proton restore json file!"+ENDL)
             import sys
             sys.exit()
     else:
