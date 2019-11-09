@@ -15,6 +15,7 @@ def execute(shell, cmd):
     
     if len(splitted) > 1:
         seconds = " ".join(cmd.split(" ")[1:])
-        time.sleep(int(seconds / 1000))
+        milisecs = seconds / 1000
+        time.sleep(int(milisecs)
     else:
         help(shell)
