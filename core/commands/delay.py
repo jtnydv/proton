@@ -11,4 +11,10 @@ def help(shell):
     shell.print_plain("")
 
 def execute(shell, cmd):
-    time.sleep(seconds)
+    splitted = cmd.split()
+    
+    if len(splitted) > 1:
+        seconds = " ".join(cmd.split(" ")[1:])
+        time.sleep(seconds)
+    else:
+help(shell)
