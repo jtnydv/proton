@@ -156,4 +156,5 @@ if __name__ == "__main__":
     pay_no_attention()
     seriously_nothing_shady_here()
     shell = core.shell.Shell(banner, __version__)
-    shell.run(autorun, restore)
+    pwd = os.getcwd()
+    shell.run(pwd + autorun, pwd + restore)
