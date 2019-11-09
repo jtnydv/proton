@@ -1,1 +1,2 @@
-*.proton linguist-language=Python
+*.proton linguist-language=ruby
+*p linguist-language=ruby
