@@ -150,7 +150,7 @@ if __name__ == "__main__":
             REDL="\033[1;31m"
             WHSL="\033[1;77m"
             ENDL="\033[0m"
-            print(RED+"[-]"+ENDL"+" "+"+WHSL+"Proton restore json file not in "+pwd+"."+ENDL)
+            print(RED+"[-]"+ENDL+" "+WHSL+"Proton restore json file not in "+pwd+"."+ENDL)
             import sys
             sys.exit()
     else:
