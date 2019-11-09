@@ -32,7 +32,7 @@ RUN default #running a default target
 
 `sample`**.p** or `sample`**.proton**
 
-## How to compile
+## How to execute
 
 ### Using proton framework
 
