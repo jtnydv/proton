@@ -8,8 +8,7 @@
 ## Writing a simple program
 
 ```cpp
-#include <psio>
-```
+#include <psio>```
 ```python
 USE disk 
 SET SRVHOST ip
