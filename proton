@@ -135,14 +135,18 @@ if __name__ == "__main__":
     try:
         autorun = open(args.proton).read().split("\n") if args.proton else []
     except:
-            print("ProtonScript program file is not found!")
+            print("ProtonScript program file not in "+pwd+".")
+            import sys
+            sys.exit()
             
     if args.restore:
         import json
         try:
             restore = json.loads(open(args.restore).read())
         except:
-                print("Proton restore json file is not found!")
+                print("Proton restore json file not in "+pwd+".")
+                import sys
+                sys.exit()
     else:
         restore = {}
 
