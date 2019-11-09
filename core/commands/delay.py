@@ -17,4 +17,4 @@ def execute(shell, cmd):
         seconds = " ".join(cmd.split(" ")[1:])
         time.sleep(seconds)
     else:
-help(shell)
+        help(shell)
