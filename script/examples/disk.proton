@@ -1,0 +1,6 @@
+#include <highio>
+
+USE disk
+SET SRVHOST 0.0.0.0
+SET SRVPORT 0000
+RUN
