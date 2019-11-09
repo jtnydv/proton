@@ -22,7 +22,6 @@
 # are not responsible for any misuse or damage caused by this program.
 
 import os
-shell = core.shell.Shell(banner, __version__)
 
 os.system("printf '\033]2;Proton Framework\a'")
 pwd = os.getcwd()
@@ -125,6 +124,7 @@ def seriously_nothing_shady_here():
 
 if __name__ == "__main__":
     import core.shell
+    shell = core.shell.Shell(banner, __version__)
     import argparse
     import datetime
 
