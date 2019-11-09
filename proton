@@ -133,8 +133,7 @@ if __name__ == "__main__":
     parser.add_argument("-u","--update",action="store_true",help="Update Proton Framework.")
     args = parser.parse_args()
     try:
-        psio = open("/tmp/proton.path").read()
-        autorun = open(psio + "/" + args.proton).read().split("\n") if args.proton else []
+        autorun = open(args.proton).read().split("\n") if args.proton else []
     except:
         REDL="\033[1;31m"
         WHSL="\033[0;97m"
