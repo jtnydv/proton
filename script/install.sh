@@ -11,5 +11,12 @@ else
 fi
 
 {
+cd ~/proton/script/bin
+cp pscript /usr/local/bin
+chmod +x /usr/local/bin/pscript
+cp pscript /bin
+chmod +x /bin/proton
+cp pscript /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/pscript
 } &> /dev/null
   
