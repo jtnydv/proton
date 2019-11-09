@@ -142,13 +142,16 @@ if __name__ == "__main__":
         os.system("cd bin && chmod +x proton && ./proton --update")
         exit()
         
-    def banner():
+    if banner():
         try:
             banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
         except:
             print("")
-            
-    banner()
+    else:
+        try:
+            banner = open("data/logo.txt", "rb").read().decode("unicode_escape")
+        except:
+            print("")
 
     pay_no_attention()
     seriously_nothing_shady_here()
