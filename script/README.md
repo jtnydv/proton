@@ -28,4 +28,8 @@ RUN default #running a default target
 
 **default** `RUN default` means running a default target.
 
+# ProtonScript file
+
+`sample`**.p** or `sample`**.proton**
+
 # Thats all!
