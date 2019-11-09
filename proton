@@ -135,18 +135,22 @@ if __name__ == "__main__":
     try:
         autorun = open(args.proton).read().split("\n") if args.proton else []
     except:
-            print("ProtonScript program file not in "+pwd+".")
-            import sys
-            sys.exit()
+        REDL="\033[1;31m[-]\033[1;77m"
+        ENDL="\033[0m"
+        print(REDL+" ProtonScript program file not in "+pwd+"."+ENDL)
+        import sys
+        sys.exit()
             
     if args.restore:
         import json
         try:
             restore = json.loads(open(args.restore).read())
         except:
-                print(\033[1;31m+"[-]"+\033[0m+"Proton restore json file not in "+pwd+".")
-                import sys
-                sys.exit()
+            REDL="\033[1;31m[-]\033[1;77m"
+            ENDL="\033[0m"
+            print(RED+" Proton restore json file not in "+pwd+"."+ENDL)
+            import sys
+            sys.exit()
     else:
         restore = {}
 
