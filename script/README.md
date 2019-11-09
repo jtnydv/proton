@@ -5,6 +5,10 @@
     
 # Getting started
 
+## System requirements
+
+- **Proton Framework** to execute the ProtonScript.
+
 ## Writing a simple program
 
 ```ruby
