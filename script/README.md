@@ -7,9 +7,9 @@
 
 ## Writing a simple program
 
-```cpp
-#include <psio>```
-```python
+```ruby
+#include <psio>
+
 USE disk 
 SET SRVHOST ip
 SET SRVPORT port
