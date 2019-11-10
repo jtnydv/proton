@@ -13,3 +13,5 @@ parser.add_argument("-d","--decode", metavar='FILE', help="Decode a ProtonScript
 args = parser.parse_args()
     
 if args.encode:
+     filename = open(args.encode).read().split("\n") if args.encode else []
+     encoder(filename)
