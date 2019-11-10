@@ -34,7 +34,7 @@
 
 ***
 
-# How to execute pscript
+# How to execute ProtonScript
 
 > pscript -h
 
@@ -78,8 +78,10 @@ RUN #executing disk stager
 ```
 ProtonScript Coder 3.0
 
-(1/2) Loading Program File ..... [ OK ]
-(2/2) Loading ProtonScript ..... [ OK ]
+(1/4) Loading Program File  ..... [ OK ]
+(2/4) Loading ProtonScript  ..... [ OK ]
+(3/4) Encoding Program File ..... [ OK ]
+(4/4) Saving Program File   ..... [ OK ]
 
 ```
 
@@ -90,9 +92,21 @@ ProtonScript Coder 3.0
 ```
 ProtonScript Coder 3.0
 
-(1/2) Loading Program File ..... [ OK ]
-(2/2) Loading ProtonScript ..... [ OK ]
+(1/3) Loading Program File  ..... [ OK ]
+(2/3) Loading ProtonScript  ..... [ OK ]
+(3/3) Running Program File  ..... [ OK ]
 
+```
+
+## Decoding program
+
+```
+ProtonScript Coder 3.0
+
+(1/4) Loading Program File  ..... [ OK ]
+(2/4) Loading ProtonScript  ..... [ OK ]
+(3/4) Decoding Program File ..... [ OK ]
+(4/4) Saving Program File   ..... [ OK ]
 ```
 
 ***
