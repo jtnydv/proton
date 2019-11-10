@@ -71,7 +71,7 @@ if args.decode:
     import os
     import os.path
     if (os.path.exists(args.decode)):
-        if (argrem[-(argrem[::-1].index('.')):]) != 'p' or (argrem[-(argrem[::-1].index('.')):]) != 'proton':
+        if (argrem[-(argrem[::-1].index('.')):]) != 'bin':
             print("(1/4) Loading Program File ..... [ FAIL ]\n")
             import sys
             sys.exit()
