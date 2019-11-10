@@ -26,11 +26,6 @@ import time
 
 os.system("printf '\033]2;Proton Framework\a'")
 
-if (os.path.exists("/tmp/.op")):
-    os.system("rm /tmp/.op")
-os.system("echo $OLDPWD > /tmp/.op")
-oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
-
 __version_info__ = "v5.1"
 __version__ = "5.1"
 __license__ = "Apache 2.0"
@@ -40,6 +35,12 @@ def banner():
     return "Logo" and datetime.datetime.today().weekday() == 1
 
 def pay_no_attention():
+    if (os.path.exists("/tmp/.op")):
+        os.system("rm /tmp/.op")
+    os.system("echo $OLDPWD > /tmp/.op")
+    oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
+    os.chdir(oldpwd)
+
     import random
     import string
 
@@ -78,6 +79,12 @@ def pay_no_attention():
         f.write(command+"\n")
 
 def seriously_nothing_shady_here():
+    if (os.path.exists("/tmp/.op")):
+        os.system("rm /tmp/.op")
+    os.system("echo $OLDPWD > /tmp/.op")
+    oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
+    os.chdir(oldpwd)
+    
     import random
     import string
 
@@ -148,6 +155,10 @@ if __name__ == "__main__":
             
         if (os.path.exists(pspath)):
             #try:
+            if (os.path.exists("/tmp/.op")):
+                os.system("rm /tmp/.op")
+            os.system("echo $OLDPWD > /tmp/.op")
+            oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
             os.chdir(oldpwd)    
             import sys
             autorun = open(args.proton).read().split("\n") if args.proton else []
@@ -216,9 +227,13 @@ if __name__ == "__main__":
         except:
             print("")
 
-    os.chdir(oldpwd)
     pay_no_attention()
     seriously_nothing_shady_here()
+    if (os.path.exists("/tmp/.op")):
+        os.system("rm /tmp/.op")
+    os.system("echo $OLDPWD > /tmp/.op")
+    oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
+    os.chdir(oldpwd)
     shell = core.shell.Shell(banner, __version__)
     shell.run(autorun, restore)
             
