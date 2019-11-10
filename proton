@@ -156,10 +156,7 @@ if __name__ == "__main__":
                 os.system("python script/coder/coder.py --decode "+argrem)
                 if (os.path.exists(name+".bin")):
                     os.system("rm "+name+".bin")
-                if (os.path.exists("/tmp/pscript.pc")):
-                    os.system("rm /tmp/pscript.pc")
-                os.system("mv "+name+".p /tmp/pscript.pc")
-                autorun = "/tmp/pscript.pc"
+                
             else:
                 time.sleep(0)
                 
