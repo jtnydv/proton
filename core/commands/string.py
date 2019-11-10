@@ -15,4 +15,4 @@ def execute(shell, cmd):
         string = " ".join(cmd.split(" ")[1:])
         print(string)
     else:
-help(shell)
+        help(shell)
