@@ -76,7 +76,7 @@ RUN #executing disk stager
 > pscript -e program.p
 
 ```
-ProtonScript Coder 3.0
+ProtonScript Coder v3.0
 
 (1/4) Loading Program File  ..... [ OK ]
 (2/4) Loading ProtonScript  ..... [ OK ]
@@ -90,7 +90,7 @@ ProtonScript Coder 3.0
 > proton -p program.p
 
 ```
-ProtonScript Coder 3.0
+ProtonScript Coder v3.0
 
 (1/3) Loading Program File  ..... [ OK ]
 (2/3) Loading ProtonScript  ..... [ OK ]
@@ -101,7 +101,7 @@ ProtonScript Coder 3.0
 ## Decoding program
 
 ```
-ProtonScript Coder 3.0
+ProtonScript Coder v3.0
 
 (1/4) Loading Program File  ..... [ OK ]
 (2/4) Loading ProtonScript  ..... [ OK ]
