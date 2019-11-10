@@ -142,16 +142,15 @@ if __name__ == "__main__":
             pspath = "/usr/local/bin/pscript"
             
         if (os.path.exists(pspath)):
-            pwd = os.system("echo $OLDPWD")
-            prot = int(pwd) + "/" + args.proton
-            autorun = open(prot).read().split("\n") if prot else []
-            #except:
-                #REDL="\033[1;31m"
-                #WHSL="\033[0;97m"
-                #ENDL="\033[0m"
-                #print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the ProtonScript program file!"+ENDL)
-                #import sys
-                #sys.exit()
+            try:
+                autorun = open(prot).read().split("\n") if prot else []
+            except:
+                REDL="\033[1;31m"
+                WHSL="\033[0;97m"
+                ENDL="\033[0m"
+                print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the ProtonScript program file!"+ENDL)
+                import sys
+                sys.exit()
         else:
             REDL="\033[1;31m"
             WHSL="\033[0;97m"
