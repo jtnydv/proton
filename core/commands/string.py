@@ -1,3 +1,5 @@
+import time
+
 DESCRIPTION = "String some text."
 
 def autocomplete(shell, line, text, state):
