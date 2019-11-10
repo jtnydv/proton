@@ -24,6 +24,6 @@ elif $1 = "-d" || $1 = "--decode"; then
   exit
   
 elif $1 = "-w" || $1 = "--write"; then
-  $EDITOR $2
+  nano $2
   exit
 fi
