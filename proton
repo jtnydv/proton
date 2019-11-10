@@ -144,8 +144,10 @@ if __name__ == "__main__":
         if (os.path.exists(pspath)):
             #try:
             def oldpwd():
-                os.system("echo $OLDPWD >> /tmp/.op")
-                return open("/tmp/.op").read()
+                if (os.path.exists("/tmp/.op")):
+                    os.system("rm /tmp/.op")
+                os.system("echo $OLDPWD > /tmp/.op")
+                return open("/tmp/.op").read().split("\n")[-1]
                 
             autorun = open(oldpwd() + '/' + args.proton).read().split("\n") if oldpwd() + '/' + args.proton else []
             #except:
