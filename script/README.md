@@ -57,8 +57,10 @@ optional arguments:
 
     INFO: So, we are going to write 
     our first ProtonScript program.
+
+## Writing program
     
-> pscript -w main.p
+> pscript -w program.p
 
 ```ruby
 #include <psio>
@@ -70,6 +72,17 @@ RUN #executing disk stager
 ```
 
 ## Encoding program
+
+> pscript -e program.p
+
+```
+ProtonScript Encoder 3.0
+
+Loading Program File .....	[ OK ]
+Checking Program File .....	[ OK ]
+Loading ProtonScript .....	[ OK ]
+ProtonScript Complete.....	[ OK ]
+
 
 ***
     
