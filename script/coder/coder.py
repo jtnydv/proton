@@ -1,4 +1,5 @@
 import argparse
+import time
 
 def encoder(pscode):
     text = open(pscode).read()
@@ -24,9 +25,57 @@ parser.add_argument("-d","--decode", metavar='FILE', help="Decode a ProtonScript
 args = parser.parse_args()
     
 if args.encode:
-    filename = open(args.encode).read().split("\n") if args.encode else []
+    print("ProtonScript Coder 3.0")
+    time.sleep(1)
+    import os
+    import os.path
+    if ((os.path.exists(args.encode)):
+        print("(1/2) Loading Program File ..... [ OK ]")
+    else:
+        print("(1/2) Loading Program File ..... [ FAIL ]")
+        import sys
+        sys.exit()
+        
+    if (os.path.exists("/data/data/com.termux")):
+            pspath = "/data/data/com.termux/files/usr/bin/pscript"
+        else:
+            pspath = "/usr/local/bin/pscript"
+        
+    time.sleep(1)
+            
+    if ((os.path.exists(pspath)):
+        print("(2/2) Loading ProtonScript  .....  [ OK ]")
+    else:
+        print("(2/2) Loading ProtonScript  .....  [ FAIL ]")
+        import sys
+        sys.exit()
+    
     encoder(args.encode)
     
 if args.decode:
-    filename = open(args.decode).read().split("\n") if args.decode else []
+    print("ProtonScript Coder 3.0")
+    time.sleep(1)
+    import os
+    import os.path
+    if ((os.path.exists(args.decode)):
+        print("(1/2) Loading Program File ..... [ OK ]")
+    else:
+        print("(1/2) Loading Program File ..... [ FAIL ]")
+        import sys
+        sys.exit()
+        
+    if (os.path.exists("/data/data/com.termux")):
+            pspath = "/data/data/com.termux/files/usr/bin/pscript"
+        else:
+            pspath = "/usr/local/bin/pscript"
+        
+    time.sleep(1)
+            
+    if ((os.path.exists(pspath)):
+        print("(2/2) Loading ProtonScript  .....  [ OK ]")
+    else:
+        print("(2/2) Loading ProtonScript  .....  [ FAIL ]")
+        import sys
+        sys.exit()
+    
     decoder(args.decode)
