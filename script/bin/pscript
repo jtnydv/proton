@@ -2,28 +2,29 @@
 
 if [[ $1 = "-h" || $1 = "--help" ]]
 then
-  echo -e """usage: pscript [-e/--encode|-d/--decode|-c/--check] FILE [-h/--help]
+  echo -e """usage: pscript [-h] [-w FILE] [-e FILE] [-d FILE]
+
 optional arguments:
   -h, --help            show this help message and exit
+  -w FILE, --write FILE 
+                        Write a ProtonScript program.
   -e FILE, --encode FILE
                         Encode a ProtonScript program file.
   -d FILE, --decode FILE 
-                        Decode a ProtonScript program file.
-  -w FILE, --write FILE 
-                        Write a ProtonScript program."""
+                        Decode a ProtonScript program file."""
                         
 fi
 
 if [[ $1 = "-e" || $1 = "--encode" ]]
 then
-  cd ~/proton/script/encoder
-  python3 encoder.py $2
+  cd ~/proton/script/coder
+  python3 coder.py -e $2
   exit
 
 elif [[ $1 = "-d" || $1 = "--decode" ]]
 then
-  cd ~/proton/script/decoder
-  python3 decoder.py $2
+  cd ~/proton/script/coder
+  python3 coder.py -d $2
   exit
   
 elif [[ $1 = "-w" || $1 = "--write" ]] 
