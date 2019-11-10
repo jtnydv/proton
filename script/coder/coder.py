@@ -62,7 +62,9 @@ if args.encode:
     print("(3/4) Encoding Program File ..... [ OK ]")
     time.sleep(2)
     encoder(args.encode)
-    print("(4/4) Saving Program File   ..... [ OK ]\n")
+    print("(4/4) Saving Program File   ..... [ OK ]")
+    time.sleep(2)
+    print("")
     import sys
     sys.exit()
     
@@ -102,5 +104,7 @@ if args.decode:
     time.sleep(2)
     decoder(args.decode)
     print("(4/4) Saving Program File   ..... [ OK ]\n")
+    time.sleep(2)
+    print("")
     import sys
     sys.exit()
