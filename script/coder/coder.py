@@ -34,7 +34,7 @@ if args.encode:
     import os
     import os.path
     if (os.path.exists(args.encode)):
-        if (argrem[-(argrem[::-1].index('.')):]) != 'p' or (argrem[-(argrem[::-1].index('.')):]) != 'proton':
+        if (argrem[-(argrem[::-1].index('.')):]) != 'p':
             print("(1/4) Loading Program File ..... [ FAIL ]\n")
             import sys
             sys.exit()
