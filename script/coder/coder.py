@@ -1,5 +1,12 @@
 import argparse
 import time
+import os
+
+if (os.path.exists("/tmp/.op")):
+    os.system("rm /tmp/.op")
+os.system("echo $OLDPWD > /tmp/.op")
+oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
+os.chdir(oldpwd)
 
 def encoder(pscode):
     text = open(pscode).read()
