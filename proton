@@ -152,7 +152,7 @@ if __name__ == "__main__":
             argv = args.proton[-1]
             autorun = open(args.proton).read().split("\n") if args.proton else []
             if (argv[-(argv[::-1].index('.')):]) == 'bin':
-                os.system("python script/coder/coder --decode "+argv)
+                os.system("python script/coder/coder.py --decode "+argv)
                     
             #except:
                 #REDL="\033[1;31m"
