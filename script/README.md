@@ -34,6 +34,14 @@
 
 ***
 
+# How to execute pscript
+
+> pscript -h
+
+
+
+***
+
 # Writing ProtonScript program
 
     INFO: So, we are going to write 
