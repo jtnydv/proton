@@ -1,4 +1,4 @@
-# ProtonScript (Proton Commands)
+# ProtonScript (Proton Language)
 
                                 _____         _           _____         _     _   
                                |  _  |___ ___| |_ ___ ___|   __|___ ___|_|___| |_ 
@@ -39,7 +39,7 @@
     INFO: So, we are going to write 
     our first ProtonScript program.
     
-> pscript main.p
+> pscript -w main.p
 
 ```ruby
 #include <psio>
@@ -49,8 +49,6 @@ SET SRVHOST host #setting up a server host
 SET SRVPORT port #setting up a server port
 RUN #executing disk stager
 ```
-
-> pscript -c main.p
 
 > proton -p main.p
 
