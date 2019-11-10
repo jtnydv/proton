@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/proton
+
 if [[ $1 = "-h" || $1 = "--help" ]]
 then
   echo -e """usage: pscript [-h] [-w FILE] [-e FILE] [-d FILE]
