@@ -76,13 +76,10 @@ RUN #executing disk stager
 > pscript -e program.p
 
 ```
-ProtonScript Encoder 3.0
+ProtonScript Coder 3.0
 
-Loading Program File  .....	[ OK ]
-Checking Program File .....	[ OK ]
-Loading ProtonScript  .....	[ OK ]
-ProtonScript Complete .....	[ OK ]
 
+```
 
 ***
     
