@@ -25,14 +25,14 @@ parser.add_argument("-d","--decode", metavar='FILE', help="Decode a ProtonScript
 args = parser.parse_args()
     
 if args.encode:
-    print("ProtonScript Coder 3.0")
+    print("ProtonScript Coder 3.0\n")
     time.sleep(1)
     import os
     import os.path
     if (os.path.exists(args.encode)):
         print("(1/2) Loading Program File ..... [ OK ]")
     else:
-        print("(1/2) Loading Program File ..... [ FAIL ]")
+        print("(1/2) Loading Program File ..... [ FAIL ]\n")
         import sys
         sys.exit()
         
@@ -44,23 +44,23 @@ if args.encode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/2) Loading ProtonScript  .....  [ OK ]")
+        print("(2/2) Loading ProtonScript  .....  [ OK ]\n")
     else:
-        print("(2/2) Loading ProtonScript  .....  [ FAIL ]")
+        print("(2/2) Loading ProtonScript  .....  [ FAIL ]\n")
         import sys
         sys.exit()
     
     encoder(args.encode)
     
 if args.decode:
-    print("ProtonScript Coder 3.0")
+    print("ProtonScript Coder 3.0\n")
     time.sleep(1)
     import os
     import os.path
     if (os.path.exists(args.decode)):
         print("(1/2) Loading Program File ..... [ OK ]")
     else:
-        print("(1/2) Loading Program File ..... [ FAIL ]")
+        print("(1/2) Loading Program File ..... [ FAIL ]\n")
         import sys
         sys.exit()
         
@@ -72,9 +72,9 @@ if args.decode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/2) Loading ProtonScript  .....  [ OK ]")
+        print("(2/2) Loading ProtonScript  .....  [ OK ]\n")
     else:
-        print("(2/2) Loading ProtonScript  .....  [ FAIL ]")
+        print("(2/2) Loading ProtonScript  .....  [ FAIL ]\n")
         import sys
         sys.exit()
     
