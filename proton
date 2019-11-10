@@ -135,10 +135,10 @@ if __name__ == "__main__":
     
     if args.proton:
         import os.path
-        if (os.path.exists("/data/data/com.termux"):
+        if (os.path.exists("/data/data/com.termux")):
             pspath = "/data/data/com.termux/files/usr/bin/pscript"
         else:
-            pspath = "/usr/local/bin/pscript
+            pspath = "/usr/local/bin/pscript"
             
         if (os.path.exists(pspath)):
             try:
