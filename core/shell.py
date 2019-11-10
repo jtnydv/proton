@@ -50,7 +50,10 @@ class Shell(object):
 
                 cmd = ""
                 while len(autorun) > 0:
-                    cmd = autorun.pop(0).split("#")[0].strip()
+                    auto = []
+                    for i in autorun:
+                        auto.append(i)
+                    cmd = auto.pop(0).split("#")[0].strip()
                     if len(cmd) > 0:
                         break
 
