@@ -39,7 +39,7 @@ if args.encode:
             import sys
             sys.exit()
         else:
-            print("(1/4) Loading Program File ..... [ OK ]")
+            print("(1/4) Loading Program File  ..... [ OK ]")
     else:
         print("(1/4) Loading Program File ..... [ FAIL ]\n")
         import sys
@@ -53,7 +53,7 @@ if args.encode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/4) Loading ProtonScript ..... [ OK ]")
+        print("(2/4) Loading ProtonScript  ..... [ OK ]")
     else:
         print("(2/4) Loading ProtonScript ..... [ FAIL ]\n")
         import sys
@@ -78,7 +78,7 @@ if args.decode:
             import sys
             sys.exit()
         else:
-            print("(1/4) Loading Program File ..... [ OK ]")
+            print("(1/4) Loading Program File  ..... [ OK ]")
     else:
         print("(1/4) Loading Program File ..... [ FAIL ]\n")
         import sys
@@ -92,7 +92,7 @@ if args.decode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/4) Loading ProtonScript ..... [ OK ]")
+        print("(2/4) Loading ProtonScript  ..... [ OK ]")
     else:
         print("(2/4) Loading ProtonScript ..... [ FAIL ]\n")
         import sys
