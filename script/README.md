@@ -78,6 +78,20 @@ RUN #executing disk stager
 ```
 ProtonScript Coder 3.0
 
+(1/2) Loading Program File ..... [ OK ]
+(2/2) Loading ProtonScript ..... [ OK ]
+
+```
+
+# Executing program
+
+> proton -p program.p
+
+```
+ProtonScript Coder 3.0
+
+(1/2) Loading Program File ..... [ OK ]
+(2/2) Loading ProtonScript ..... [ OK ]
 
 ```
 
