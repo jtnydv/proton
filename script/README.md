@@ -78,10 +78,10 @@ RUN #executing disk stager
 ```
 ProtonScript Encoder 3.0
 
-Loading Program File .....	[ OK ]
+Loading Program File  .....	[ OK ]
 Checking Program File .....	[ OK ]
-Loading ProtonScript .....	[ OK ]
-ProtonScript Complete.....	[ OK ]
+Loading ProtonScript  .....	[ OK ]
+ProtonScript Complete .....	[ OK ]
 
 
 ***
