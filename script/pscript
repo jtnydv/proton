@@ -2,14 +2,17 @@
 
 if [[ $1 = "-h" || $1 = "--help" ]]
 then
-  echo -e """usage: pscript [-h] [-w FILE] [-e FILE] [-d FILE]
+  echo -e """usage: pscript [-h] [-v] [-g] [--no-output OPTION] 
+                                           [-e FILE] [-d FILE]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -v, --version         Display ProtonScript version.
+  -g, --gui             Open a ProtonScript GUI console.
+
+ProtonScript Coder:
   --no--output OPTION   
                         Disable ProtonScript Coder output.
-  -w FILE, --write FILE 
-                        Write a ProtonScript program.
   -e FILE, --encode FILE
                         Encode a ProtonScript program file.
   -d FILE, --decode FILE 
@@ -23,7 +26,8 @@ if [[ $2 = "-e" || $1 = "--encode" ]]
 then
 if [[ $3 = "" ]]
 then
-echo -e "usage: pascript [-h] [-w FILE] [-e FILE] [-d FILE]"
+echo -e "usage: pscript [-h] [-v] [-g] [--no-output OPTION]"
+echo -e "                              [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -e/--encode: expected one argument"
 exit
 fi
@@ -37,7 +41,8 @@ if [[ $2 = "-d" || $1 = "--decode" ]]
 then
 if [[ $3 = "" ]]
 then
-echo -e "usage: pascript [-h] [-w FILE] [-e FILE] [-d FILE]"
+echo -e "usage: pscript [-h] [-v] [-g] [--no-output OPTION]"
+echo -e "                              [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -d/--decode: expected one argument"
 exit
 fi
@@ -51,7 +56,8 @@ elif [[ $1 = "-e" || $1 = "--encode" ]]
 then
 if [[ $2 = "" ]]
 then
-echo -e "usage: pascript [-h] [-w FILE] [-e FILE] [-d FILE]"
+echo -e "usage: pscript [-h] [-v] [-g] [--no-output OPTION]"
+echo -e "                              [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -e/--encode: expected one argument"
 exit
 fi
@@ -62,28 +68,16 @@ elif [[ $1 = "-d" || $1 = "--decode" ]]
 then
 if [[ $2 = "" ]]
 then
-echo -e "usage: pascript [-h] [-w FILE] [-e FILE] [-d FILE]"
+echo -e "usage: pscript [-h] [-v] [-g] [--no-output OPTION]"
+echo -e "                              [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -d/--decode: expected one argument"
 exit
 fi
   python3 ~/proton/script/coder/coder.py -d $2
   exit
   
-elif [[ $1 = "-w" || $1 = "--write" ]] 
+elif [[ $1 = "-g" || $1 = "--gui" ]] 
 then
-if [[ $2 = "" ]]
-then
-echo -e "usage: pascript [-h] [-w FILE] [-e FILE] [-d FILE]"
-echo -e "pscript: error: argument -w/--write: expected one argument"
-exit
-fi
-if [[ -f $2 ]]
-then
-  nano $2
-  exit
-else
-  touch $2
-  nano $2
-  exit
-fi
+cd ~/proton/script/gui
+python psgui.py
 fi
