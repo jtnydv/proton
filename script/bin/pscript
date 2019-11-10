@@ -38,3 +38,4 @@ else
   nano $2
   exit
 fi
+fi
