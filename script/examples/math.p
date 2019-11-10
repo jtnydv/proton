@@ -1,5 +1,4 @@
 #include <psio>
-#include <psmath>
 
 PRINT 4 * 4 #calculate 4 * 4
 DELAY 0.4 #delay the program
