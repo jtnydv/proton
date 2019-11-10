@@ -28,6 +28,7 @@ parser.add_argument("-d","--decode", metavar='FILE', help="Decode a ProtonScript
 args = parser.parse_args()
     
 if args.encode:
+    argrem = args.encode
     print("ProtonScript Coder 3.0\n")
     time.sleep(1)
     import os
@@ -66,6 +67,7 @@ if args.encode:
     sys.exit()
     
 if args.decode:
+    argrem = args.decode
     print("ProtonScript Coder 3.0\n")
     time.sleep(1)
     import os
