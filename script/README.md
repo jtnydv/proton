@@ -38,7 +38,18 @@
 
 > pscript -h
 
+```
+usage: pscript [-h] [-w FILE] [-e FILE] [-d FILE]
 
+optional arguments:
+  -h, --help            show this help message and exit
+  -w FILE, --write FILE 
+                        Write a ProtonScript program.
+  -e FILE, --encode FILE
+                        Encode a ProtonScript program file.
+  -d FILE, --decode FILE 
+                        Decode a ProtonScript program file.
+```
 
 ***
 
@@ -58,7 +69,7 @@ SET SRVPORT port #setting up a server port
 RUN #executing disk stager
 ```
 
-> proton -p main.p
+## Encoding program
 
 ***
     
