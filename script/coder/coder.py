@@ -33,7 +33,12 @@ if args.encode:
     import os
     import os.path
     if (os.path.exists(args.encode)):
-        print("(1/4) Loading Program File ..... [ OK ]")
+        if (argrem[-(argrem[::-1].index('.')):]) != 'p' or (argrem[-(argrem[::-1].index('.')):]) != 'proton':
+            print("(1/4) Loading Program File ..... [ FAIL ]\n")
+            import sys
+            sys.exit()
+        else:
+            print("(1/4) Loading Program File ..... [ OK ]")
     else:
         print("(1/4) Loading Program File ..... [ FAIL ]\n")
         import sys
@@ -66,7 +71,12 @@ if args.decode:
     import os
     import os.path
     if (os.path.exists(args.decode)):
-        print("(1/4) Loading Program File ..... [ OK ]")
+        if (argrem[-(argrem[::-1].index('.')):]) != 'p' or (argrem[-(argrem[::-1].index('.')):]) != 'proton':
+            print("(1/4) Loading Program File ..... [ FAIL ]\n")
+            import sys
+            sys.exit()
+        else:
+            print("(1/4) Loading Program File ..... [ OK ]")
     else:
         print("(1/4) Loading Program File ..... [ FAIL ]\n")
         import sys
