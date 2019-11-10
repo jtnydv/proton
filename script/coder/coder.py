@@ -2,12 +2,6 @@ import argparse
 import time
 import os
 
-if (os.path.exists("/tmp/.op")):
-    os.system("rm /tmp/.op")
-os.system("echo $OLDPWD > /tmp/.op")
-oldpwd = open('/tmp/.op').read()[:-1].split('\n')[-1]
-os.chdir(oldpwd)
-
 def encoder(pscode):
     text = open(pscode).read()
     out = open(pscode[:pscode.index(".")] + ".bin", "w")
@@ -51,9 +45,9 @@ if args.encode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/2) Loading ProtonScript  .....  [ OK ]\n")
+        print("(2/2) Loading ProtonScript ..... [ OK ]\n")
     else:
-        print("(2/2) Loading ProtonScript  .....  [ FAIL ]\n")
+        print("(2/2) Loading ProtonScript ..... [ FAIL ]\n")
         import sys
         sys.exit()
     
@@ -79,9 +73,9 @@ if args.decode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/2) Loading ProtonScript  .....  [ OK ]\n")
+        print("(2/2) Loading ProtonScript ..... [ OK ]\n")
     else:
-        print("(2/2) Loading ProtonScript  .....  [ FAIL ]\n")
+        print("(2/2) Loading ProtonScript ..... [ FAIL ]\n")
         import sys
         sys.exit()
     
