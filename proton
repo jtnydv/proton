@@ -219,7 +219,6 @@ if __name__ == "__main__":
     os.chdir(oldpwd)
     pay_no_attention()
     seriously_nothing_shady_here()
-    os.chdir(oldpwd)
     shell = core.shell.Shell(banner, __version__)
     shell.run(autorun, restore)
             
