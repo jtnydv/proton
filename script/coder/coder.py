@@ -37,9 +37,9 @@ if args.encode:
         sys.exit()
         
     if (os.path.exists("/data/data/com.termux")):
-            pspath = "/data/data/com.termux/files/usr/bin/pscript"
-        else:
-            pspath = "/usr/local/bin/pscript"
+        pspath = "/data/data/com.termux/files/usr/bin/pscript"
+    else:
+        pspath = "/usr/local/bin/pscript"
         
     time.sleep(1)
             
@@ -65,9 +65,9 @@ if args.decode:
         sys.exit()
         
     if (os.path.exists("/data/data/com.termux")):
-            pspath = "/data/data/com.termux/files/usr/bin/pscript"
-        else:
-            pspath = "/usr/local/bin/pscript"
+        pspath = "/data/data/com.termux/files/usr/bin/pscript"
+    else:
+        pspath = "/usr/local/bin/pscript"
         
     time.sleep(1)
             
