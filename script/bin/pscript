@@ -29,6 +29,12 @@ then
   
 elif [[ $1 = "-w" || $1 = "--write" ]] 
 then
+if [[ -f $2 ]]
+then
+  nano $2
+  exit
+else
+  touch $2
   nano $2
   exit
 fi
