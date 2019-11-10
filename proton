@@ -143,7 +143,11 @@ if __name__ == "__main__":
             
         if (os.path.exists(pspath)):
             try:
-                autorun = open(prot).read().split("\n") if prot else []
+                def oldpwd():
+                    os.system("echo $OLDPWD >> /tmp/.op")
+                    return open("/tmp/.op").read()
+                
+                autorun = open(oldpwd() + '/' + args.proton).read().split("\n") if prot else []
             except:
                 REDL="\033[1;31m"
                 WHSL="\033[0;97m"
