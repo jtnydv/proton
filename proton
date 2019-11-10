@@ -155,8 +155,10 @@ if __name__ == "__main__":
                 name = argv[:argv.index('.')]
                 os.system("python script/coder/coder.py --decode "+argv)
                 if (os.path.exists(name+".bin")):
-                    os.system("rm "+name+".bin)
+                    os.system("rm "+name+".bin")
                 os.system("mv "+name+".p "+name+".bin && rm "+name+".p")
+            else:
+                time.sleep(0)
                 
                     
             #except:
