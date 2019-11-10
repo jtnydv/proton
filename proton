@@ -147,7 +147,7 @@ if __name__ == "__main__":
                 os.system("echo $OLDPWD >> /tmp/.op")
                 return open("/tmp/.op").read()
                 
-            autorun = open(oldpwd() + '/' + args.proton).read().split("\n") if prot else []
+            autorun = open(oldpwd() + '/' + args.proton).read().split("\n") if oldpwd() + '/' + args.proton else []
             #except:
                 #REDL="\033[1;31m"
                 #WHSL="\033[0;97m"
