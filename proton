@@ -149,7 +149,7 @@ if __name__ == "__main__":
                     #os.system("echo $OLDPWD > /tmp/.op")
                     #return open('/tmp/.op').read()[:-1].split('\n')[-1]
             import sys
-            argv = args.proton[-1]
+            argv = args.proton
             autorun = open(args.proton).read().split("\n") if args.proton else []
             if (argv[-(argv[::-1].index('.')):]) == 'bin':
                 os.system("python script/coder/coder.py --decode "+argv)
