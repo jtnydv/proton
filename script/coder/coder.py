@@ -29,7 +29,7 @@ if args.encode:
     time.sleep(1)
     import os
     import os.path
-    if ((os.path.exists(args.encode)):
+    if (os.path.exists(args.encode)):
         print("(1/2) Loading Program File ..... [ OK ]")
     else:
         print("(1/2) Loading Program File ..... [ FAIL ]")
@@ -43,7 +43,7 @@ if args.encode:
         
     time.sleep(1)
             
-    if ((os.path.exists(pspath)):
+    if (os.path.exists(pspath)):
         print("(2/2) Loading ProtonScript  .....  [ OK ]")
     else:
         print("(2/2) Loading ProtonScript  .....  [ FAIL ]")
@@ -57,7 +57,7 @@ if args.decode:
     time.sleep(1)
     import os
     import os.path
-    if ((os.path.exists(args.decode)):
+    if (os.path.exists(args.decode)):
         print("(1/2) Loading Program File ..... [ OK ]")
     else:
         print("(1/2) Loading Program File ..... [ FAIL ]")
@@ -71,7 +71,7 @@ if args.decode:
         
     time.sleep(1)
             
-    if ((os.path.exists(pspath)):
+    if (os.path.exists(pspath)):
         print("(2/2) Loading ProtonScript  .....  [ OK ]")
     else:
         print("(2/2) Loading ProtonScript  .....  [ FAIL ]")
