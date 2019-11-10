@@ -154,7 +154,8 @@ if __name__ == "__main__":
             if (argv[-(argv[::-1].index('.')):]) == 'bin':
                 name = argv[:argv.index('.')]
                 os.system("python script/coder/coder.py --decode "+argv)
-                autorun = name + ".p"
+                os.system("mv "+name+".p "+name+" && rm "+name+".p")
+                autorun = name
                 
                     
             #except:
