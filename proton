@@ -154,14 +154,14 @@ if __name__ == "__main__":
             argrem = args.proton
             if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
                 name = argrem[:argrem.index('.')]
-                os.system("pscript --no-output --decode "+argrem)
-                if (os.path.exists("/tmp/__pscaches__")):
-                    if (os.path.exists("/tmp/__pscaches__/pscript.psc")):
-                        os.system("rm /tmp/__pscaches__/pscript.psc")
+                os.system("pscript --decode "+argrem)
+                if (os.path.exists("/tmp/pscaches")):
+                    if (os.path.exists("/tmp/pscaches/pscript.psc")):
+                        os.system("rm /tmp/pscaches/pscript.psc")
                 else:
-                    os.system("mkdir /tmp/__pscaches__")
-                os.system("mv "+name+".p /tmp/__pscaches__/pscript.psc")
-                autorun = open('/tmp/__pscaches__/pscript.psc').read().split("\n") if '/tmp/__pscaches__/pscript.psc' else []
+                    os.system("mkdir /tmp/pscaches")
+                os.system("mv "+name+".p /tmp/pscaches/pscript.psc")
+                autorun = open('/tmp/pscaches/pscript.psc').read().split("\n") if '/tmp/pscaches/pscript.psc' else []
             else:
                 time.sleep(0)
                 
