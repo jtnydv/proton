@@ -83,7 +83,7 @@ ProtonScript Coder 3.0
 
 ```
 
-# Executing program
+## Executing program
 
 > proton -p program.p
 
