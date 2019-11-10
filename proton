@@ -153,9 +153,7 @@ if __name__ == "__main__":
             argrem = args.proton
             if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
                 name = argrem[:argrem.index('.')]
-                os.system("python script/coder/coder.py --decode "+argrem)
-                if (os.path.exists(name+".bin")):
-                    os.system("rm "+name+".bin")
+                os.system("pscript --no-output --decode "+argrem)
                 autorun = open(name + '.p').read().split("\n") if name + '.p' else []
             else:
                 time.sleep(0)
