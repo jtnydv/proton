@@ -1,4 +1,4 @@
-def encoder(pscript)
+def encoder(pscript):
     text = open(pscript).read()
     out = open(pscript[:pscript.index(".")]+".bin", "w")
     for i in text:
