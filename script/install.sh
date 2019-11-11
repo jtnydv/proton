@@ -26,7 +26,7 @@ else
 fi
 
 {
-cd ~/proton/script/bin
+cd ~/proton/script
 cp pscript /usr/local/bin
 chmod +x /usr/local/bin/pscript
 cp pscript /bin
