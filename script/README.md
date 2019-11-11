@@ -95,13 +95,10 @@ RUN #executing disk stager
 > pscript -e program.p
 
 ```
-ProtonScript Coder v3.0
-
 (1/4) Loading Program File  ..... [ OK ]
 (2/4) Loading ProtonScript  ..... [ OK ]
 (3/4) Encoding Program File ..... [ OK ]
 (4/4) Saving Program File   ..... [ OK ]
-
 ```
 
 ***
@@ -111,12 +108,9 @@ ProtonScript Coder v3.0
 > proton -p program.bin
 
 ```
-ProtonScript Coder v3.0
-
 (1/3) Loading Program File  ..... [ OK ]
 (2/3) Loading ProtonScript  ..... [ OK ]
 (3/3) Running Program File  ..... [ OK ]
-
 ```
 
 ***
@@ -126,13 +120,10 @@ ProtonScript Coder v3.0
 > pscript -d program.bin
 
 ```
-ProtonScript Coder v3.0
-
 (1/4) Loading Program File  ..... [ OK ]
 (2/4) Loading ProtonScript  ..... [ OK ]
 (3/4) Decoding Program File ..... [ OK ]
 (4/4) Saving Program File   ..... [ OK ]
-
 ```
 
 ***
