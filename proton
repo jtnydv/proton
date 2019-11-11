@@ -162,7 +162,7 @@ if __name__ == "__main__":
                     WHSL="\033[0;97m"
                     ENDL="\033[0m"
                     print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!")
-                    return
+                    exit(0)
                 
                     
             except:
