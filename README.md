@@ -72,7 +72,7 @@ usage: proton [-h] [-p FILE] [-r FILE] [-u]
 optional arguments:
   -h, --help            show this help message and exit
   -p FILE, --proton FILE
-                        A ProtonScript program file.
+                        Run a ProtonScript program.
   -r FILE, --restore FILE
                         A Proton restore json file.
   -u, --update          Update Proton Framework.
