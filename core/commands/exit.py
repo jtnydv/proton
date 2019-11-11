@@ -33,8 +33,8 @@ def convert_to_parsable(obj):
 
 def execute(shell, cmd):
     splitted = cmd.split()
-    sw = splitted[1].lower()
-    if sw == "-f":
+    
+    if splitted[1].lower() == "-f":
         restore_map = {}
         restore_map['creds'] = convert_to_parsable(shell.creds)
         restore_map['creds_keys'] = convert_to_parsable(shell.creds_keys)
