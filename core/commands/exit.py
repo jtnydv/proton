@@ -33,7 +33,8 @@ def convert_to_parsable(obj):
 
 def execute(shell, cmd):
     splitted = cmd.split()
-    print(splitted)
+    if len(splitted) < 2:
+        splitted[1] = ''
     
     if splitted[1].lower() == "-f":
         restore_map = {}
