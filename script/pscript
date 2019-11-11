@@ -4,12 +4,12 @@ if [[ $1 = "-h" || $1 = "--help" ]]
 then
   echo -e """usage: pscript [-h] [-v] [-i] [--no-output OPTION] 
                               [-e FILE] [-d FILE]
-
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
+  -u, --update          Update the ProtonScript.
   -i, --ide             Open the ProtonScript IDE.
-
+  
 ProtonScript Coder:
   --no--output OPTION   
                         Disable ProtonScript Coder output.
