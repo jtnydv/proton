@@ -20,6 +20,12 @@ ProtonScript Coder:
                         
 fi
 
+if [[ $1 = "-v" || $1 = "--version" ]]
+then
+echo -e "ProtonScript v3.0-dev"
+exit
+fi
+
 if [[ $1 = "--no-output" ]]
 then
 if [[ $2 = "-e" || $1 = "--encode" ]]
