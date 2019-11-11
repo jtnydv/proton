@@ -10,19 +10,18 @@ def decoder(pscode):
         text += chr(int(i, base=2))
     out.write(text)
     out.close()
-    os.system("rm "+pscode)
     
 parser = argparse.ArgumentParser()
 parser.add_argument("-r","--run", metavar='FILE', help="Run a ProtonScript program file.")
 args = parser.parse_args()
 
-if args.decode:
-    argrem = args.decode
+if args.run:
+    argrem = args.run
     print("ProtonScript Coder 3.0\n")
     time.sleep(1)
     import os
     import os.path
-    if (os.path.exists(args.decode)):
+    if (os.path.exists(args.run)):
         if (argrem[-(argrem[::-1].index('.')):]) != 'bin':
             print("(1/4) Loading Program File ..... [ FAIL ]\n")
             import sys
@@ -51,4 +50,4 @@ if args.decode:
     print("(3/4) Running Program File ..... [ OK ]")
     time.sleep(2)
     print("")
-    decoder(args.decode)
+    decoder(args.run)
