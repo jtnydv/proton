@@ -87,6 +87,10 @@ RUN #executing disk stager
 
 ## ProtonScript command
 
+**1.** Create a ProtonScript program and write it to file named `program.p`.
+
+**2.** Encode the ProtonScript program file via `pscript`.
+
 > pscript -e program.p
 
 ```
@@ -99,6 +103,8 @@ ProtonScript Coder v3.0
 
 ```
 
+***
+
 # Executing ProtonScript program
 
 > proton -p program.bin
@@ -109,6 +115,22 @@ ProtonScript Coder v3.0
 (1/3) Loading Program File  ..... [ OK ]
 (2/3) Loading ProtonScript  ..... [ OK ]
 (3/3) Running Program File  ..... [ OK ]
+
+```
+
+***
+
+# Decoding ProtonScript program
+
+> pscript -d program.bin
+
+```
+ProtonScript Coder v3.0
+
+(1/4) Loading Program File  ..... [ OK ]
+(2/4) Loading ProtonScript  ..... [ OK ]
+(3/4) Decoding Program File ..... [ OK ]
+(4/4) Saving Program File   ..... [ OK ]
 
 ```
 
