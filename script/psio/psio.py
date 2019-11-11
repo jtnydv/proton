@@ -47,7 +47,7 @@ if args.run:
         import sys
         sys.exit()
     
-    print("(3/4) Running Program File ..... [ OK ]")
+    print("(3/4) Running Program File  ..... [ OK ]")
     time.sleep(2)
     print("")
     decoder(args.run)
