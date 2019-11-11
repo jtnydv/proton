@@ -87,3 +87,26 @@ then
 cd ~/proton/script/ide
 python pside.py
 fi
+
+if [[ $1 != "" ]]
+then
+echo -e "usage: pscript [-h] [-v] [-i] [--no-output OPTION]"
+echo -e "                              [-e FILE] [-d FILE]"
+echo -e "pscript: error: unrecognized arguments: "$1""
+else
+  echo -e """usage: pscript [-h] [-v] [-i] [--no-output OPTION] 
+                              [-e FILE] [-d FILE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         Display ProtonScript version.
+  -i, --ide             Open the ProtonScript IDE.
+
+ProtonScript Coder:
+  --no--output OPTION   
+                        Disable ProtonScript Coder output.
+  -e FILE, --encode FILE
+                        Encode a ProtonScript program file.
+  -d FILE, --decode FILE 
+                        Decode a ProtonScript program file."""
+fi
