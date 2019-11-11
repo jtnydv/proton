@@ -22,7 +22,7 @@ fi
 
 if [[ $1 = "-v" || $1 = "--version" ]]
 then
-echo -e "ProtonScript v3.0-dev"
+echo -e "ProtonScript v3.0-dev stable"
 exit
 fi
 
