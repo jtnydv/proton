@@ -21,6 +21,46 @@ ProtonScript Coder:
                         
 fi
 
+#blue start 
+	BS="-e \033[1;34m"
+#color end
+	CE="\033[0m"
+#red start
+	RS="\033[31m"
+#green start
+	GNS="-e \033[1;32m"
+#white start
+  WHS="\033[0;97m"
+
+if [[ "$1" = "-u" || "$1" = "--update" ]]
+then
+{
+rm /bin/pscript
+rm /usr/local/bin/pscript
+rm /data/data/com.termux/files/usr/bin/pscript
+} &> /dev/null
+if [[ -f ~/proton/script/pscript ]]
+then
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ OK ]"
+else
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+exit
+fi
+sleep 5
+{
+cp ~/proton/script/pscript /bin
+cp ~/proton/script/pscript /usr/local/bin
+cp ~/proton/script/pscript /data/data/com.termux/files/usr/bin
+chmod +x /bin/pscript
+chmod +x /usr/local/bin/pscript
+chmod +x /data/data/com.termux/files/usr/bin/pscript
+} &> /dev/null
+echo -e ""
+exit
+fi
+
 if [[ $1 = "-v" || $1 = "--version" ]]
 then
 echo -e "ProtonScript v3.0 stable"
