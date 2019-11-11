@@ -39,22 +39,20 @@
 > pscript -h
 
 ```
-usage: pscript [-h] [-v] [-u] [-g] [--no-output OPTION] 
+usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION] 
                                    [-e FILE] [-d FILE]
-
+                                   
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
   -u, --update          Update the ProtonScript.
-  -g, --gui             Open the ProtonScript IDE.
-
-ProtonScript Coder:
+  -i, --ide             Open the ProtonScript IDE.
   --no--output OPTION   
-                        Disable ProtonScript Coder output.
+                        Disable ProtonScript output.
   -e FILE, --encode FILE
-                        Encode a ProtonScript program file.
+                        Encode a ProtonScript program.
   -d FILE, --decode FILE 
-                        Decode a ProtonScript program file."""
+                        Decode a ProtonScript program.
 ```
 
 ***
