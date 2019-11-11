@@ -10,14 +10,12 @@ optional arguments:
   -v, --version         Display ProtonScript version.
   -u, --update          Update the ProtonScript.
   -i, --ide             Open the ProtonScript IDE.
-  
-ProtonScript Coder:
   --no--output OPTION   
-                        Disable ProtonScript Coder output.
+                        Disable ProtonScript output.
   -e FILE, --encode FILE
-                        Encode a ProtonScript program file.
+                        Encode a ProtonScript program.
   -d FILE, --decode FILE 
-                        Decode a ProtonScript program file."""
+                        Decode a ProtonScript program."""
                         
 fi
 
@@ -136,19 +134,17 @@ echo -e "                                   [-e FILE] [-d FILE]"
 echo -e "pscript: error: unrecognized arguments: "$1""
 else
   echo -e """usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION] 
-                                                [-e FILE] [-d FILE]
-
+                                   [-e FILE] [-d FILE]
+                                   
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
   -u, --update          Update the ProtonScript.
   -i, --ide             Open the ProtonScript IDE.
-
-ProtonScript Coder:
   --no--output OPTION   
-                        Disable ProtonScript Coder output.
+                        Disable ProtonScript output.
   -e FILE, --encode FILE
-                        Encode a ProtonScript program file.
+                        Encode a ProtonScript program.
   -d FILE, --decode FILE 
-                        Decode a ProtonScript program file."""
+                        Decode a ProtonScript program."""
 fi
