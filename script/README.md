@@ -39,12 +39,13 @@
 > pscript -h
 
 ```
-usage: pscript [-h] [-v] [-g] [--no-output OPTION] 
-                              [-e FILE] [-d FILE]
+usage: pscript [-h] [-v] [-u] [-g] [--no-output OPTION] 
+                                   [-e FILE] [-d FILE]
 
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
+  -u, --update          Update the ProtonScript.
   -g, --gui             Open the ProtonScript IDE.
 
 ProtonScript Coder:
