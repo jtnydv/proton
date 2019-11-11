@@ -45,7 +45,7 @@ usage: pscript [-h] [-v] [-g] [--no-output OPTION]
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
-  -g, --gui             Open a ProtonScript GUI console.
+  -g, --gui             Open the ProtonScript IDE.
 
 ProtonScript Coder:
   --no--output OPTION   
@@ -63,14 +63,14 @@ ProtonScript Coder:
     INFO: So, we are going to write 
     our first ProtonScript program.
 
-## Writing program
+## ProtonScript IDE
 
-    INFO: There is the ProtonScript GUI console 
-    for the comfortable writing a code with colors.
+    INFO: There is the ProtonScript IDE for the comfortable 
+    writing, checking and encoding ProtonScript program.
     
 > pscript -g
 
-**1.** Write ProtonScript code in the ProtonScript GUI console using this option.
+**1.** Write ProtonScript program in the ProtonScript IDE using this option.
 
 ```ruby
 #include <psio>
@@ -81,9 +81,11 @@ SET SRVPORT port #setting up a server port
 RUN #executing disk stager
 ```
 
-**2.** Save this ProtonScript code as `program.p`.
+**2.** Encode the written program via clicking `Encode Program`.
 
-## Encoding program
+**3.** Download the encoded file named `program.bin`.
+
+## ProtonScript command
 
 > pscript -e program.p
 
@@ -97,9 +99,9 @@ ProtonScript Coder v3.0
 
 ```
 
-## Executing program
+# Executing ProtonScript program
 
-> proton -p program.p
+> proton -p program.bin
 
 ```
 ProtonScript Coder v3.0
@@ -108,17 +110,6 @@ ProtonScript Coder v3.0
 (2/3) Loading ProtonScript  ..... [ OK ]
 (3/3) Running Program File  ..... [ OK ]
 
-```
-
-## Decoding program
-
-```
-ProtonScript Coder v3.0
-
-(1/4) Loading Program File  ..... [ OK ]
-(2/4) Loading ProtonScript  ..... [ OK ]
-(3/4) Decoding Program File ..... [ OK ]
-(4/4) Saving Program File   ..... [ OK ]
 ```
 
 ***
