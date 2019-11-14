@@ -11,7 +11,7 @@
 
     INFO: ProtonScript is a Proton Framework programming language
     used to quickly execute Proton commands in the Proton Framework, 
-    you can enable ProtonScript feature via Proton Framework.
+    you can enable the ProtonScript feature via Proton Framework.
     
 ***
 
