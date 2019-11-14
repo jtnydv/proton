@@ -71,6 +71,7 @@ usage: proton [-h] [-p FILE] [-r FILE] [-u]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -i, --install         Install the ProtonScript.
   -p FILE, --proton FILE
                         Run a ProtonScript program.
   -r FILE, --restore FILE
@@ -149,7 +150,7 @@ implant/util/upload_file | Uploads a file from the listening server to the targe
 
 ***
 
-# TLS Communications
+# TLS communications
 
     INFO: To enable TLS communications, you will need 
     to host your Proton stager on a valid domain 
@@ -164,12 +165,25 @@ implant/util/upload_file | Uploads a file from the listening server to the targe
     INFO: ProtonScript is a Proton Framework programming language
     used to quickly execute Proton commands in the Proton Framework, 
     you can enable ProtonScript feature via Proton Framework.
+    
+> proton -i
+
+    (1/1) Installing ProtonScript ..... [ OK ]
+    
+# ProtonScript documentation
+
+    INFO: You can read more about ProtonScript in the 
+    ProtonScript documentation. You can find the ProtonScript 
+    documentation in the Proton Framework script directory. 
+    Read how to write first ProtonScript program!
    
 ***
     
 # Disclaimer
 
-Usage of Proton for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, federal, and international laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+    Usage of Proton for attacking targets without prior mutual consent is illegal. 
+    It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
+    Developers assume no liability and are not responsible for any misuse or damage caused by this program.
     
 ***
 
