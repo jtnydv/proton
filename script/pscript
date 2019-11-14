@@ -2,14 +2,14 @@
 
 if [[ $1 = "-h" || $1 = "--help" ]]
 then
-  echo -e """usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION] 
+  echo -e """usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION] 
                                    [-e FILE] [-d FILE]
                                    
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
+  -n, --notepad         Open the ProtonScript notepad.
   -u, --update          Update the ProtonScript.
-  -i, --ide             Open the ProtonScript IDE.
   --no--output OPTION   
                         Disable ProtonScript output.
   -e FILE, --encode FILE
@@ -71,7 +71,7 @@ if [[ $2 = "-e" || $1 = "--encode" ]]
 then
 if [[ $3 = "" ]]
 then
-echo -e "usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION]"
+echo -e "usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION]"
 echo -e "                                   [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -e/--encode: expected one argument"
 exit
@@ -86,7 +86,7 @@ if [[ $2 = "-d" || $1 = "--decode" ]]
 then
 if [[ $3 = "" ]]
 then
-echo -e "usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION]"
+echo -e "usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION]"
 echo -e "                                   [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -d/--decode: expected one argument"
 exit
@@ -101,7 +101,7 @@ elif [[ $1 = "-e" || $1 = "--encode" ]]
 then
 if [[ $2 = "" ]]
 then
-echo -e "usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION]"
+echo -e "usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION]"
 echo -e "                                   [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -e/--encode: expected one argument"
 exit
@@ -113,7 +113,7 @@ elif [[ $1 = "-d" || $1 = "--decode" ]]
 then
 if [[ $2 = "" ]]
 then
-echo -e "usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION]"
+echo -e "usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION]"
 echo -e "                                   [-e FILE] [-d FILE]"
 echo -e "pscript: error: argument -d/--decode: expected one argument"
 exit
@@ -121,26 +121,26 @@ fi
   python3 ~/proton/script/coder/coder.py -d $2
   exit
   
-elif [[ $1 = "-i" || $1 = "--ide" ]] 
+elif [[ $1 = "-n" || $1 = "--notepad" ]] 
 then
-cd ~/proton/script/ide
-python pside.py
+cd ~/proton/script/notepad
+python notepad.py
 fi
 
 if [[ $1 != "" ]]
 then
-echo -e "usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION]"
+echo -e "usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION]"
 echo -e "                                   [-e FILE] [-d FILE]"
 echo -e "pscript: error: unrecognized arguments: "$1""
 else
-  echo -e """usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION] 
+  echo -e """usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION] 
                                    [-e FILE] [-d FILE]
                                    
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
+  -n, --notepad         Open the ProtonScript notepad.
   -u, --update          Update the ProtonScript.
-  -i, --ide             Open the ProtonScript IDE.
   --no--output OPTION   
                         Disable ProtonScript output.
   -e FILE, --encode FILE
