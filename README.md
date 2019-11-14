@@ -175,7 +175,6 @@ implant/util/upload_file | Uploads a file from the listening server to the targe
     INFO: You can read more about ProtonScript in the 
     ProtonScript documentation. You can find the ProtonScript 
     documentation in the Proton Framework script directory. 
-    Read how to write first ProtonScript program!
    
 ***
     
