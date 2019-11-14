@@ -35,6 +35,7 @@ def mode_proton():
     return open('js/mode-proton.js').read()
 
 if __name__ == '__main__':
-    print("* ProtonScript notepad (click to open): http://127.0.0.1:5000")
-    app.run(debug=False)
+    import webbrowser
+    webbrowser.open('http://127.0.0.1:5000')
+    app.run(debug=True)
     
