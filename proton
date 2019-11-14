@@ -143,6 +143,9 @@ if __name__ == "__main__":
             pspath = "/usr/local/bin/pscript"
             
         if (os.path.exists(pspath)):
+            REDL="\033[1;31m"
+            WHSL="\033[0;97m"
+            ENDL="\033[0m"
             print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript is already installed!"+ENDL)
         else:
             os.system("cd script && chmod +x install.sh && ./install.sh")
