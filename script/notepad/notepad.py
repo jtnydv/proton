@@ -9,6 +9,8 @@ def is_keyword(os):
 def index():
     text = open('index.html').read()
     return text
+    import webbrowser
+    webbrowser.open('http://127.0.0.1:5000')
 
 @app.route('/js/')
 def js():
@@ -36,5 +38,4 @@ def mode_proton():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    import webbrowser
-    webbrowser.open('http://127.0.0.1:5000')
+    
