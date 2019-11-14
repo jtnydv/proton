@@ -158,6 +158,14 @@ implant/util/upload_file | Uploads a file from the listening server to the targe
     store and will NOT allow a self-signed certificate.
     
 ***
+
+# ProtonScript (Proton Language)
+
+    INFO: ProtonScript is a Proton Framework programming language
+    used to quickly execute Proton commands in the Proton Framework, 
+    you can enable ProtonScript feature via Proton Framework.
+   
+***
     
 # Disclaimer
 
