@@ -147,6 +147,8 @@ if __name__ == "__main__":
             WHSL="\033[0;97m"
             ENDL="\033[0m"
             print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript is already installed!"+ENDL)
+            import sys
+            sys.exit()
         else:
             os.system("cd script && chmod +x install.sh && ./install.sh")
             import sys
