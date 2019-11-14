@@ -1,6 +1,6 @@
 from flask import Flask
-import urllib
-urllib.urlopen('http://127.0.0.1:5000')
+import os
+os.system("python urlloop.py")
 
 app = Flask(__name__)
 
