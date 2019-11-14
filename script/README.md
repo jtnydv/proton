@@ -39,14 +39,14 @@
 > pscript -h
 
 ```
-usage: pscript [-h] [-v] [-u] [-i] [--no-output OPTION] 
+usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION] 
                                    [-e FILE] [-d FILE]
                                    
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display ProtonScript version.
+  -n, --notepad         Open the ProtonScript notepad.
   -u, --update          Update the ProtonScript.
-  -i, --ide             Open the ProtonScript IDE.
   --no--output OPTION   
                         Disable ProtonScript output.
   -e FILE, --encode FILE
@@ -61,15 +61,10 @@ optional arguments:
 
     INFO: So, we are going to write 
     our first ProtonScript program.
-
-## ProtonScript IDE
-
-    INFO: There is the ProtonScript IDE for the comfortable 
-    writing, checking and encoding ProtonScript program.
     
-> pscript -g
-
-**1.** Write ProtonScript program in the ProtonScript IDE using this option.
+**1.** Write ProtonScript program in the ProtonScript notepad.    
+    
+> pscript -n
 
 ```ruby
 #include <psio>
@@ -80,15 +75,9 @@ SET SRVPORT port #setting up a server port
 RUN #executing disk stager
 ```
 
-**2.** Encode the written program via clicking `Encode Program`.
+**2.** Copy this code to a file, name it `program.p`.
 
-**3.** Download the encoded file named `program.bin`.
-
-## ProtonScript command
-
-**1.** Create a ProtonScript program and write it to file named `program.p`.
-
-**2.** Encode the ProtonScript program file via `pscript`.
+**3.** Encode your ProtonScript program file via `pscript`.
 
 > pscript -e program.p
 
