@@ -47,7 +47,7 @@ define('ace/mode/duckycode', function(require, exports, module) {
          },
          {
             token: 'support.type',
-            regex: '^(USE|SET|LOAD|BACK|DELAY)'
+            regex: '^(USE|SET|LOAD|BACK|DELAY|SRVHOST)'
          },
          {
             token: 'keyword',
