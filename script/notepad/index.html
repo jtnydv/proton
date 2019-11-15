@@ -54,12 +54,12 @@ $('body')
 </script>
 
 <!-- Begin page content -->
-<main class="container" role="main" style="position: absoulte;top: 50%;left: 50%;">
+<main class="container" role="main" style="height: auto !important;">
   <div class="row mt-5" style="height: auto !important;">
-    <div class="col-11 col-md-13">
+    <div class="col-12 col-md-13">
         <div class="card">
           <div class="card-header">ProtonScript</div>
-            <div class=" ace_editor ace-dracula ace_dark" id="editor" style="height: 600px;"><textarea id='text_input' class="ace_text-input" style="left: 44px; top: 100px; width: 1px; height: 1px; font-size: 1px; opacity: 0;" spellcheck="false" wrap="off" autocorrect="off" autocapitalize="off">
+            <div class=" ace_editor ace-dracula ace_dark" id="editor" style="height: 490px;"><textarea id='text_input' class="ace_text-input" style="left: 44px; top: 14px; width: 1px; height: 1px; font-size: 1px; opacity: 0;" spellcheck="false" wrap="off" autocorrect="off" autocapitalize="off">
 </textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 40px;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="left: 0px; top: 0px; width: 40px; height: 1000000px;"><div class="ace_gutter-cell ace_gutter-active-line " style="top: 0px; height: 14px;"><span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 40px; right: 0px; bottom: 0px;"><div class="ace_content" style="left: 0px; top: 0px; width: 568px; height: 518px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 532px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="left: 0px; top: 0px; height: 14px; right: 0px;"></div></div><div class="ace_layer ace_text-layer" style="margin: 0px 4px; left: 0px; top: 0px; height: 1000000px;"><div class="ace_line" style="top: 0px; height: 14px;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 7px; height: 14px; display: block;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 21px; bottom: 0px; display: none;"><div class="ace_scrollbar-inner" style="width: 21px; height: 14px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="left: 40px; height: 21px; right: 0px; display: none;"><div class="ace_scrollbar-inner" style="width: 568px; height: 21px;"></div></div><div style="font: inherit; left: 0px; top: 0px; width: auto; height: auto; overflow: hidden; white-space: pre; visibility: hidden; position: absolute; font-size-adjust: none; font-stretch: inherit;"><div style="font: inherit; left: 0px; top: 0px; width: auto; height: auto; overflow: visible; white-space: pre; visibility: hidden; position: absolute; font-size-adjust: none; font-stretch: inherit;"></div></div></div>
         </div>
     </div>
@@ -70,8 +70,8 @@ $('body')
     ace.config.setModuleUrl("ace/mode/protoncode", "/js/mode-proton.js");
     editor.session.setOption("mode", "ace/mode/protoncode");
     editor.setShowPrintMargin(false);
-    editor.setOption("minLines", 50);
-    editor.setOption("maxLines", 50);
+    editor.setOption("minLines", 35);
+    editor.setOption("maxLines", 35);
     
   if (typeof(Storage) !== "undefined") {
     proton_text = localStorage.getItem("protontext")
