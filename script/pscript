@@ -1,5 +1,15 @@
 #!/bin/bash
 
+if [[ -d ~/proton ]]
+then
+sleep 0
+else
+{
+cd ~
+git clone https://github.com/entynetproject/proton.git
+} &> /dev/null
+fi
+
 if [[ $1 = "-h" || $1 = "--help" ]]
 then
   echo -e """usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION] 
