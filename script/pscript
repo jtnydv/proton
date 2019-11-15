@@ -67,7 +67,7 @@ sleep 1
 echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
 exit
 fi
-if [[ $EUID != 0 ]]
+if [[ $EUID -ne 0 ]]
 then
 sleep 1
 echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
