@@ -31,11 +31,11 @@ define('ace/mode/duckycode', function(require, exports, module) {
          },
          {
             token: 'string',
-            regex: '(^PYEXEC|#include <psio>)'
+            regex: '(^PYEXEC|EDIT|SHELL|LOGO|LOAD|INFO|HELP|#include)'
          },
          {
             token: 'string',
-            regex: '(^PYEXEC|#include <psio>)'
+            regex: '(^PYEXEC|EDIT|SHELL|LOGO|LOAD|INFO|HELP|#include)'
          },
          {
              token: 'comment',
@@ -47,11 +47,11 @@ define('ace/mode/duckycode', function(require, exports, module) {
          },
          {
             token: 'support.type',
-            regex: '^(USE|SET|LOAD|BACK|DELAY|SRVHOST|SRVPORT)'
+            regex: '^(USE|SET|DELAY|SRVHOST|SRVPORT|PRINT|RUN)'
          },
          {
             token: 'keyword',
-            regex: '^(UNSET|INFO|KILL|RUN)'
+            regex: '^(UNSET|KILL|EXIT|BACK|CLEAR)'
          },
          {
             token: 'keywordMapper',
