@@ -31,7 +31,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
          },
          {
             token: 'string',
-            regex: '(PYEXEC|EDIT|SHELL|LOGO|LOAD|INFO|HELP|#include)'
+            regex: '(PYEXEC|EDIT|SHELL|LOGO|LOAD|#include)'
          },
          {
              token: 'comment',
@@ -39,7 +39,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
          },
          {
              token: 'constant.language',
-             regex: '(JOBS|STAGERS|ZOMBIES|CREDS|DOMAIN|REPEAT)$'
+             regex: '(JOBS|STAGERS|ZOMBIES|CREDS|DOMAIN|REPEAT|INFO|HELP)'
          },
          {
             token: 'support.function',
