@@ -50,7 +50,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
             regex: '(UNSET|KILL|EXIT|BACK|CLEAR)'
          },
          {
-            token: 'support.type',
+            token: 'support.function',
             regex: "[0-9_][a-zA-Z0-9_]*\\b"
          },
            ] 
