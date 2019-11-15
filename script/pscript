@@ -48,12 +48,19 @@ exit
 fi
 sleep 5
 {
+cd ~
+mkdir .pscript
+cd ~/.pscript
+git clone https://github.com/entynetproject/proton.git
+rm -r ~/proton/script
+cp -r ~/.pscript ~/proton
 cp ~/proton/script/pscript /bin
 cp ~/proton/script/pscript /usr/local/bin
 cp ~/proton/script/pscript /data/data/com.termux/files/usr/bin
 chmod +x /bin/pscript
 chmod +x /usr/local/bin/pscript
 chmod +x /data/data/com.termux/files/usr/bin/pscript
+rm -r ~/.pscript
 } &> /dev/null
 echo -e ""
 exit
