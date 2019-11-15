@@ -162,7 +162,7 @@ if __name__ == "__main__":
             pspath = "/usr/local/bin/pscript"
             
         if (os.path.exists(pspath)):
-            try:
+            if 1:
                 import sys
                 autorun = open(args.proton).read().split("\n") if args.proton else []
                 argrem = args.proton
@@ -185,7 +185,7 @@ if __name__ == "__main__":
                     import sys
                     sys.exit()                
                     
-            except:
+            else:
                 REDL="\033[1;31m"
                 WHSL="\033[0;97m"
                 ENDL="\033[0m"
