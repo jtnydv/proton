@@ -44,14 +44,14 @@ if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
 if [[ -d /data/data/com.termux ]]
 then
-if [[ -f /data/data/com.termux/files/usr/bin/proton ]]
+if [[ -f /data/data/com.termux/files/usr/bin/pscript ]]
 then
 UPD="true"
 else
 UPD="false"
 fi
 else
-if [[ -f /usr/local/bin/proton ]]
+if [[ -f /usr/local/bin/pscript ]]
 then
 UPD="true"
 else
@@ -88,15 +88,17 @@ echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
 exit
 fi
 sleep 5
-#{
+{
 cd ~
 mkdir .pscript
 cd ~/.pscript
 git clone https://github.com/entynetproject/proton.git
 rm -r ~/proton/script
 cp -r ~/.pscript/proton/script ~/proton
-if [[ "$UPD" = "true" ]]
+if [[ "$UPD" != "true" ]]
 then
+sleep 0
+else
 cp ~/proton/script/pscript /bin
 cp ~/proton/script/pscript /usr/local/bin
 cp ~/proton/script/pscript /data/data/com.termux/files/usr/bin
@@ -105,7 +107,7 @@ chmod +x /usr/local/bin/pscript
 chmod +x /data/data/com.termux/files/usr/bin/pscript
 fi
 rm -r ~/.pscript
-#} &> /dev/null
+} &> /dev/null
 echo -e ""
 exit
 fi
