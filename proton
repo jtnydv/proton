@@ -21,6 +21,8 @@
 # state, federal, and international laws. Developers assume no liability and 
 # are not responsible for any misuse or damage caused by this program.
 
+def main():
+
 import os
 import time
 
@@ -121,8 +123,6 @@ def seriously_nothing_shady_here():
     with open('data/stager/js/rundll32_js/rundll32_js.cmd', 'w') as f:
         f.write(command+"\n")
 
-
-def main():
     import core.shell
     import argparse
     import datetime
