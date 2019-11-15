@@ -54,8 +54,8 @@ define('ace/mode/protoncode', function(require, exports, module) {
             regex: '^(UNSET|KILL|EXIT|BACK|CLEAR)'
          },
          {
-            token: 'keywordMapper',
-            regex: "[a-zA-Z][a-zA-Z0-9_]*\\b"
+            token: 'support.type',
+            regex: "[0-9_][a-zA-Z0-9_]*\\b"
          },
            ] 
         }
