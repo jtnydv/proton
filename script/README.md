@@ -70,7 +70,7 @@ optional arguments:
 ```ruby
 #include <psio>
 
-PRINT Hello, world!
+PRINT hello, world!
 ```
 
 **2.** Copy this code to a file, name it `program.p`.
