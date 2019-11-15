@@ -21,8 +21,6 @@
 # state, federal, and international laws. Developers assume no liability and 
 # are not responsible for any misuse or damage caused by this program.
 
-def main():
-
 import os
 import time
 
@@ -123,6 +121,8 @@ def seriously_nothing_shady_here():
     with open('data/stager/js/rundll32_js/rundll32_js.cmd', 'w') as f:
         f.write(command+"\n")
 
+
+if __name__ == "__main__":
     import core.shell
     import argparse
     import datetime
@@ -147,10 +147,12 @@ def seriously_nothing_shady_here():
             WHSL="\033[0;97m"
             ENDL="\033[0m"
             print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript is already installed!"+ENDL)
-            return 0
+            import sys
+            sys.exit()
         else:
             os.system("cd script && chmod +x install.sh && ./install.sh")
-            return 0    
+            import sys
+            sys.exit()    
     
     if args.proton:
         import os.path
@@ -180,7 +182,8 @@ def seriously_nothing_shady_here():
                     WHSL="\033[0;97m"
                     ENDL="\033[0m"
                     print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!")
-                    return 0
+                    import sys
+                    sys.exit()
                 
                     
             except:
@@ -188,7 +191,8 @@ def seriously_nothing_shady_here():
                 WHSL="\033[0;97m"
                 ENDL="\033[0m"
                 print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the ProtonScript program file!"+ENDL)
-                return 0
+                import sys
+                sys.exit()
         else:
             REDL="\033[1;31m"
             WHSL="\033[0;97m"
@@ -197,9 +201,11 @@ def seriously_nothing_shady_here():
             ips = input('Install ProtonScript y/N: ')
             if ips == "y" or ips == "Y":
                 os.system("cd script && chmod +x install.sh && ./install.sh")
-                return 0
+                import sys
+                sys.exit()
             else:
-                return 0
+                import sys
+                sys.exit()
             
     if args.restore:
         import json
@@ -210,13 +216,14 @@ def seriously_nothing_shady_here():
             WHSL="\033[0;97m"
             ENDL="\033[0m"
             print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the Proton restore json file!"+ENDL)
-            return 0
+            import sys
+            sys.exit()
     else:
         restore = {}
 
     if args.update:
         os.system("cd bin && chmod +x proton && ./proton --update")
-        return 0
+        exit()
         
     if banner():
         try:
@@ -233,6 +240,3 @@ def seriously_nothing_shady_here():
     seriously_nothing_shady_here()
     shell = core.shell.Shell(banner, __version__)
     shell.run(autorun, restore)
-
-if __name__ == '__main__':
-    main()
