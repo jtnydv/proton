@@ -1,8 +1,8 @@
-define('ace/mode/duckycode', function(require, exports, module) {
+define('ace/mode/protoncode', function(require, exports, module) {
 
     var oop = require("ace/lib/oop");
     var TextMode = require("ace/mode/text").Mode;
-    var ExampleHighlightRules = require("ace/mode/duckycode_highlight_rules").ExampleHighlightRules;
+    var ExampleHighlightRules = require("ace/mode/protoncode_highlight_rules").ExampleHighlightRules;
     
     var Mode = function() {
         this.HighlightRules = ExampleHighlightRules;
@@ -17,7 +17,7 @@ define('ace/mode/duckycode', function(require, exports, module) {
     exports.Mode = Mode;
     });
     
-    define('ace/mode/duckycode_highlight_rules', function(require, exports, module) {
+    define('ace/mode/protoncode_highlight_rules', function(require, exports, module) {
     
     var oop = require("ace/lib/oop");
     var TextHighlightRules = require("ace/mode/text_highlight_rules").TextHighlightRules;
