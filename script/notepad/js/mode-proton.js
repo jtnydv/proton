@@ -42,9 +42,9 @@ define('ace/mode/protoncode', function(require, exports, module) {
              regex: '(JOBS|STAGERS|ZOMBIES|CREDS|DOMAIN|REPEAT)$'
          },
          {
-            token: 'support.type',
+            token: 'support.function',
             regex: '(USE|SET|DELAY|PRINT|RUN)'
-         },
+         },       
          {
             token: 'keyword',
             regex: '(UNSET|KILL|EXIT|BACK|CLEAR)'
