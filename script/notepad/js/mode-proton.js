@@ -47,11 +47,11 @@ define('ace/mode/duckycode', function(require, exports, module) {
          },
          {
             token: 'support.type',
-            regex: '^(USE|SET|LOAD|BACK|DELAY|SRVHOST)'
+            regex: '^(USE|SET|LOAD|BACK|DELAY|SRVHOST|SRVPORT)'
          },
          {
             token: 'keyword',
-            regex: '^(UNSET|INFO|KILL)'
+            regex: '^(UNSET|INFO|KILL|RUN)'
          },
          {
             token: 'keywordMapper',
