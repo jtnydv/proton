@@ -1,6 +1,5 @@
 from flask import Flask
 import os
-os.system("python urlloop.py")
 
 app = Flask(__name__)
 
@@ -37,5 +36,6 @@ def mode_proton():
     return open('js/mode-proton.js').read()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+    os.system("python urlloop.py")
     
