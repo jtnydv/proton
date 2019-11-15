@@ -42,6 +42,22 @@ fi
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
+if [[ -d /data/data/com.termux ]]
+then
+if [[ -f /data/data/com.termux/files/usr/bin/proton ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+else
+if [[ -f /usr/local/bin/proton ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+fi
 {
 ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 } &> /dev/null
@@ -79,12 +95,17 @@ cd ~/.pscript
 git clone https://github.com/entynetproject/proton.git
 rm -r ~/proton/script
 cp -r ~/.pscript/proton/script ~/proton
+if [[ "$UPD" != "true" ]]
+then
+sleep 0
+else
 cp ~/proton/script/pscript /bin
 cp ~/proton/script/pscript /usr/local/bin
 cp ~/proton/script/pscript /data/data/com.termux/files/usr/bin
 chmod +x /bin/pscript
 chmod +x /usr/local/bin/pscript
 chmod +x /data/data/com.termux/files/usr/bin/pscript
+fi
 rm -r ~/.pscript
 } &> /dev/null
 echo -e ""
