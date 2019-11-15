@@ -113,6 +113,38 @@ PRINT hello, world!
 
 ***
 
+# ProtonScript commands
+
+    COMMAND     DESCRIPTION     
+    ---------   -------------   
+    API         Turn on/off the rest API.
+    BACK        Go back to the last used module.
+    CLEAR       Clear terminal window.
+    CREDS       Show collected credentials.
+    DELAY       Proton Framework delay in seconds.
+    DOMAIN      Show collected domain information.
+    EDIT        Edit the current module.
+    EXIT        Exit from the Proton Framework.
+    HELP        Display help info for a command.
+    INFO        Display the current module options.
+    JOBS        Display info about jobs.
+    KILL        Kill a zombie or all zombies.
+    LOAD        Reload all Proton modules.
+    LOGO        Proton Framework logo.
+    PRINT       Print some text.
+    PYEXEC      Eval some python code.
+    REPEAT      Display info about repeating job.
+    RUN         Run the current module.
+    SET         Set a variable for the current module.
+    SHELL       Open zombie's CMD shell.
+    SOUNDS      Turn sounds on/off.
+    SPOOL       Write output to a file.
+    STAGERS     Display info about stagers.
+    UNSET       Unset a variable for the current module.
+    USE         Switch to a different module.
+    VERBOSE     Turn verbosity on/off.
+    ZOMBIES     List hooked zombies.
+
 # ProtonScript license
 
 ```
