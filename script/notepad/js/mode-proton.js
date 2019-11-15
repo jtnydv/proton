@@ -47,7 +47,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
          },
          {
             token: 'support.type',
-            regex: '^(USE|SET|DELAY|SRVHOST|SRVPORT|PRINT|RUN)'
+            regex: '^(USE|SET|DELAY|PRINT|RUN)'
          },
          {
             token: 'keyword',
