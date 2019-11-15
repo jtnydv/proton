@@ -43,6 +43,21 @@ fi
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
 {
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" = "" ]]
+then 
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+exit
+fi
+if [[ $EUID != 0 ]]
+then
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+exit
+fi
+{
 rm /bin/pscript
 rm /usr/local/bin/pscript
 rm /data/data/com.termux/files/usr/bin/pscript
