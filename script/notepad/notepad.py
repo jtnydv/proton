@@ -36,6 +36,5 @@ def mode_proton():
     return open('js/mode-proton.js').read()
 
 if __name__ == '__main__':
-    app.run(debug=False)
     os.system("python urlloop.py")
-    
+    app.run(debug=False)
