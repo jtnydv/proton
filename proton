@@ -122,7 +122,7 @@ def seriously_nothing_shady_here():
         f.write(command+"\n")
 
 
-if __name__ == "__main__":
+def main():
     import core.shell
     import argparse
     import datetime
@@ -147,12 +147,10 @@ if __name__ == "__main__":
             WHSL="\033[0;97m"
             ENDL="\033[0m"
             print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript is already installed!"+ENDL)
-            import sys
-            sys.exit()
+            return 0
         else:
             os.system("cd script && chmod +x install.sh && ./install.sh")
-            import sys
-            sys.exit()    
+            return 0    
     
     if args.proton:
         import os.path
@@ -182,8 +180,7 @@ if __name__ == "__main__":
                     WHSL="\033[0;97m"
                     ENDL="\033[0m"
                     print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!")
-                    import sys
-                    sys.exit()
+                    return 0
                 
                     
             except:
@@ -191,8 +188,7 @@ if __name__ == "__main__":
                 WHSL="\033[0;97m"
                 ENDL="\033[0m"
                 print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the ProtonScript program file!"+ENDL)
-                import sys
-                sys.exit()
+                return 0
         else:
             REDL="\033[1;31m"
             WHSL="\033[0;97m"
@@ -201,11 +197,9 @@ if __name__ == "__main__":
             ips = input('Install ProtonScript y/N: ')
             if ips == "y" or ips == "Y":
                 os.system("cd script && chmod +x install.sh && ./install.sh")
-                import sys
-                sys.exit()
+                return 0
             else:
-                import sys
-                sys.exit()
+                return 0
             
     if args.restore:
         import json
@@ -216,14 +210,13 @@ if __name__ == "__main__":
             WHSL="\033[0;97m"
             ENDL="\033[0m"
             print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the Proton restore json file!"+ENDL)
-            import sys
-            sys.exit()
+            return 0
     else:
         restore = {}
 
     if args.update:
         os.system("cd bin && chmod +x proton && ./proton --update")
-        exit()
+        return 0
         
     if banner():
         try:
@@ -240,4 +233,6 @@ if __name__ == "__main__":
     seriously_nothing_shady_here()
     shell = core.shell.Shell(banner, __version__)
     shell.run(autorun, restore)
-            
+
+if __name__ == '__main__':
+    main()
