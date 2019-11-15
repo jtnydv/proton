@@ -63,7 +63,7 @@ mkdir .pscript
 cd ~/.pscript
 git clone https://github.com/entynetproject/proton.git
 rm -r ~/proton/script
-cp -r ~/.pscript ~/proton
+cp -r ~/.pscript/proton/script ~/proton
 cp ~/proton/script/pscript /bin
 cp ~/proton/script/pscript /usr/local/bin
 cp ~/proton/script/pscript /data/data/com.termux/files/usr/bin
