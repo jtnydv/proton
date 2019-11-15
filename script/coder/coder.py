@@ -101,7 +101,7 @@ if args.decode:
     print("(3/4) Decoding Program File ..... [ OK ]")
     time.sleep(2)
     decoder(args.decode)
-    print("(4/4) Saving Program File   ..... [ OK ]\n")
+    print("(4/4) Saving Program File   ..... [ OK ]")
     time.sleep(2)
     print("")
     import sys
