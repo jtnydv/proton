@@ -43,8 +43,8 @@ class Shell(object):
         if restore_map:
             self.restore(restore_map)
         if len(autorun) > 0:
-            autorun.insert(0, 'PYEXEC print("+============[ ProtonScript Console ]============+\\n")')
-            autorun.append('PYEXEC print("\\n+============[ Prorogram Completed  ]============+\\n")')
+            autorun.insert(0, 'PYEXEC print("+==========[ "+\033[1;77m+"ProtonScript Console"+\033[0m+" ]==========+\\n")')
+            autorun.append('PYEXEC print("\\n+==========[ "+\033[1;77m+"Prorogram Completed"+\033[0m+"  ]==========+\\n")')
 
         while True:
             try:
