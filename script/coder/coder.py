@@ -43,7 +43,7 @@ if args.encode:
     import os.path
     if (os.path.exists(args.encode)):
         try:
-            if (argrem[-(argrem[::-1].index('.')):]) = 'p':
+            if (argrem[-(argrem[::-1].index('.')):]) == 'p':
                 print("\n(1/4) Loading Program File  ..... [ OK ]")
             
         except:
