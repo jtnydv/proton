@@ -129,7 +129,7 @@ PRINT hello, world!
     INFO        Display the current module options.
     JOBS        Display info about jobs.
     KILL        Kill a zombie or all zombies.
-    LOAD        Reload all Proton modules.
+    LOAD        Reload all Proton Framework modules.
     LOGO        Proton Framework logo.
     PRINT       Print some text.
     PYEXEC      Eval some python code.
