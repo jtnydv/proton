@@ -28,6 +28,10 @@ if args.run:
         try:
             if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
                 print("\n(1/4) Loading Program File  ..... [ OK ]")
+            else:
+                print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+                import sys
+                sys.exit()
         except:
             print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
             import sys
