@@ -67,11 +67,7 @@ optional arguments:
     
 > pscript -n
 
-```ruby
-#include <psio>
-
-PRINT hello, world!
-```
+![psnotepad](https://user-images.githubusercontent.com/54115104/68991469-4da15700-0870-11ea-88ae-6ae5223c7fcb.png)
 
 **2.** Copy this code to a file, name it `program.p`.
 
