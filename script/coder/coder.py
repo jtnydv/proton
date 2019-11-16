@@ -7,6 +7,7 @@ def encoder(pscode):
     out = open(pscode[:pscode.index(".")] + ".bin", "w")
     if text == '':
         out.write('')
+        os.system("rm "+pscode)
         return None
     txt = ""
     for i in text:
@@ -20,6 +21,7 @@ def decoder(pscode):
     out = open(pscode[:pscode.index(".")] + ".p", "w")
     if binary == '':
         out.write('')
+        os.system("rm "+pscode)
         return None
     binary = binary.split(" ")
     text = ""
