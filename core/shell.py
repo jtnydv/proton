@@ -46,7 +46,6 @@ class Shell(object):
         while True:
             try:
                 if len(autorun) > 0:
-                    autorun.append("PRINT ProtonScript Console: ")
                     self.prompt = self.colors.get_prompt(self.state, False)
                     cmd = ''
                     while len(autorun) > 0:
