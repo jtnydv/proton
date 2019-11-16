@@ -43,7 +43,7 @@ class Shell(object):
         if restore_map:
             self.restore(restore_map)
         if len(autorun) > 0:
-            autorun.append('PYEXEC print("------[Program Completed]------")')
+            autorun.append('PYEXEC print("------[Program Completed]------\n")')
 
         while True:
             try:
