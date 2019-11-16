@@ -32,7 +32,7 @@ if args.run:
             import sys
             sys.exit()
             
-        if (argrem[-(argrem[::-1].index('.')):]) == 'p':
+        if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
             print("\n(1/4) Loading Program File  ..... [ OK ]")
             
         else:
