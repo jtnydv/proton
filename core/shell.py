@@ -46,12 +46,14 @@ class Shell(object):
         while True:
             try:
                 if len(autorun) > 0:
+                    print("ProtonScript Console:")
                     self.prompt = self.colors.get_prompt(self.state, False)
                     cmd = ''
                     while len(autorun) > 0:
                         cmd = autorun.pop(0).split("#")[0].strip()
                         if len(cmd) > 0:
                             break
+                            
                 else:
                     self.prompt = self.colors.get_prompt(self.state, True)
                     self.clean_prompt = self.colors.get_prompt(self.state, False)
