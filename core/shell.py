@@ -42,6 +42,9 @@ class Shell(object):
 
         if restore_map:
             self.restore(restore_map)
+        if len(autorun) > 0:
+            autorun.append('PYEXEC print("ProtonScript Console")')
+            autorun.append('PYEXEC print("--------------------")')
 
         while True:
             try:
