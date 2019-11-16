@@ -150,6 +150,14 @@ fi
 if [[ $1 = "--no-output" ]]
 then
 
+if [[ $2 = "" ]]
+then
+echo -e "usage: pscript [-h] [-v] [-n] [-u] [--no-output OPTION]"
+echo -e "                                   [-e FILE] [-d FILE]"
+echo -e "pscript: error: argument --no-output: expected one argument"
+exit
+fi
+
 if [[ "$2" = "-u" || "$2" = "--update" ]]
 then
 {
@@ -230,6 +238,16 @@ then
 cd ~/proton/script/notepad
 python notepad.py
 } &> /dev/null
+exit
+fi
+
+if [[ $2 = "-h" || $2 = "--help" ]]
+then
+exit
+fi
+
+if [[ $2 = "-v" || $2 = "--version" ]]
+then
 exit
 fi
 
