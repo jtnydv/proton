@@ -21,6 +21,7 @@ def decoder(pscode):
     if binary == '':
         out.write('')
         return None
+    binary = binary.split(" ")
     text = ""
     for i in binary:
         text += chr(int(i, base=2))
