@@ -67,7 +67,7 @@ optional arguments:
     
 > pscript -n
 
-![psnotepad](https://user-images.githubusercontent.com/54115104/68991469-4da15700-0870-11ea-88ae-6ae5223c7fcb.png)
+![psnotepad](https://user-images.githubusercontent.com/54115104/68991507-a375ff00-0870-11ea-9077-23ef1d19bdde.png)
 
 **2.** Copy this code to a file, name it `program.p`.
 
