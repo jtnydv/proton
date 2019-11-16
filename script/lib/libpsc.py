@@ -6,8 +6,6 @@ def decoder(pscode):
     binary = open(pscode).read().split(" ")
     out = open(pscode[:pscode.index(".")] + ".p", "w")
     if binary == '':
-        time.sleep(1)
-        print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
         out.write('')
         return None
     text = ""
