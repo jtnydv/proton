@@ -26,7 +26,7 @@ if args.run:
     import os.path
     if (os.path.exists(args.decode)):
         try:
-            if (argrem[-(argrem[::-1].index('.')):]) = 'bin':
+            if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
                 print("\n(1/4) Loading Program File  ..... [ OK ]")
         except:
             print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
