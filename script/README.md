@@ -7,7 +7,7 @@
                                                                          |_|  
 ***
 
-![pscript](https://user-images.githubusercontent.com/54115104/68992168-f489f100-0878-11ea-8d5a-8302ed951436.png)
+![pscript](https://user-images.githubusercontent.com/54115104/68992194-66fad100-0879-11ea-8036-9204c1d54cd9.png)
 
 # About ProtonScript
 
