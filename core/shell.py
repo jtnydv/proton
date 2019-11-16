@@ -43,8 +43,8 @@ class Shell(object):
         if restore_map:
             self.restore(restore_map)
         if len(autorun) > 0:
-            autorun.insert(0, 'PYEXEC print("------[ProtonScript Console]------\n")')
-            autorun.append('PYEXEC print("\n------[Program Completed]------\n")')
+            autorun.insert(0, 'PYEXEC print("------[ProtonScript Console]------" + \n)')
+            autorun.append('PYEXEC print(\n + "------[Program Completed]------" + \n)')
 
         while True:
             try:
