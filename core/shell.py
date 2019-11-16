@@ -43,10 +43,8 @@ class Shell(object):
         if restore_map:
             self.restore(restore_map)
         if len(autorun) > 0:
-            SAS="\033[1;77m"
-            ENDL="\033[0m"
-            autorun.insert(0, 'PYEXEC print("+==========[ "+SAS+"ProtonScript Console"+ENDL+" ]==========+\\n")')
-            autorun.append('PYEXEC print("\\n+==========[   "+SAS+"Program Completed"+ENDL+"  ]==========+\\n")')
+            autorun.insert(0, 'PYEXEC SAS="\033[1;77m";ENDL="\033[0m";print("+==========[ "+SAS+"ProtonScript Console"+ENDL+" ]==========+\\n")')
+            autorun.append('PYEXEC SAS="\033[1;77m";ENDL="\033[0m";print("\\n+==========[   "+SAS+"Program Completed"+ENDL+"  ]==========+\\n")')
 
         while True:
             try:
