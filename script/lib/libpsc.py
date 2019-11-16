@@ -24,7 +24,14 @@ if args.run:
     time.sleep(1)
     import os
     import os.path
-    if (os.path.exists(args.decode)):
+    if (os.path.exists(args.run)):
+        if '.' in args.run:
+            time.sleep(0)
+        else:
+            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            import sys
+            sys.exit()
+            
         if (argrem[-(argrem[::-1].index('.')):]) == 'p':
             print("\n(1/4) Loading Program File  ..... [ OK ]")
             
