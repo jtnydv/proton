@@ -49,11 +49,12 @@ optional arguments:
   -n, --notepad         Open the ProtonScript notepad.
   -u, --update          Update the ProtonScript.
   --no--output OPTION   
-                        Disable ProtonScript output.
+                        Disable output for an option.
   -e FILE, --encode FILE
                         Encode a ProtonScript program.
   -d FILE, --decode FILE 
                         Decode a ProtonScript program."""
+			exit
                         
 fi
 
@@ -148,6 +149,90 @@ fi
 
 if [[ $1 = "--no-output" ]]
 then
+
+if [[ "$2" = "-u" || "$2" = "--update" ]]
+then
+{
+if [[ -d /data/data/com.termux ]]
+then
+if [[ -f /data/data/com.termux/files/usr/bin/pscript ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+else
+if [[ -f /usr/local/bin/pscript ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+fi
+{
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" = "" ]]
+then 
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+exit
+fi
+if [[ $EUID -ne 0 ]]
+then
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+exit
+fi
+{
+rm /bin/pscript
+rm /usr/local/bin/pscript
+rm /data/data/com.termux/files/usr/bin/pscript
+} &> /dev/null
+if [[ -f ~/proton/script/pscript ]]
+then
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ OK ]"
+else
+sleep 1
+echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+exit
+fi
+sleep 5
+{
+cd ~
+mkdir .pscript
+cd ~/.pscript
+git clone https://github.com/entynetproject/proton.git
+rm -r ~/proton/script
+cp -r ~/.pscript/proton/script ~/proton
+if [[ "$UPD" != "true" ]]
+then
+sleep 0
+else
+cp ~/proton/script/pscript /bin
+cp ~/proton/script/pscript /usr/local/bin
+cp ~/proton/script/pscript /data/data/com.termux/files/usr/bin
+chmod +x /bin/pscript
+chmod +x /usr/local/bin/pscript
+chmod +x /data/data/com.termux/files/usr/bin/pscript
+fi
+rm -r ~/.pscript
+} &> /dev/null
+echo -e ""
+exit
+} &> /dev/null
+fi
+
+if [[ $2 = "-n" || $2 = "--notepad" ]] 
+then
+{
+cd ~/proton/script/notepad
+python notepad.py
+} &> /dev/null
+exit
+fi
+
 if [[ $2 = "-e" || $1 = "--encode" ]]
 then
 if [[ $3 = "" ]]
@@ -229,4 +314,5 @@ optional arguments:
                         Encode a ProtonScript program.
   -d FILE, --decode FILE 
                         Decode a ProtonScript program."""
+			exit
 fi
