@@ -164,7 +164,7 @@ if __name__ == "__main__":
         if (os.path.exists(pspath)):
             if True:
                 import sys
-                if (os.path.exists(args.proton)):
+                if (os.path.exists(args.run)):
                     time.sleep(0)
                 else:
                     REDL="\033[1;31m"
@@ -174,8 +174,8 @@ if __name__ == "__main__":
                     import sys
                     sys.exit()
                 
-                autorun = open(args.proton).read().split("\n") if args.proton else []
-                argrem = args.proton
+                autorun = open(args.run).read().split("\n") if args.run else []
+                argrem = args.run
                 if '.' in argrem:
                     time.sleep(0)
                 else:
@@ -226,7 +226,7 @@ if __name__ == "__main__":
     if args.json:
         import json
         try:
-            restore = json.loads(open(args.restore).read())
+            restore = json.loads(open(args.json).read())
         except:
             REDL="\033[1;31m"
             WHSL="\033[0;97m"
