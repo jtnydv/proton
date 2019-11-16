@@ -42,11 +42,12 @@ if args.encode:
     import os
     import os.path
     if (os.path.exists(args.encode)):
-        try:
-            if (argrem[-(argrem[::-1].index('.')):]) == 'p':
-                print("\n(1/4) Loading Program File  ..... [ OK ]")
+       # try:
+        if (argrem[-(argrem[::-1].index('.')):]) == 'p':
+            print("\n(1/4) Loading Program File  ..... [ OK ]")
             
-        except:
+        else:
+        #except:
             print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
             import sys
             sys.exit()
