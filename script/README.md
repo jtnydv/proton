@@ -7,6 +7,8 @@
                                                                          |_|  
 ***
 
+![pscript](https://user-images.githubusercontent.com/54115104/68992168-f489f100-0878-11ea-8d5a-8302ed951436.png)
+
 # About ProtonScript
 
     INFO: ProtonScript is a Proton Framework programming language
