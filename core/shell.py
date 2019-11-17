@@ -44,7 +44,7 @@ class Shell(object):
             self.restore(restore_map)
         if len(autorun) > 0:
             if autorun[-1][:3] == "INT":
-                STAT = ""
+                STAT = "DELAY 0"
             else:
                 STAT = "EXIT -f"
                 
