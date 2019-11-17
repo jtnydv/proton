@@ -35,7 +35,7 @@ CE="\033[0m"
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "\n(1/2) Installing ProtonScript ..... [ FAIL ]\n"
+   echo -e "\n(1/1) Installing ProtonScript ..... [ FAIL ]\n"
    exit
 fi
 
@@ -53,7 +53,7 @@ else
 fi
 
 sleep 1
-echo -e "\n(1/2) Installing ProtonScript ..... [ OK ]"
+echo -e "\n(1/1) Installing ProtonScript ..... [ OK ]"
 
 {
 cd ~/proton/script
