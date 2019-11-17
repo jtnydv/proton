@@ -62,6 +62,7 @@ class Shell(object):
             try:
                 if len(autorun) > 0:
                     self.prompt = self.colors.get_prompt(self.state, False)
+                    self.clean_prompt = self.colors.get_prompt(self.state, False)
                     cmd = ''
                     while len(autorun) > 0:
                         cmd = autorun.pop(0).split("#")[0].strip()
