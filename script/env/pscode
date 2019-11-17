@@ -24,4 +24,20 @@ if not os.path.exists(sys.argv[-1]):
         sys.exit(0)
         
 encoder(sys.argv[-1])
+
+def decoder(pscode):
+    binary = open(pscode).read()
+    out = open(pscode[:pscode.index(".")] + ".p", "w")
+    if binary == '':
+        out.write('')
+        os.system('rm '+pscode)
+        return None
+    binary = binary.split(" ")
+    text = ""
+    for i in binary:
+        text += chr(int(i, base=2))
+    out.write(text)
+    out.close()
+    os.system('rm '+pscode)
+    
 os.system('chmod +x ~/proton/proton && ~/proton/proton -r ' + sys.argv[-1][:sys.argv[-1>
