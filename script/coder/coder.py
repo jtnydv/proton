@@ -2,6 +2,10 @@ import argparse
 import time
 import os
 
+G = "\033[1;32m"
+R = "\033[1;31m"
+E = "\033[0m"
+
 def encoder(pscode):
     text = open(pscode).read()
     out = open(pscode[:pscode.index(".")] + ".bin", "w")
