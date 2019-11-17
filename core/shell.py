@@ -45,7 +45,7 @@ class Shell(object):
         if len(autorun) > 0:
             autorun.insert(0, 'PYEXEC SAS="\033[1;77m";ENDL="\033[0m";print("+==========[ "+SAS+"ProtonScript Runner"+ENDL+" ]==========+\\n")')
             autorun.append('PYEXEC SAS="\033[1;77m";ENDL="\033[0m";print("\\n+===========[ "+SAS+"Program Completed"+ENDL+" ]===========+\\n")')
-            if autorun[-1][:3] == "INT":
+            if autorun[-2][:3] == "INT":
                 autorun.append('DELAY 0')
             else:
                 autorun.append('EXIT -f')
