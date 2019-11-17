@@ -24,7 +24,6 @@ parser.add_argument("-r","--run", metavar='FILE', help="Run a ProtonScript progr
 args = parser.parse_args()
 
 if args.run:
-    os.system("printf '\033]2;ProtonScript Runner\a'")
     argrem = args.run
     time.sleep(1)
     import os
