@@ -44,12 +44,14 @@ class Shell(object):
             self.restore(restore_map)
         if len(autorun) > 0:
             if autorun[-1][:3] == "INT":
-                DEF = "DELAY 0"
+                DEF = "INT"
             else:
-                DEF = "EXIT -f"
+                DEF = "DELAY 0"
+                
             autorun.insert(0, 'PYEXEC SAS="\033[1;77m";ENDL="\033[0m";print("+==========[ "+SAS+"ProtonScript Runner"+ENDL+" ]==========+\\n")')
+            autorun.appedn(DEF)
             autorun.append('PYEXEC SAS="\033[1;77m";ENDL="\033[0m";print("\\n+===========[ "+SAS+"Program Completed"+ENDL+" ]===========+\\n")')
-            autorun.append(DEF)
+            autorun.append('EXIT -f')
             
         while True:
             try:
