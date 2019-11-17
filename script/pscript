@@ -97,13 +97,13 @@ ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's
 if [[ "$ASESR" = "" ]]
 then 
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$R"FAIL"$E" ]\n"
 exit
 fi
 if [[ $EUID -ne 0 ]]
 then
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$R"FAIL"$E" ]\n"
 exit
 fi
 {
@@ -114,10 +114,10 @@ rm /data/data/com.termux/files/usr/bin/pscript
 if [[ -f ~/proton/script/pscript ]]
 then
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ OK ]"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$G"OK"$E" ]"
 else
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$R"FAIL"$E" ]\n"
 exit
 fi
 sleep 5
@@ -187,13 +187,13 @@ ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's
 if [[ "$ASESR" = "" ]]
 then 
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$R"FAIL"$E" ]\n"
 exit
 fi
 if [[ $EUID -ne 0 ]]
 then
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$R"FAIL"$E" ]\n"
 exit
 fi
 {
@@ -204,10 +204,10 @@ rm /data/data/com.termux/files/usr/bin/pscript
 if [[ -f ~/proton/script/pscript ]]
 then
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ OK ]"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$G"OK"$E" ]"
 else
 sleep 1
-echo -e "\n(1/1) Updating ProtonScript ..... [ FAIL ]\n"
+echo -e "\n(1/1) Updating ProtonScript ..... [ "$R"FAIL"$E" ]\n"
 exit
 fi
 sleep 5
