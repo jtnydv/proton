@@ -38,7 +38,7 @@ E = "\033[0m"
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "\n(1/1) Installing ProtonScript ..... [ FAIL ]\n"
+   echo -e "\n(1/1) Installing ProtonScript ..... [ "$R"FAIL"$E" ]\n"
    exit
 fi
 
