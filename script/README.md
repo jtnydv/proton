@@ -118,7 +118,7 @@ optional arguments:
     INFO: PSCode environment is a feature that allows you to 
     run ProtonScript program without using a proton command.
     
-**1.** Add a `#!/usr/bin/env pscode` hasbang to your ProtonScript program file and execute it using just `./`.
+**1.** Add a `#!/usr/bin/env pscode` hasbang to your ProtonScript program file and execute it just using `./`.
 
 > chmod +x program.p
 
