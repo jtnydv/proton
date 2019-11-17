@@ -1,4 +1,4 @@
-DESCRIPTION = "Ignore ProtonScript program exit."
+DESCRIPTION = "Ignore ProtonScript runner exit."
 
 def autocomplete(shell, line, text, state):
     return None
