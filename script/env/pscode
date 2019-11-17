@@ -24,5 +24,6 @@ if not os.path.exists(sys.argv[-1]):
         sys.exit(0)
         
 encoder(sys.argv[-1])
-os.system('cd ~/proton && chmod +x proton && ./proton -r ' + sys.argv[-1][:sys.argv[-1].index('.')]+'.bin')
+pwd = os.getcwd()
+os.system('cd ~/proton && chmod +x proton && ./proton -r ' + pwd + '/' + sys.argv[-1][:sys.argv[-1].index('.')]+'.bin')
 os.system('rm ' + sys.argv[-1][:sys.argv[-1].index('.')]+'.bin')
