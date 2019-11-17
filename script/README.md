@@ -7,7 +7,7 @@
                                                                          |_|  
 ***
 
-![pscode](https://user-images.githubusercontent.com/54115104/68995309-36c52980-089d-11ea-8852-f89ff5b07a17.png)
+![ps](https://user-images.githubusercontent.com/54115104/68995309-36c52980-089d-11ea-8852-f89ff5b07a17.png)
 
 # About ProtonScript
 
@@ -113,19 +113,27 @@ optional arguments:
 
 ***
 
-# PSCode environment
+# ProtonScript environment
 
-    INFO: PSCode environment is a feature that 
+    INFO: ProtonScript environment is a feature that 
     allows you to run ProtonScript program without 
     encoding and without using a proton command.
     
-**1.** Add a `#!/usr/bin/env pscode` hasbang to your ProtonScript program file.
+**1.** Add a `#!/usr/bin/env psenv` hasbang to your ProtonScript program file.
 
 **2.** Run `program.p` using this following commands.
 
 > chmod +x program.p
 
 > ./program.p
+
+***
+
+# ProtonScript code
+
+    INFO: ProtonScript code is a binary 
+    encoded ProtonScript program executable 
+    only in the Proton Framework.
 
 ***
 
