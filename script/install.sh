@@ -66,7 +66,7 @@ cp pscript /bin
 chmod +x /bin/pscript
 cp pscript /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/pscript
-cd ~/proton/script/env
+cd ~/proton/script/pscode
 cp pscode /usr/local/bin
 chmod +x /usr/local/bin/pscode
 cp pscode /bin
