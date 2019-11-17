@@ -96,7 +96,7 @@ optional arguments:
 (3/3) Running Program File  ..... [ OK ]
 ```
 
-![runner](https://user-images.githubusercontent.com/54115104/68998628-06de4c00-08c6-11ea-9ae8-ea3aae66b586.png)
+![runner](https://user-images.githubusercontent.com/54115104/69006396-c6bbaf80-093f-11ea-812d-308f5eecb4dd.png)
 
 ***
 
