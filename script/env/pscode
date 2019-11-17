@@ -40,4 +40,47 @@ def decoder(pscode):
     out.close()
     os.system('rm '+pscode)
     
-os.system('chmod +x ~/proton/proton && ~/proton/proton -r ' + sys.argv[-1][:sys.argv[-1>
+def code(filename):
+    argrem = filename
+    time.sleep(1)
+    import os
+    import os.path
+    if (os.path.exists(filename)):
+        if '.' in filename:
+            time.sleep(0)
+        else:
+            print("\n(1/3) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
+            import sys
+            sys.exit()
+            
+        if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
+            print("\n(1/3) Loading Program File  ..... [ "+G+"OK"+E+" ]")
+            
+        else:
+            print("\n(1/3) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
+            import sys
+            sys.exit()
+    else:
+        print("\n(1/3) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
+        import sys
+        sys.exit()
+        
+    if (os.path.exists("/data/data/com.termux")):
+        pspath = "/data/data/com.termux/files/usr/bin/pscript"
+    else:
+        pspath = "/usr/local/bin/pscript"
+        
+    time.sleep(1)
+            
+    if (os.path.exists(pspath)):
+        print("(2/3) Loading ProtonScript  ..... [ "+G+"OK"+E+" ]")
+    else:
+        print("(2/3) Loading ProtonScript ..... [ "+R+"FAIL"+E+" ]\n")
+        import sys
+        sys.exit()
+    
+    print("(3/3) Running Program File  ..... [ "+G+"OK"+E+" ]")
+    time.sleep(2)
+    decoder(filename)
+    
+code(sys.argv[-1])
