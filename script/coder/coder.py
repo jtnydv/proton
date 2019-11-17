@@ -49,19 +49,19 @@ if args.encode:
         if '.' in args.encode:
             time.sleep(0)
         else:
-            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            print("\n(1/4) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
             import sys
             sys.exit()
             
         if (argrem[-(argrem[::-1].index('.')):]) == 'p':
-            print("\n(1/4) Loading Program File  ..... [ OK ]")
+            print("\n(1/4) Loading Program File  ..... [ "+G+"OK"+E+" ]")
             
         else:
-            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            print("\n(1/4) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
             import sys
             sys.exit()
     else:
-        print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+        print("\n(1/4) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
         import sys
         sys.exit()
         
@@ -73,16 +73,16 @@ if args.encode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/4) Loading ProtonScript  ..... [ OK ]")
+        print("(2/4) Loading ProtonScript  ..... [ "+G+"OK"+E+" ]")
     else:
-        print("(2/4) Loading ProtonScript ..... [ FAIL ]\n")
+        print("(2/4) Loading ProtonScript ..... [ "+R+"FAIL"+E+" ]\n")
         import sys
         sys.exit()
     
-    print("(3/4) Encoding Program File ..... [ OK ]")
+    print("(3/4) Encoding Program File ..... [ "+G+"OK"+E+" ]")
     time.sleep(2)
     encoder(args.encode)
-    print("(4/4) Saving Program File   ..... [ OK ]")
+    print("(4/4) Saving Program File   ..... [ "+G+"OK"+E+" ]")
     time.sleep(2)
     print("")
     import sys
@@ -97,19 +97,19 @@ if args.decode:
         if '.' in args.decode:
             time.sleep(0)
         else:
-            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            print("\n(1/4) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
             import sys
             sys.exit()
             
         if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
-            print("\n(1/4) Loading Program File  ..... [ OK ]")
+            print("\n(1/4) Loading Program File  ..... [ "+G+"OK"+E+" ]")
             
         else:
-            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            print("\n(1/4) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
             import sys
             sys.exit()
     else:
-        print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+        print("\n(1/4) Loading Program File ..... [ "+R+"FAIL"+E+" ]\n")
         import sys
         sys.exit()
         
@@ -121,16 +121,16 @@ if args.decode:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/4) Loading ProtonScript  ..... [ OK ]")
+        print("(2/4) Loading ProtonScript  ..... [ "+G+"OK"+E+" ]")
     else:
-        print("(2/4) Loading ProtonScript ..... [ FAIL ]\n")
+        print("(2/4) Loading ProtonScript ..... [ "+R+"FAIL"+E+" ]\n")
         import sys
         sys.exit()
     
-    print("(3/4) Decoding Program File ..... [ OK ]")
+    print("(3/4) Decoding Program File ..... [ "+G+"OK"+E+" ]")
     time.sleep(2)
     decoder(args.decode)
-    print("(4/4) Saving Program File   ..... [ OK ]")
+    print("(4/4) Saving Program File   ..... [ "+G+"OK"+E+" ]")
     time.sleep(2)
     print("")
     import sys
