@@ -35,13 +35,13 @@ CE="\033[0m"
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "\n(1/2) Uninstalling ProtonScript ..... [ FAIL ]\n"
+   echo -e "\n(1/1) Uninstalling ProtonScript ..... [ FAIL ]\n"
    exit
 fi
 
 
    sleep 1
-   echo -e "\n(1/2) Uninstalling ProtonScript ..... [ OK ]"
+   echo -e "\n(1/1) Uninstalling ProtonScript ..... [ OK ]"
 
 {
 rm /bin/pscript
