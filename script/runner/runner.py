@@ -28,19 +28,19 @@ if args.run:
         if '.' in args.run:
             time.sleep(0)
         else:
-            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            print("\n(1/3) Loading Program File ..... [ FAIL ]\n")
             import sys
             sys.exit()
             
         if (argrem[-(argrem[::-1].index('.')):]) == 'bin':
-            print("\n(1/4) Loading Program File  ..... [ OK ]")
+            print("\n(1/3) Loading Program File  ..... [ OK ]")
             
         else:
-            print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+            print("\n(1/3) Loading Program File ..... [ FAIL ]\n")
             import sys
             sys.exit()
     else:
-        print("\n(1/4) Loading Program File ..... [ FAIL ]\n")
+        print("\n(1/3) Loading Program File ..... [ FAIL ]\n")
         import sys
         sys.exit()
         
@@ -52,12 +52,12 @@ if args.run:
     time.sleep(1)
             
     if (os.path.exists(pspath)):
-        print("(2/4) Loading ProtonScript  ..... [ OK ]")
+        print("(2/3) Loading ProtonScript  ..... [ OK ]")
     else:
-        print("(2/4) Loading ProtonScript ..... [ FAIL ]\n")
+        print("(2/3) Loading ProtonScript ..... [ FAIL ]\n")
         import sys
         sys.exit()
     
-    print("(3/4) Running Program File  ..... [ OK ]")
+    print("(3/3) Running Program File  ..... [ OK ]")
     time.sleep(2)
     decoder(args.run)
