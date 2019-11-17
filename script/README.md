@@ -145,6 +145,8 @@ optional arguments:
     USE         Switch to a different module.
     VERBOSE     Turn verbosity on/off.
     ZOMBIES     List hooked zombies.
+    
+**NOTE:** Use `HELP COMMAND` to find more info about a command.
 
 # ProtonScript license
 
