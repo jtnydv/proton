@@ -88,7 +88,7 @@ optional arguments:
 
 # Running ProtonScript program
 
-> proton -r program.bin
+> proton -r program.psc
 
 ```
 (1/3) Loading Program File  ..... [ OK ]
@@ -102,7 +102,7 @@ optional arguments:
 
 # Decoding ProtonScript program
 
-> pscript -d program.bin
+> pscript -d program.psc
 
 ```
 (1/4) Loading Program File  ..... [ OK ]

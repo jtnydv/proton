@@ -191,8 +191,8 @@ if __name__ == "__main__":
                         name = argrem[:argrem.index('.')]
                         os.system("python3 script/runner/runner.py -r "+argrem)
                         if (os.path.exists("/tmp/pscaches")):
-                            if (os.path.exists("/tmp/pscaches/pscript.psc")):
-                                os.system("rm /tmp/pscaches/pscript.psc")
+                            if (os.path.exists("/tmp/pscaches/pscript.p")):
+                                os.system("rm /tmp/pscaches/pscript.p")
                         else:
                             os.system("mkdir /tmp/pscaches")
                     else:
@@ -203,8 +203,8 @@ if __name__ == "__main__":
                         import sys
                         sys.exit()  
                     
-                    os.system("mv "+name+".p /tmp/pscaches/pscript.psc")
-                    autorun = open('/tmp/pscaches/pscript.psc').read().split("\n") if '/tmp/pscaches/pscript.psc' else []
+                    os.system("mv "+name+".p /tmp/pscaches/pscript.p")
+                    autorun = open('/tmp/pscaches/pscript.p').read().split("\n") if '/tmp/pscaches/pscript.p' else []
                 except:
                     import sys
                     sys.exit()  

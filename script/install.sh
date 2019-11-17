@@ -66,13 +66,13 @@ cp pscript /bin
 chmod +x /bin/pscript
 cp pscript /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/pscript
-cd ~/proton/script/pscode
-cp pscode /usr/local/bin
-chmod +x /usr/local/bin/pscode
-cp pscode /bin
-chmod +x /bin/pscode
-cp pscode /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/pscode
+cd ~/proton/script/psenv
+cp psenv /usr/local/bin
+chmod +x /usr/local/bin/psenv
+cp psenv /bin
+chmod +x /bin/psenv
+cp psenv /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/psenv
 } &> /dev/null
 sleep 5
 echo -e ""

@@ -8,7 +8,7 @@ E = "\033[0m"
 
 def encoder(pscode):
     text = open(pscode).read()
-    out = open(pscode[:pscode.index(".")] + ".bin", "w")
+    out = open(pscode[:pscode.index(".")] + ".psc", "w")
     if text == '':
         out.write('')
         os.system("rm "+pscode)

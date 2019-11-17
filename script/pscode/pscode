@@ -3,7 +3,7 @@ import sys, os, os.path
 
 def encoder(pscode):
     text = open(pscode).read()
-    out = open(pscode[:pscode.index(".")] + ".bin", "w")
+    out = open(pscode[:pscode.index(".")] + ".psc", "w")
     if text == '':
         out.write('')
         return None
@@ -25,5 +25,5 @@ if not os.path.exists(sys.argv[-1]):
         
 encoder(sys.argv[-1])
 pwd = os.getcwd()
-os.system('cd ~/proton && chmod +x proton && ./proton -r ' + pwd + '/' + sys.argv[-1][:sys.argv[-1].index('.')]+'.bin')
-os.system('rm ' + sys.argv[-1][:sys.argv[-1].index('.')]+'.bin')
+os.system('cd ~/proton && chmod +x proton && ./proton -r ' + pwd + '/' + sys.argv[-1][:sys.argv[-1].index('.')]+'.psc')
+os.system('rm ' + sys.argv[-1][:sys.argv[-1].index('.')]+'.psc')
