@@ -14,13 +14,13 @@ def encoder(pscode):
     out.close()
 
 if not len(sys.argv) == 2:
-        print('usage: pscode FILE')
+        print('usage: psenv FILE')
         sys.exit(0)
 if not '.p' == sys.argv[-1][-2:]:
         print('Killed: 9')
         sys.exit(0)
 if not os.path.exists(sys.argv[-1]):
-        print('No such file or directory')
+        print('No such ProtonScript program file!')
         sys.exit(0)
         
 encoder(sys.argv[-1])
