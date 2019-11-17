@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import sys, os, os.path
+if not len(sys.argv) == 2:
+        print('usage: pscode FILE')
+        sys.exit(0)
+if not '.p' == sys.argv[-1][-2:]:
+        print('Killed: 9')
+        sys.exit(0)
+if not os.path.exists(sys.argv[-1]):
+        print('No such file or directory')
+        sys.exit(0)
+os.system('pscript -e ' + sys.argv[-1])
+os.system('chmod +x ~/proton/proton && ~/proton/proton -r ' + sys.argv[-1][:sys.argv[-1>
