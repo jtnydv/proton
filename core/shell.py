@@ -43,7 +43,7 @@ class Shell(object):
         if restore_map:
             self.restore(restore_map)
         if len(autorun) > 0:
-            if autorun[-2][:3] == "NOPSE":
+            if autorun[-2][:5] == "NOPSE":
                 DEF = "DELAY 0"
             else:
                 DEF = "EXIT -f"
