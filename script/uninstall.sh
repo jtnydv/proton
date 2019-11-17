@@ -50,6 +50,9 @@ fi
 rm /bin/pscript
 rm /usr/local/bin/pscript
 rm /data/data/com.termux/files/usr/bin/pscript
+rm /bin/pscode
+rm /usr/local/bin/pscode
+rm /data/data/com.termux/files/usr/bin/pscode
 } &> /dev/null
 sleep 5
 echo -e ""
