@@ -131,7 +131,7 @@ optional arguments:
     KILL        Kill a zombie or all zombies.
     LOAD        Reload all Proton Framework modules.
     LOGO        Proton Framework logo.
-    NOPSE       Ignore ProtonScript program exit.
+    NOPSE       Ignore ProtonScript runner exit.
     PRINT       Print some text.
     PYEXEC      Eval some python code.
     REPEAT      Display info about repeating job.
