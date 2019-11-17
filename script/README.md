@@ -86,9 +86,9 @@ optional arguments:
 
 ***
 
-# Executing ProtonScript program
+# Running ProtonScript program
 
-> proton -p program.bin
+> proton -r program.bin
 
 ```
 (1/3) Loading Program File  ..... [ OK ]
