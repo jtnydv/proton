@@ -49,7 +49,7 @@ class Shell(object):
                 if not i == '':
                     autorun.append(i)
               
-            if autorun[-2][:5] == "NOPSE":
+            if autorun[-1][:5] == "NOPSE":
                 DEF = "DELAY 0"
             else:
                 DEF = "EXIT -f"
