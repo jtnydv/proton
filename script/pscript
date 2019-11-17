@@ -28,6 +28,10 @@
 #    Email     : entynetproject@gmail.com
 #
 
+G="\033[1;32m"
+R="\033[1;31m"
+E="\033[0m"
+
 if [[ -d ~/proton ]]
 then
 sleep 0
