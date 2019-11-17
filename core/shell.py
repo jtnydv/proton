@@ -43,6 +43,12 @@ class Shell(object):
         if restore_map:
             self.restore(restore_map)
         if len(autorun) > 0:
+            auto = autorun
+            autorun = []
+            for i in auto:
+                if not i == '':
+                    autorun.append(i)
+              
             if autorun[-2][:5] == "NOPSE":
                 DEF = "DELAY 0"
             else:
