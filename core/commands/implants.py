@@ -1,3 +1,14 @@
+DESCRIPTION = "Display info about implants."
+
+def autocomplete(shell, line, text, state):
+    return None
+
+def help(shell):
+    shell.print_plain("")
+    shell.print_plain('Use "implants -l" to print all available implants.')
+    shell.print_plain("")
+
+def execute(shell, cmd):
 bypassuac_compdefaults	Bypass UAC via registry hijack for ComputerDefaults.exe.
 bypassuac_compmgmtlauncher	Bypass UAC via registry hijack for CompMgmtLauncher.exe.
 bypassuac_eventvwr	Uses enigma0x3's eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.
