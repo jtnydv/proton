@@ -18,7 +18,7 @@ def execute(shell, cmd):
         if flag == "-s":
             print("")
             print("        NAME         DESCRIPTION")                
-            print("        -----        -------------")                
+            print("        ----         -----------")                
             print("        mshta        Serves payloads using MSHTA.exe HTML Applications (default).")
             print("        regsvr       Serves payloads using regsvr32.exe COM+ scriptlets.")
             print("        wmic         Serves payloads using WMIC XSL.")
@@ -30,7 +30,7 @@ def execute(shell, cmd):
         elif flag == "-i":
             print("")
             print("        NAME                        DESCRIPTION")                
-            print("        -----                       -------------")
+            print("        ----                        -----------")
             print("        bypassuac_compdefaults      Bypass UAC via registry hijack for ComputerDefaults.exe.")
             print("        bypassuac_compmgmtlauncher  Bypass UAC via registry hijack for CompMgmtLauncher.exe.")
             print("        bypassuac_eventvwr          Uses eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.")
