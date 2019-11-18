@@ -95,7 +95,7 @@ optional arguments:
     INFO: Proton stagers hook target 
     zombie and allow you to use implants.
 
-Module | Description
+Name | Description
 --------|------------
 mshta | Serves payloads using MSHTA.exe HTML Applications (default).
 regsvr | Serves payloads using regsvr32.exe COM+ scriptlets.
@@ -109,7 +109,7 @@ bitsadmin | Transfers a .wsf payload containing JScript over a Bitsadmin job and
     INFO: Proton implants starts 
     jobs on a remote zombie target.
 
-Module | Description
+Name | Description
 --------|------------
 bypassuac_compdefaults | Bypass UAC via registry hijack for ComputerDefaults.exe.
 bypassuac_compmgmtlauncher | Bypass UAC via registry hijack for CompMgmtLauncher.exe.
