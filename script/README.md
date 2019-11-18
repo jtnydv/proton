@@ -129,27 +129,6 @@ optional arguments:
 
 ***
 
-# ProtonScript code
-
-    INFO: ProtonScript code is a binary 
-    encoded ProtonScript program executable 
-    only in the Proton Framework.
-    
-## Encoded program
-
-```
-1010000 1010010 1001001 1001110 1010100 100000 1001000 1100101 1101100 1101100 
-1101111 101100 100000 1010111 1101111 1110010 1101100 1100100 100001 1010
-```
-
-## Decoded program
-
-```
-PRINT Hello, World!
-```
-
-***
-
 # ProtonScript commands
 
     COMMAND     DESCRIPTION     
