@@ -26,8 +26,6 @@ def execute(shell, cmd):
             print("         disk         Serves payloads using files on disk.")
             print("         bitsadmin    Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.")
             print("")
-            import sys
-            sys.exit(0)
                 
         elif flag == "-i":
             print("")
