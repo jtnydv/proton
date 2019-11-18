@@ -6,7 +6,6 @@ def autocomplete(shell, line, text, state):
 def help(shell):
     shell.print_plain("")
     shell.print_plain('Use "stagers %s" to print a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
-    shell.print_plain('Use "stagers -l" to print all stagers.')
     shell.print_plain('Use "stagers -o %s" to print a stager\'s options.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
     shell.print_plain('Use "stagers -k %s" to kill a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
     shell.print_plain("")
@@ -154,19 +153,7 @@ def execute(shell, cmd):
         id = splitted[-1]
         if len(splitted) > 2:
             flag = splitted[1]
-            if flag == "-l":
-                print("         NAME         DESCRIPTION")                
-                print("         -----        -------------")                
-                print("         mshta	     Serves payloads using MSHTA.exe HTML Applications (default).")
-                print("         regsvr	     Serves payloads using regsvr32.exe COM+ scriptlets.")
-                print("         wmic 	     Serves payloads using WMIC XSL.")
-                print("         rundll32_js	 Serves payloads using rundll32.exe.")
-                print("         disk	     Serves payloads using files on disk.")
-                print("         bitsadmin	 Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.")
-                import sys
-                sys.exit(0)
-                
-            elif flag == "-k":
+            if flag == "-k":
                 kill_listener(shell, id)
                 return
             elif flag == "-o":
