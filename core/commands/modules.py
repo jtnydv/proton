@@ -66,8 +66,8 @@ def execute(shell, cmd):
             print("         exec_wmi	                Executes a command on another system.")
             print("         stage_wmi	                Hook a zombie on another machine using WMI.")
             print("         tcp	                        Uses HTTP to scan open TCP ports on the target zombie LAN.")
-            print("         download_file	            Downloads a file from the target zombie.")
-            print("         multi_module	            Run a number of implants in succession.")
+            print("         download_file               Downloads a file from the target zombie.")
+            print("         multi_module                Run a number of implants in succession.")
             print("         upload_file	                Uploads a file from the listening server to the target zombies.")
     else:
         help(shell)
