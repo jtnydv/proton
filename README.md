@@ -30,7 +30,7 @@
  </a>
 </p>
 
-![proton](https://user-images.githubusercontent.com/54115104/69085040-71be8d00-0a56-11ea-81de-4ff59910e28e.png)
+![proton](https://user-images.githubusercontent.com/54115104/69095595-b3096980-0a63-11ea-89ee-97ac47f64d32.png)
 
 # About proton framework
 
