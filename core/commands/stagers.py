@@ -58,7 +58,7 @@ def print_listener_options(shell, id):
 
             shell.print_plain("")
             shell.print_plain(formats.format("NAME", "VALUE", "REQ", "DESCRIPTION"))
-            shell.print_plain(formats.format("-----","------------", "----", "-------------"))
+            shell.print_plain(formats.format("----","-----", "---", "-----------"))
 
             for option in stager.options.options:
 
