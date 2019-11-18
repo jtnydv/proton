@@ -15,6 +15,9 @@ def execute(shell, cmd):
     
     if len(splitted) > 1:
         string = " ".join(cmd.split(" ")[1:])
-        print(string)
+        if '+' in string or '-' in string or '*' in string or '/' in string:
+            print(eval(string))
+        else:
+            print(string)
     else:
         help(shell)
