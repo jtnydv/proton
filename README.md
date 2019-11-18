@@ -30,7 +30,7 @@
  </a>
 </p>
 
-![entypreter](https://user-images.githubusercontent.com/54115104/68437120-11fff080-01d1-11ea-807a-bd82768142ff.png)
+![proton](https://user-images.githubusercontent.com/54115104/69085040-71be8d00-0a56-11ea-81de-4ff59910e28e.png)
 
 # About proton framework
 
@@ -41,9 +41,6 @@
     packs (and potentially even versions of NT4) all the way through Windows 10.
    
 ***
-
-![modules](https://user-images.githubusercontent.com/54115104/69085038-71be8d00-0a56-11ea-809c-f4e4ca6707b4.png)
-![proton](https://user-images.githubusercontent.com/54115104/69085040-71be8d00-0a56-11ea-81de-4ff59910e28e.png)
 
 # Getting started
 
@@ -86,7 +83,7 @@ optional arguments:
 
 # Proton framework modules
 
-![modules](https://user-images.githubusercontent.com/54115104/68437699-b9315780-01d2-11ea-860e-b9916bae1de0.png)
+![modules](https://user-images.githubusercontent.com/54115104/69085038-71be8d00-0a56-11ea-809c-f4e4ca6707b4.png)
 
     INFO: There are to kinds of Proton Framework 
     modules - stagers and implants. Proton stagers hook 
