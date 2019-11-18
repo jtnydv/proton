@@ -1,3 +1,4 @@
+
 DESCRIPTION = "Switch to a different module."
 
 def autocomplete(shell, line, text, state):
@@ -42,12 +43,11 @@ def execute(shell, cmd):
 
     if len(splitted) > 1:
         module = splitted[1]
-        if "/" not in module:
-            module = [k for k in shell.plugins if k.lower().split('/')[-1] == module.lower()][0]
         if module not in shell.plugins:
             shell.print_error("No module named %s." % (module))
             return
-
+        if "/" not in module:
+            module = [k for k in shell.plugins if k.lower().split('/')[-1] == module.lower()][0]
         shell.previous = shell.state
         shell.state = module
         
