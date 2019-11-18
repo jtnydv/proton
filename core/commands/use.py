@@ -40,8 +40,8 @@ def help(shell):
 def modules(shell, module):
     for i in shell.plugins:
         if module == i.split('/')[-1]:
-            return 1
-    return 0
+            return 0
+    return 1
     
 def execute(shell, cmd):
     splitted = cmd.split()
