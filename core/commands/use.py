@@ -1,4 +1,3 @@
-
 DESCRIPTION = "Switch to a different module."
 
 def autocomplete(shell, line, text, state):
