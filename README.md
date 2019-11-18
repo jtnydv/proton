@@ -42,6 +42,9 @@
    
 ***
 
+![modules](https://user-images.githubusercontent.com/54115104/69085038-71be8d00-0a56-11ea-809c-f4e4ca6707b4.png)
+![proton](https://user-images.githubusercontent.com/54115104/69085040-71be8d00-0a56-11ea-81de-4ff59910e28e.png)
+
 # Getting started
 
 ## Proton installation
