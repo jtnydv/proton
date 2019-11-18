@@ -113,9 +113,9 @@ Name | Description
 --------|------------
 bypassuac_compdefaults | Bypass UAC via registry hijack for ComputerDefaults.exe.
 bypassuac_compmgmtlauncher | Bypass UAC via registry hijack for CompMgmtLauncher.exe.
-bypassuac_eventvwr | Uses enigma0x3's eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.
+bypassuac_eventvwr | Uses eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.
 bypassuac_fodhelper | Bypass UAC via registry hijack for fodhelper.exe.
-bypassuac_sdclt | Uses enigma0x3's sdclt.exe exploit to bypass UAC on Windows 10.
+bypassuac_sdclt | Uses sdclt.exe exploit to bypass UAC on Windows 10.
 bypassuac_slui | Bypass UAC via registry hijack for slui.exe.
 system_createservice | Elevate from administrative session to SYSTEM via SC.exe.
 youtube | Maxes volume and opens the specified YouTube video in a hidden window.
@@ -129,8 +129,8 @@ loot_finder | Finds loot on the target box.
 user_hunter | Locate users logged on to domain computers (using Dynamic Wrapper X).
 mimikatz_dotnet2js | Injects a reflective-loaded DLL to run powerkatz.dll.
 mimikatz_dynwrapx | Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).
-implant/inject/mimikatz_tashlib | Executes arbitrary shellcode using the TashLib COM object. (Work in Progress!)
-shellcode_dotnet2js | Executes arbitrary shellcode using the DotNet2JS technique. Inject shellcode into a host process via createremotethread as a new thread (thanks psmitty7373!).
+mimikatz_tashlib | Executes arbitrary shellcode using the TashLib COM object.
+shellcode_dotnet2js | Executes arbitrary shellcode using the DotNet2JS technique. Inject shellcode into a host process via createremotethread as a new thread.
 shellcode_dynwrapx | Executes arbitrary shellcode using the Dynamic Wrapper X COM object.
 shellcode_excel | Runs arbitrary shellcode payload (if Excel is installed).
 enable_rdesktop | Enables remote desktop on the target.
