@@ -154,8 +154,8 @@ def execute(shell, cmd):
         if len(splitted) > 2:
             flag = splitted[1]
             if flag == "-l":
-                print("         MODULE       DESCRIPTION")                
-                print("         ------       -----------")                
+                print("         NAME         DESCRIPTION")                
+                print("         -----        -------------")                
                 print("         mshta	     Serves payloads using MSHTA.exe HTML Applications (default).")
                 print("         regsvr	     Serves payloads using regsvr32.exe COM+ scriptlets.")
                 print("         wmic 	     Serves payloads using WMIC XSL.")
@@ -164,6 +164,7 @@ def execute(shell, cmd):
                 print("         bitsadmin	 Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.")
                 import sys
                 sys.exit(0)
+                
             elif flag == "-k":
                 kill_listener(shell, id)
                 return
