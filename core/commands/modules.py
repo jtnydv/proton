@@ -48,7 +48,7 @@ def execute(shell, cmd):
             print("        loot_finder                 Finds loot on the target box.")
             print("        user_hunter                 Locate users logged on to domain computers (using Dynamic Wrapper X).")
             print("        mimikatz_dotnet2js          Injects a reflective-loaded DLL to run powerkatz.dll.")
-            print("        mimikatz_dynwrapx	       Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).")
+            print("        mimikatz_dynwrapx           Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).")
             print("        mimikatz_tashlib            Executes arbitrary shellcode using the TashLib COM object.")
             print("        shellcode_dotnet2js         Executes arbitrary shellcode using the DotNet2JS technique.")
             print("        shellcode_dynwrapx          Executes arbitrary shellcode using the Dynamic Wrapper X COM object.")
@@ -66,7 +66,7 @@ def execute(shell, cmd):
             print("        tcp                         Uses HTTP to scan open TCP ports on the target zombie LAN.")
             print("        download_file               Downloads a file from the target zombie.")
             print("        multi_module                Run a number of implants in succession.")
-            print("        upload_file	               Uploads a file from the listening server to the target zombies.")
+            print("        upload_file                 Uploads a file from the listening server to the target zombies.")
             print("")
     else:
         help(shell)
