@@ -7,7 +7,9 @@ def help(shell):
     pass
 
 def execute(shell, cmd):
-        COMMAND     DESCRIPTION     
-        ---------   -------------   
+    print("")
+    print("    MODULE     DESCRIPTION")     
+    print("    --------   -------------")
+    print("")
         
  
