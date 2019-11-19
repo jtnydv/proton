@@ -1,12 +1,12 @@
-DESCRIPTION = "Display all stagers and implants."
+DESCRIPTION = "Display all stagers or all implants."
 
 def autocomplete(shell, line, text, state):
     pass
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain('Use "modules -s" to print all available stagers.')
-    shell.print_plain('Use "modules -i" to print all available implants.')
+    shell.print_plain('Use "modules -s" to display all available stagers.')
+    shell.print_plain('Use "modules -i" to display all available implants.')
     shell.print_plain("")
 
 def execute(shell, cmd):
