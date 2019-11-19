@@ -16,8 +16,5 @@ color brightred "\<(BACK|CLEAR|EXIT|KILL|UNSET|NOPSE)\>"
 # Comment
 color blue "(^|[[:blank:]])#.*"
 
-# Reminders.
-color brightwhite,yellow "(FIXME|TODO|XXX)"
-
 # Trailing whitespace.
 color ,green "[[:space:]]+$"
