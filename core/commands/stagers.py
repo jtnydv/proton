@@ -5,7 +5,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain('Use "stagers %s" to print a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
+    shell.print_plain('Use "stagers %s" to display a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
     shell.print_plain('Use "stagers -o %s" to print a stager\'s options.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
     shell.print_plain('Use "stagers -k %s" to kill a stager.' % shell.colors.colorize("STAGER_ID", [shell.colors.BOLD]))
     shell.print_plain("")
