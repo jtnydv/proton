@@ -88,6 +88,8 @@ optional arguments:
 
 # Running ProtonScript program
 
+![runner](https://user-images.githubusercontent.com/54115104/69009297-12cd1b00-0965-11ea-8963-5e229003bfbf.png)
+
 ## Using proton command
 
 > proton -r program.psc
@@ -97,8 +99,6 @@ optional arguments:
 (2/3) Loading ProtonScript  ..... [ OK ]
 (3/3) Running Program File  ..... [ OK ]
 ```
-
-![runner](https://user-images.githubusercontent.com/54115104/69009297-12cd1b00-0965-11ea-8963-5e229003bfbf.png)
 
 ## Using ProtonScript environment
 
@@ -119,8 +119,6 @@ optional arguments:
 (2/3) Loading ProtonScript  ..... [ OK ]
 (3/3) Running Program File  ..... [ OK ]
 ```
-
-![runner](https://user-images.githubusercontent.com/54115104/69009297-12cd1b00-0965-11ea-8963-5e229003bfbf.png)
 
 ***
 
