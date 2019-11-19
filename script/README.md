@@ -105,7 +105,6 @@ optional arguments:
     INFO: ProtonScript environment is a feature that 
     allows you to run ProtonScript program without 
     encoding and without using a proton command.
-    
 
 **1.** Add a `#!/usr/bin/env psenv` hasbang to your ProtonScript program file.
 
@@ -114,6 +113,14 @@ optional arguments:
 > chmod +x program.p
 
 > ./program.p
+
+```
+(1/3) Loading Program File  ..... [ OK ]
+(2/3) Loading ProtonScript  ..... [ OK ]
+(3/3) Running Program File  ..... [ OK ]
+```
+
+![runner](https://user-images.githubusercontent.com/54115104/69009297-12cd1b00-0965-11ea-8963-5e229003bfbf.png)
 
 ***
 
