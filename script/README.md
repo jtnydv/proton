@@ -152,8 +152,8 @@ optional arguments:
     JOBS        Display info about jobs.
     KILL        Kill a zombie or all zombies.
     LOAD        Reload all Proton Framework modules.
-    LOGO        Proton Framework logo.
-    MODULES     Display all stagers and implants.
+    LOGO        Display Proton Framework logo.
+    MODULES     Display all stagers or all implants.
     NOPSE       Ignore ProtonScript runner exit.
     PRINT       Print some text.
     PYEXEC      Eval some python code.
