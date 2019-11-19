@@ -73,6 +73,13 @@ cp psenv /bin
 chmod +x /bin/psenv
 cp psenv /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/psenv
+cd ~/proton/script/nanorc
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+cp pscript.nanorc /usr/local/share/nano
+else
+cp pscript.nanorc /usr/share/nano
+fi
 } &> /dev/null
 sleep 5
 echo -e ""
