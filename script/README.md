@@ -88,6 +88,8 @@ optional arguments:
 
 # Running ProtonScript program
 
+## Using proton command
+
 > proton -r program.psc
 
 ```
@@ -97,6 +99,21 @@ optional arguments:
 ```
 
 ![runner](https://user-images.githubusercontent.com/54115104/69009297-12cd1b00-0965-11ea-8963-5e229003bfbf.png)
+
+## Using ProtonScript environment
+
+    INFO: ProtonScript environment is a feature that 
+    allows you to run ProtonScript program without 
+    encoding and without using a proton command.
+    
+
+**1.** Add a `#!/usr/bin/env psenv` hasbang to your ProtonScript program file.
+
+**2.** Run `program.p` using this following commands.
+
+> chmod +x program.p
+
+> ./program.p
 
 ***
 
@@ -110,22 +127,6 @@ optional arguments:
 (3/4) Decoding Program File ..... [ OK ]
 (4/4) Saving Program File   ..... [ OK ]
 ```
-
-***
-
-# ProtonScript environment
-
-    INFO: ProtonScript environment is a feature that 
-    allows you to run ProtonScript program without 
-    encoding and without using a proton command.
-    
-**1.** Add a `#!/usr/bin/env psenv` hasbang to your ProtonScript program file.
-
-**2.** Run `program.p` using this following commands.
-
-> chmod +x program.p
-
-> ./program.p
 
 ***
 
