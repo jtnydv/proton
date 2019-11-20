@@ -11,7 +11,7 @@ color green "\<(API|SOUNDS|SPOOL|VERBOSE)\>"
 color brightyellow "\<(LOAD|LOGO|PYEXEC|SHELL|EDIT)\>"
 color brightred "\<(BACK|CLEAR|EXIT|KILL|UNSET|NOPSE)\>"
 
-# Comment
+# Comments.
 color blue "(^|[[:blank:]])#.*"
 
 # Trailing whitespace.
