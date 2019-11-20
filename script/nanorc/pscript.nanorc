@@ -1,4 +1,4 @@
-syntax psenv "\.p$"
+syntax pscript "\.p$"
 header "^#!.*psenv"
 magic "ProtonScript files"
 linter pyflakes
@@ -12,4 +12,7 @@ color brightyellow "\<(LOAD|LOGO|PYEXEC|SHELL|EDIT)\>"
 color brightred "\<(BACK|CLEAR|EXIT|KILL|UNSET|NOPSE)\>"
 
 # Comments.
-color darkblue "(^|[[:blank:]])#.*"
+color blue "(^|[[:blank:]])#.*"
+
+# Trailing whitespace.
+color ,green "[[:space:]]+$"
