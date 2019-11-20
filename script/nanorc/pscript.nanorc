@@ -5,7 +5,7 @@ linter pyflakes
 comment "#"
 
 # Keywords.
-color brightblue "\<(DELAY|PRINT|RUN|SET|USE|[0-9][a-zA-Z0-9])\>"
+color brightblue "\<(DELAY|PRINT|RUN|SET|USE|[0-9][a-zA-Z0-9]*\\b)\>"
 color brightmagenta "\<(CREDS|DOMAIN|HELP|INFO|JOBS|REPEAT|STAGERS|ZOMBIES|MODULES)\>"
 color green "\<(API|SOUNDS|SPOOL|VERBOSE)\>"
 color brightyellow "\<(LOAD|LOGO|PYEXEC|SHELL|EDIT)\>"
