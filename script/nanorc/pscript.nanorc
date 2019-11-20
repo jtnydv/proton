@@ -12,7 +12,4 @@ color brightyellow "\<(LOAD|LOGO|PYEXEC|SHELL|EDIT)\>"
 color brightred "\<(BACK|CLEAR|EXIT|KILL|UNSET|NOPSE)\>"
 
 # Comments.
-color grey "(^|[[:blank:]])#.*"
-
-# Trailing whitespace.
-color ,green "[[:space:]]+$"
+color darkblue "(^|[[:blank:]])#.*"
