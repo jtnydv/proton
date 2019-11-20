@@ -5,14 +5,14 @@ linter pyflakes
 comment "#"
 
 # Keywords.
-color brightblue "\<(DELAY|PRINT|RUN|SET|USE|[a-zA-Z0-9])\>"
+color brightblue "\<(DELAY|PRINT|RUN|SET|USE|[0-9][a-zA-Z0-9])\>"
 color brightmagenta "\<(CREDS|DOMAIN|HELP|INFO|JOBS|REPEAT|STAGERS|ZOMBIES|MODULES)\>"
 color green "\<(API|SOUNDS|SPOOL|VERBOSE)\>"
 color brightyellow "\<(LOAD|LOGO|PYEXEC|SHELL|EDIT)\>"
 color brightred "\<(BACK|CLEAR|EXIT|KILL|UNSET|NOPSE)\>"
 
 # Comments.
-color blue "(^|[[:blank:]])#.*"
+color grey "(^|[[:blank:]])#.*"
 
 # Trailing whitespace.
 color ,green "[[:space:]]+$"
