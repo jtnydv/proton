@@ -198,7 +198,7 @@ if __name__ == "__main__":
                     REDL="\033[1;31m"
                     WHSL="\033[0;97m"
                     ENDL="\033[0m"
-                    print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!")
+                    print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!"+ENDC)
                     import sys
                     sys.exit()
                 
@@ -207,20 +207,20 @@ if __name__ == "__main__":
                         name = argrem[:argrem.index('.')]
                         os.system("python3 script/runner/runner.py -r "+argrem)
                         if (os.path.exists("/tmp/pscript")):
-                            if (os.path.exists("/tmp/pscript/pscript.p")):
-                                os.system("rm /tmp/pscript/pscript.p")
+                            if (os.path.exists("/tmp/pscript/program.p")):
+                                os.system("rm /tmp/pscript/program.p")
                         else:
                             os.system("mkdir /tmp/pscript")
                     else:
                         REDL="\033[1;31m"
                         WHSL="\033[0;97m"
                         ENDL="\033[0m"
-                        print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!")
+                        print(REDL+"[-]"+ENDL+" "+WHSL+"ProtonScript program file is not executable!"+ENDC)
                         import sys
                         sys.exit()  
                     
-                    os.system("mv "+name+".p /tmp/pscript/pscript.p")
-                    autorun = open('/tmp/pscript/pscript.p').read().split("\n") if '/tmp/pscript/pscript.p' else []
+                    os.system("mv "+name+".p /tmp/pscript/program.p")
+                    autorun = open('/tmp/pscript/program.p').read().split("\n") if '/tmp/pscript/program.p' else []
                 except:
                     import sys
                     sys.exit()  
