@@ -164,7 +164,6 @@ if __name__ == "__main__":
         if (os.path.exists(pspath)):
             if True:
                 import sys
-                run = args.run
                 import os.path
                 if (os.path.exists("/tmp/pscript")):
                     time.sleep(0)
@@ -176,8 +175,11 @@ if __name__ == "__main__":
                 else:
                     os.system("echo $OLDPWD >> /tmp/pscript/pspath.temp")
                     
-                if not '/' in run:
+                if not '/' in args.run:
                     run = open("/tmp/pscript/pspath.temp").read().split('\n')[-2]+'/'+run
+                else:
+                    run = args.run
+                    
                 if (os.path.exists(run)):
                     time.sleep(0)
                 else:
