@@ -189,7 +189,7 @@ if __name__ == "__main__":
                     sys.exit()
                 
                 autorun = open(run).read().split("\n") if args.run else []
-                argrem = args.run
+                argrem = run
                 if '.' in argrem:
                     time.sleep(0)
                 else:
