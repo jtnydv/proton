@@ -241,15 +241,33 @@ if __name__ == "__main__":
             
     if args.json:
         import json
-        try:
-            restore = json.loads(open(args.json).read())
-        except:
+        import os.path
+        if (os.path.exists("/tmp/pjson")):
+             time.sleep(0)
+        else:
+            os.system("mkdir /tmp/pjson")
+                    
+        if (os.path.exists("/tmp/pscript/pjpath.temp")):
+            os.system("rm /tmp/pscript/pjpath.temp")
+        else:
+            os.system("echo $OLDPWD >> /tmp/pjson/pjpath.temp")
+                    
+        if not '/' in args.json:
+            run = open("/tmp/pjson/pjpath.temp").read().split('\n')[-2]+'/'+args.json
+        else:
+            run = args.json
+            
+        if (os.path.exists(run)):
+            time.sleep(0)
+        else:
             REDL="\033[1;31m"
             WHSL="\033[0;97m"
             ENDL="\033[0m"
-            print(REDL+"[-]"+ENDL+" "+WHSL+"You must specify the full path to the Proton restore json file!"+ENDL)
+            print(REDL+"[-]"+ENDL+" "+WHSL+"No such Proton Framework json file!"+ENDL)
             import sys
-            sys.exit()
+            sys.exit()                
+        
+        restore = json.loads(open(run).read())
     else:
         restore = {}
 
