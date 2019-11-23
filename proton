@@ -172,6 +172,7 @@ if __name__ == "__main__":
                     
                 if (os.path.exists("/tmp/pscript/pspath.temp")):
                     os.system("rm /tmp/pscript/pspath.temp")
+                    os.system("echo $OLDPWD >> /tmp/pscript/pspath.temp")
                 else:
                     os.system("echo $OLDPWD >> /tmp/pscript/pspath.temp")
                     
@@ -249,6 +250,7 @@ if __name__ == "__main__":
                     
         if (os.path.exists("/tmp/pscript/pjpath.temp")):
             os.system("rm /tmp/pscript/pjpath.temp")
+            os.system("echo $OLDPWD >> /tmp/pjson/pjpath.temp")
         else:
             os.system("echo $OLDPWD >> /tmp/pjson/pjpath.temp")
                     
