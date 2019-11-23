@@ -32,16 +32,6 @@ G="\033[1m"
 R="\033[1m"
 E="\033[0m"
 
-if [[ -d ~/proton ]]
-then
-sleep 0
-else
-{
-cd ~
-git clone https://github.com/entynetproject/proton.git
-} &> /dev/null
-fi
-
 if [[ -d /data/data/com.termux ]]
 then
 pspath="/data/data/com.termux/files/usr/bin/proton"
@@ -49,16 +39,14 @@ else
 pspath="/usr/local/bin/proton"
 fi
 
-if [[ -f $paspath ]]
+if [[ -f $pspath ]]
 then
 sleep 0
 else
-{
-cd ~/proton/script
-chmod +x install.sh
-./install.sh
-} &> /dev/null
-cd
+RS="\033[1;31m"
+WS="\033[0;97m"
+CE="\033[0m"
+echo -e ""$RS"[-]"$WS" Proton Framework is not installed!"$CE""
 fi
 
 if [[ $1 = "-h" || $1 = "--help" ]]
