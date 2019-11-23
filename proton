@@ -228,21 +228,8 @@ if __name__ == "__main__":
     if args.json:
         import json
         import os.path
-        if (os.path.exists("/tmp/pjson")):
-             time.sleep(0)
-        else:
-            os.system("mkdir /tmp/pjson")
-                    
-        if (os.path.exists("/tmp/pscript/pjpath.temp")):
-            os.system("rm /tmp/pscript/pjpath.temp")
-        os.system("echo $OLDPWD >> /tmp/pjson/pjpath.temp")
-                    
-        if not '/' in args.json:
-            run = open("/tmp/pjson/pjpath.temp").read().split('\n')[-2]+'/'+args.json
-        else:
-            run = args.json
             
-        if (os.path.exists(run)):
+        if (os.path.exists(args.json)):
             time.sleep(0)
         else:
             REDL="\033[1;31m"
@@ -252,7 +239,7 @@ if __name__ == "__main__":
             import sys
             sys.exit()                
         
-        restore = json.loads(open(run).read())
+        restore = json.loads(open(args.json).read())
     else:
         restore = {}
 
