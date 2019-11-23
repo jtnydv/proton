@@ -105,7 +105,7 @@ cd proton
 chmod +x proton
 if [[ $1 == "-r" || $1 == "-j" ]]
 then
-./proton $1 $pwd/$2
+./proton $1 $pwd/$2 $3 $4 $5 $6 $7 $8 $9
 else
 ./proton $1 $2 $3 $4 $5 $6 $7 $8 $9
 fi
@@ -125,7 +125,7 @@ cd proton
 chmod +x proton
 if [[ $1 == "-r" || $1 == "-j" ]]
 then
-./proton $1 $pwd/$2
+./proton $1 $pwd/$2 $3 $4 $5 $6 $7 $8 $9
 else
 ./proton $1 $2 $3 $4 $5 $6 $7 $8 $9
 fi
