@@ -23,7 +23,7 @@
 
 printf '\033]2;Proton Framework\a'
 
-$pwd=$PWD
+pwd=$PWD
 
 #blue start 
 	BS="-e \033[1;34m"
