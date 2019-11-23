@@ -177,6 +177,7 @@ if __name__ == "__main__":
                     
                 if not '/' in args.run:
                     run = open("/tmp/pscript/pspath.temp").read().split('\n')[-2]+'/'+args.run
+                    print(run)
                 else:
                     run = args.run
                     
