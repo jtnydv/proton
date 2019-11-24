@@ -7,7 +7,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain('Use "string %s" to print the specified text.' % (shell.colors.colorize("TEXT", shell.colors.BOLD)))
+    shell.print_plain('Use "print %s" to print the specified text.' % (shell.colors.colorize("TEXT", shell.colors.BOLD)))
     shell.print_plain("")
 
 def execute(shell, cmd):
