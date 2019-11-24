@@ -24,7 +24,6 @@
 import os
 import time
 
-os.chdir(".")
 os.system("printf '\033]2;Proton Framework\a'")
 
 __version_info__ = "v5.1"
