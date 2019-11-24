@@ -47,6 +47,7 @@ RS="\033[1;31m"
 WS="\033[0;97m"
 CE="\033[0m"
 echo -e ""$RS"[-]"$WS" Proton Framework is not installed!"$CE""
+exit
 fi
 
 if [[ $1 = "-h" || $1 = "--help" ]]
