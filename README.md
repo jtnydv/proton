@@ -162,7 +162,7 @@ upload_file | Uploads a file from the listening server to the target zombies.
 
 # ProtonScript (Proton Language)
 
-![pscode](https://user-images.githubusercontent.com/54115104/68995309-36c52980-089d-11ea-8852-f89ff5b07a17.png)
+![pscript](https://user-images.githubusercontent.com/54115104/69556144-505d2400-0fb5-11ea-8184-108f3c1c852c.png)
 
     INFO: ProtonScript is a Proton Framework programming language
     used to quickly execute Proton commands in the Proton Framework, 
