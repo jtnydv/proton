@@ -117,6 +117,7 @@ echo -e """
 	verbose     Turn verbosity on/off.
 	zombies     List hooked zombies.
 """
+exit
 fi
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
