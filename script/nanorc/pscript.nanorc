@@ -13,5 +13,5 @@ color brightred "\<(back|clear|exit|kill|unset|nopse)\>"
 
 # Comments and numbers.
 color brightblue "[0-9]"
-color grey "(^|[[:blank:]])-.*"
+color blue "(^|[[:blank:]])-.*"
 color blue "(^|[[:blank:]])#.*"
