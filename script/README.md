@@ -7,7 +7,7 @@
                                                                          |_|  
 ***
 
-![ps](https://user-images.githubusercontent.com/54115104/68995309-36c52980-089d-11ea-8852-f89ff5b07a17.png)
+![pscript](https://user-images.githubusercontent.com/54115104/69556144-505d2400-0fb5-11ea-8184-108f3c1c852c.png)
 
 # About ProtonScript
 
@@ -69,7 +69,7 @@ optional arguments:
     
 > pscript -n
 
-![psnotepad](https://user-images.githubusercontent.com/54115104/68992304-ab3aa100-087a-11ea-8acb-4402ffbb6fcd.png)
+![Hello, World!](https://user-images.githubusercontent.com/54115104/69556145-50f5ba80-0fb5-11ea-87c7-cc1a0c024448.png)
 
 **2.** Copy this code to a file, name it `program.p`.
 
