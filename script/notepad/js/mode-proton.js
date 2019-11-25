@@ -27,11 +27,11 @@ define('ace/mode/protoncode', function(require, exports, module) {
         this.$rules = {
          start: [{
             token: 'entity.name.function',
-            regex: '(VERBOSE|SPOOL|API|SOUNDS)'
+            regex: '(verbose|spool|api|sounds)'
          },
          {
             token: 'string',
-            regex: '(PYEXEC|EDIT|SHELL|LOGO|LOAD)'
+            regex: '(pyexec|edit|shell|logo|load)'
          },
          {
              token: 'comment',
@@ -39,15 +39,15 @@ define('ace/mode/protoncode', function(require, exports, module) {
          },
          {
              token: 'constant.language',
-             regex: '(JOBS|STAGERS|ZOMBIES|CREDS|DOMAIN|REPEAT|INFO|HELP|MODULES)'
+             regex: '(jobs|stagers|zombies|creds|domain|repeat|info|help|modules)'
          },
          {
             token: 'support.function',
-            regex: '(USE|SET|DELAY|PRINT|RUN)'
+            regex: '(use|set|delay|print|run)'
          },       
          {
             token: 'keyword',
-            regex: '(UNSET|KILL|EXIT|BACK|CLEAR|NOPSE)'
+            regex: '(unset|kill|exit|back|clear|nopse)'
          },
          {
             token: 'support.function',
