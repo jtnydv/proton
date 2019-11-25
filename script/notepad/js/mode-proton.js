@@ -51,7 +51,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
          },
          {
             token: 'support.function',
-            regex: "[0-9][a-zA-Z0-9]*\\b"
+            regex: "[0-9][a-zA-Z0-9-]*\\b"
          },
            ] 
         }
