@@ -99,7 +99,7 @@ cd ~/proton
 } &> /dev/null
 mkdir etc/.disabled
 mv proton etc/.disabled
-cp etc/proton ~/proton
+mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -r etc/.disabled
 chmod +x proton
@@ -107,7 +107,7 @@ chmod +x proton
 cd ~/proton
 mkdir etc/.disabled
 mv proton etc/.disabled
-cp etc/proton ~/proton
+mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -r etc/.disabled
 else
@@ -124,7 +124,7 @@ cd ~/proton
 } &> /dev/null
 mkdir etc/.disabled
 mv proton etc/.disabled
-cp etc/proton ~/proton
+mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -r etc/.disabled
 chmod +x proton
@@ -132,7 +132,7 @@ chmod +x proton
 cd ~/proton
 mkdir etc/.disabled
 mv proton etc/.disabled
-cp etc/proton ~/proton
+mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -r etc/.disabled
 else
