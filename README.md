@@ -125,7 +125,7 @@ comsvcs_lsass | Utilizes comsvcs.dll to create a MiniDump of LSASS, parses with 
 enum_domain_info | Retrieve information about the Windows domain.
 hashdump_dc | Domain controller hashes from the NTDS.dit file.
 hashdump_sam | Retrieves hashed passwords from the SAM hive.
-loot_finder | Finds loot on the target box.
+loot_finder | Finds loot on the target machine.
 user_hunter | Locate users logged on to domain computers (using Dynamic Wrapper X).
 mimikatz_dotnet | Injects a reflective-loaded DLL to run powerkatz.dll.
 mimikatz_dynwrapx | Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).
