@@ -100,9 +100,9 @@ Name | Description
 mshta | Serves payloads using MSHTA.exe HTML Applications (default).
 regsvr | Serves payloads using regsvr32.exe COM+ scriptlets.
 wmic | Serves payloads using WMIC XSL.
-rundll32_js | Serves payloads using rundll32.exe.
+rundll | Serves payloads using rundll32.exe.
 disk | Serves payloads using files on disk.
-bitsadmin | Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.
+bits | Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.
 
 ## Proton implants
 
@@ -127,10 +127,10 @@ hashdump_dc | Domain controller hashes from the NTDS.dit file.
 hashdump_sam | Retrieves hashed passwords from the SAM hive.
 loot_finder | Finds loot on the target box.
 user_hunter | Locate users logged on to domain computers (using Dynamic Wrapper X).
-mimikatz_dotnet2js | Injects a reflective-loaded DLL to run powerkatz.dll.
+mimikatz_dotnet | Injects a reflective-loaded DLL to run powerkatz.dll.
 mimikatz_dynwrapx | Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).
 mimikatz_tashlib | Executes arbitrary shellcode using the TashLib COM object.
-shellcode_dotnet2js | Executes arbitrary shellcode using the DotNet2JS technique. Inject shellcode into a host process via createremotethread as a new thread.
+shellcode_dotnet | Executes arbitrary shellcode using the DotNet2JS technique. Inject shellcode into a host process via createremotethread as a new thread.
 shellcode_dynwrapx | Executes arbitrary shellcode using the Dynamic Wrapper X COM object.
 shellcode_excel | Runs arbitrary shellcode payload (if Excel is installed).
 enable_rdesktop | Enables remote desktop on the target.
