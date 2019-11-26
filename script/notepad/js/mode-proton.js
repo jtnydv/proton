@@ -27,7 +27,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
          start: [
          {
             token: 'Simon',
-            regex: '(rundll3|rundll32|dotnet2)'
+            regex: '(rundll32|dotnet2)'
          },
          {
             token: 'entity.name.function',
