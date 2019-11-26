@@ -1,5 +1,4 @@
 define('ace/mode/protoncode', function(require, exports, module) {
-
     var oop = require("ace/lib/oop");
     var TextMode = require("ace/mode/text").Mode;
     var ExampleHighlightRules = require("ace/mode/protoncode_highlight_rules").ExampleHighlightRules;
@@ -25,39 +24,39 @@ define('ace/mode/protoncode', function(require, exports, module) {
     var ExampleHighlightRules = function() {
     
         this.$rules = {
-         start: [{
+         start: [
+         {
+            token: 'Simon',
+            regex: '(rundll32_js)'
+         },
+         {
             token: 'entity.name.function',
-            regex: '^(verbose|spool|api|sounds)'
+            regex: '(|^)(verbose|spool|api|sounds)( |$)'
          },
          {
             token: 'string',
-            regex: '^(pyexec|edit|shell|logo|load)'
-         },
+            regex: '(|^)(pyexec|edit|shell|logo|load)( |$)'        },
          {
              token: 'comment',
              regex: '(#).*$'
          },
          {
              token: 'constant.language',
-             regex: '^(jobs|stagers|zombies|creds|domain|repeat|info|help|modules)'
-         },
+             regex: '(|^)(jobs|stagers|zombies|creds|domain|repeat|info|help|modules)( |$)'
+         }, 
          {
             token: 'support.function',
-            regex: '^(use|set|delay|print|run)'
-         },       
+            regex: '(|^)(use|set|delay|print|run)( |$)'
+         },       	
          {
             token: 'keyword',
-            regex: '^(unset|kill|exit|back|clear|nopse)'
-         },
-         {
-            token: 'test',
-            regex: '--[a-zA-Z].*$'
+            regex: '(|^)(unset|kill|exit|back|clear|nopse)( |$)'
          },
          {
             token: 'support.function',
             regex: "[0-9]"
          },
-           ] 
+         ] 
         }
         
     }
