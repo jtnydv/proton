@@ -97,12 +97,12 @@ optional arguments:
 
 Name | Description
 --------|------------
-mshta | Serves payloads using MSHTA.exe HTML Applications (default).
-regsvr | Serves payloads using regsvr32.exe COM+ scriptlets.
+mshta | Serves payloads using mshta.exe.
+regsvr | Serves payloads using regsvr32.exe.
 wmic | Serves payloads using WMIC XSL.
 rundll | Serves payloads using rundll32.exe.
 disk | Serves payloads using files on disk.
-bits | Transfers a .wsf payload containing JScript over a Bitsadmin job and executes it.
+bits | Transfers payloads over a BitsAdmin.
 
 ## Proton implants
 
