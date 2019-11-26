@@ -45,7 +45,7 @@ def execute(shell, cmd):
             print("        enum_domain_info            Retrieve information about the Windows domain.")
             print("        hashdump_dc                 Domain controller hashes from the NTDS.dit file.")
             print("        hashdump_sam                Retrieves hashed passwords from the SAM hive.")
-            print("        loot_finder                 Finds loot on the target box.")
+            print("        loot_finder                 Finds loot on the target machine.")
             print("        user_hunter                 Locate users logged on to domain computers (using Dynamic Wrapper X).")
             print("        mimikatz_dotnet             Injects a reflective-loaded DLL to run powerkatz.dll.")
             print("        mimikatz_dynwrapx           Injects a reflective-loaded DLL to run powerkatz.dll (using Dynamic Wrapper X).")
