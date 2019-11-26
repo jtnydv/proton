@@ -19,12 +19,12 @@ def execute(shell, cmd):
             print("")
             print("        NAME         DESCRIPTION")                
             print("        ----         -----------")                
-            print("        mshta        Serves payloads using MSHTA.exe HTML Applications.")
-            print("        regsvr       Serves payloads using regsvr32.exe COM+ scriptlets.")
-            print("        wmic         Serves payloads using WMIC XSL.")
+            print("        mshta        Serves payloads using mshta.exe.")
+            print("        regsvr       Serves payloads using regsvr32.exe.")
             print("        rundll       Serves payloads using rundll32.exe.")
             print("        disk         Serves payloads using files on disk.")
-            print("        bits         Transfers a payload over a BitsAdmin.")
+            print("        bits         Transfers payloads over a BitsAdmin.")
+            print("        wmic         Serves payloads using WMIC XSL.")
             print("")
                 
         elif flag == "-i":
