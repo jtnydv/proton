@@ -5,6 +5,7 @@ linter pyflakes
 comment "#"
 
 # Keywords.
+color white "\<(rundll32|dotnet2)\>"
 color brightblue "\<(delay|print|run|set|use|[0-9][a-zA-Z0-9])\>"
 color brightmagenta "\<(creds|domain|help|info|jobs|repeat|stagers|zombies|modules)\>"
 color green "\<(api|sounds|spool|verbose)\>"
