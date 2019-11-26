@@ -5,7 +5,6 @@ linter pyflakes
 comment "#"
 
 # Keywords.
-color white "\<(rundll32|dotnet2)\>"
 color brightblue "\<(delay|print|run|set|use|[0-9][a-zA-Z0-9])\>"
 color brightmagenta "\<(creds|domain|help|info|jobs|repeat|stagers|zombies|modules)\>"
 color green "\<(api|sounds|spool|verbose)\>"
@@ -15,3 +14,7 @@ color brightred "\<(back|clear|exit|kill|unset|nopse)\>"
 # Comments and numbers.
 color brightblue "[0-9]"
 color blue "(^|[[:blank:]])#.*"
+
+# Modules.
+
+color white "\<(rundll32_js|mimikatz_dotnet2js|shellcode_dotnet2js)\>.*"
