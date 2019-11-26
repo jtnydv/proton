@@ -99,10 +99,10 @@ Name | Description
 --------|------------
 mshta | Serves payloads using mshta.exe.
 regsvr | Serves payloads using regsvr32.exe.
-wmic | Serves payloads using WMIC XSL.
 rundll | Serves payloads using rundll32.exe.
 disk | Serves payloads using files on disk.
-bits | Transfers payloads over a BitsAdmin.
+bits | Serves payloads using BitsAdmin.
+wmic | Serves payloads using WMIC XSL.
 
 ## Proton implants
 
