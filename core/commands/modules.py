@@ -23,7 +23,7 @@ def execute(shell, cmd):
             print("        regsvr       Serves payloads using regsvr32.exe.")
             print("        rundll       Serves payloads using rundll32.exe.")
             print("        disk         Serves payloads using files on disk.")
-            print("        bits         Transfers payloads over a BitsAdmin.")
+            print("        bits         Serves payloads using BitsAdmin.")
             print("        wmic         Serves payloads using WMIC XSL.")
             print("")
                 
