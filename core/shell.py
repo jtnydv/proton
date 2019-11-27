@@ -106,7 +106,7 @@ class Shell(object):
         return res.strip().lower()
 
     def confirm_exit(self):
-        run_command(exit)
+        self.run_command(exit)
 
     def run_command(self, cmd):
         if not cmd:
