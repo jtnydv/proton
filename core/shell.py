@@ -89,8 +89,10 @@ class Shell(object):
                 self.run_command(cmd)
 
             except KeyboardInterrupt:
+                print("")
                 self.run_command("exit")
             except EOFError:
+                print("")
                 self.run_command("exit")
             except Exception:
                 self.print_plain(traceback.format_exc())
