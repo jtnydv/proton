@@ -106,10 +106,7 @@ class Shell(object):
         return res.strip().lower()
 
     def confirm_exit(self):
-        res = self.confirm_prompt("Exit Proton Framework? y/N:")           
-            
-        if res.strip().lower() == "y":
-            self.run_command("exit")
+        run_command(exit)
 
     def run_command(self, cmd):
         if not cmd:
