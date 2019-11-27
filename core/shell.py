@@ -89,7 +89,7 @@ class Shell(object):
                 self.run_command(cmd)
 
             except KeyboardInterrupt:
-                self.confirm_exit()
+                self.run_command("exit")
             except EOFError:
                 self.run_command("exit")
             except Exception:
