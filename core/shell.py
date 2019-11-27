@@ -169,12 +169,12 @@ class Shell(object):
                 return None
 
         remap = {
-            "?": "help",
-            "exploit": "run",
-            "execute": "run",
-            "options": "info",
-            "quit": "exit",
-            "sessions": "zombies",
+            "help": "help",
+            "run": "run",
+            "run": "run",
+            "info": "info",
+            "exit": "exit",
+            "zombies": "zombies",
         }
 
         # no space, autocomplete will be the basic commands:
