@@ -124,7 +124,7 @@ class SchTasksImplant(core.implant.Implant):
         self.options.register("FDROPDIR", "", "", hidden=True)
         self.options.register("RETRYATTEMPTS", "5", "Number of times to retry calling back.")
         self.options.register("RETRYDELAY", "60", "Seconds between retry attempts.")
-        self.options.register("DROPFILE", "", "Name to give the drop file (randomly generated if no name).", advanced=True)
+        self.options.register("DROPFILE", "", "Name to give the drop file.", advanced=True)
         self.options.register("FDROPFILE", "", "", hidden=True)
         self.options.register("NOFORCE", "false", "", hidden=True)
         self.options.register("ELEVATED", "true", "", hidden=True)
