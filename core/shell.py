@@ -105,7 +105,7 @@ class Shell(object):
         except:
             sys.stdout.write(os.linesep)
 
-        return res.strip().lower()
+        return res.strip()
 
     def confirm_exit(self):
         self.run_command("exit")
@@ -113,7 +113,7 @@ class Shell(object):
     def run_command(self, cmd):
         if not cmd:
             return
-        action = cmd.split()[0].lower()
+        action = cmd.split()[0]
         remap = {
             "help": "help",
             "run": "run",
