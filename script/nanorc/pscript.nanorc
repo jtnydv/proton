@@ -17,4 +17,4 @@ color blue "(^|[[:blank:]])#.*"
 
 # Modules.
 
-color white "\<(rundll32_js|mimikatz_dotnet2js|shellcode_dotnet2js)\>.*"
+color white "(_|/|\).*$"
