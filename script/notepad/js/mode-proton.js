@@ -25,10 +25,10 @@ define('ace/mode/protoncode', function(require, exports, module) {
     
         this.$rules = {
          start: [
-         {
-            token: 'Modules',
-            regex: '(_|/|\).*$'
-         },
+        // {
+         //   token: 'Modules',
+          //  regex: '(_|/|\).*$'
+       //  },
          {
             token: 'entity.name.function',
             regex: '(|^)(verbose|spool|api|sounds)( |$)'
