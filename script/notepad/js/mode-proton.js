@@ -27,7 +27,7 @@ define('ace/mode/protoncode', function(require, exports, module) {
          start: [
          {
             token: 'Modules',
-            regex: '(enum_domain_info).*$'
+            regex: '(enum).*$'
          },
          {
             token: 'entity.name.function',
