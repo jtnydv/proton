@@ -14,7 +14,3 @@ color brightred "\<(back|clear|exit|kill|unset|nopse)\>"
 # Comments and numbers.
 color brightblue "[0-9]"
 color blue "(^|[[:blank:]])#.*"
-
-# Modules.
-
-color white "(_|/|\).*$"
