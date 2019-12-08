@@ -4,7 +4,7 @@
 #            --------------------------------------------------
 #                               ProtonScript               
 #            --------------------------------------------------
-#          Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+#                  Copyright (C) <2019>  <Entynetproject>
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
 #
 #
 #    About Author :   
-#    Founder   : Entynetproject (Ivan Nikolsky)
+#    Founder   : Entynetproject
 #    Site      : http://entynetproject.simplesite.com/
 #    Instagram : @entynetproject 
 #    Twitter   : @entynetproject
