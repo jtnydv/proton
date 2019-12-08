@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# 
 #            --------------------------------------------------
 #                               ProtonScript               
 #            --------------------------------------------------
@@ -18,15 +17,6 @@
 #
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#    About Author :   
-#    Founder   : Entynetproject
-#    Site      : http://entynetproject.simplesite.com/
-#    Instagram : @entynetproject 
-#    Twitter   : @entynetproject
-#    Email     : entynetproject@gmail.com
-#
 
 import sys, os, os.path
 
