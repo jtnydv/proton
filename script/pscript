@@ -168,7 +168,7 @@ cd ~
 mkdir .pscript
 cd ~/.pscript
 git clone https://github.com/entynetproject/proton.git
-rm -r ~/proton/script
+rm -rf ~/proton/script
 cp -r ~/.pscript/proton/script ~/proton
 if [[ "$UPD" != "true" ]]
 then
@@ -192,7 +192,7 @@ cd ~/proton/script/nanorc
 cp pscript.nanorc /usr/local/share/nano
 cp pscript.nanorc /usr/share/nano
 fi
-rm -r ~/.pscript
+rm -rf ~/.pscript
 } &> /dev/null
 echo -e ""
 exit
@@ -274,7 +274,7 @@ cd ~
 mkdir .pscript
 cd ~/.pscript
 git clone https://github.com/entynetproject/proton.git
-rm -r ~/proton/script
+rm -rf ~/proton/script
 cp -r ~/.pscript/proton/script ~/proton
 if [[ "$UPD" != "true" ]]
 then
@@ -298,7 +298,7 @@ cd ~/proton/script/nanorc
 cp pscript.nanorc /usr/local/share/nano
 cp pscript.nanorc /usr/share/nano
 fi
-rm -r ~/.pscript
+rm -rf ~/.pscript
 } &> /dev/null
 echo -e ""
 exit
