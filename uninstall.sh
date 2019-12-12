@@ -32,7 +32,7 @@ fi
 {
 rm /bin/proton
 rm /usr/local/bin/proton
-rm -r ~/proton
+rm -rf ~/proton
 rm /etc/proton.conf
 rm /data/data/com.termux/files/usr/bin/proton
 rm /bin/pscript
