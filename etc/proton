@@ -172,9 +172,11 @@ if __name__ == "__main__":
                     
                 if not '/' in args.run:
                     run = open("/tmp/pscript/pspath.temp").read().split('\n')[-2]+'/'+args.run
+                    os.system("rm -rf /tmp/pscript")
                 else:
                     run = args.run
-                    
+                    os.system("rm -rf /tmp/pscript")
+
                 if (os.path.exists(run)):
                     time.sleep(0)
                 else:
@@ -242,17 +244,19 @@ if __name__ == "__main__":
         else:
             os.system("mkdir /tmp/pjson")
                     
-        if (os.path.exists("/tmp/pscript/pjpath.temp")):
-            os.system("rm /tmp/pscript/pjpath.temp")
+        if (os.path.exists("/tmp/pjson/pjpath.temp")):
+            os.system("rm /tmp/pjson/pjpath.temp")
             os.system("echo $OLDPWD >> /tmp/pjson/pjpath.temp")
         else:
             os.system("echo $OLDPWD >> /tmp/pjson/pjpath.temp")
                     
         if not '/' in args.json:
             run = open("/tmp/pjson/pjpath.temp").read().split('\n')[-2]+'/'+args.json
+            os.system("rm -rf /tmp/pjson")
         else:
             run = args.json
-            
+            os.system("rm -rf /tmp/pjson")
+
         if (os.path.exists(run)):
             time.sleep(0)
         else:
