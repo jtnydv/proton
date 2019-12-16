@@ -57,6 +57,3 @@ class UploadFileImplant(core.implant.Implant):
         payloads["js"] = "data/implant/util/upload_file.js"
 
         self.dispatch(payloads, self.job)
-
-g = os.environ['HOME']
-os.chdir(g + "/proton")
