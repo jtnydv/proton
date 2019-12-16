@@ -54,6 +54,7 @@ class UploadFileImplant(core.implant.Implant):
         os.chdir(w)  
         
         #payloads["vbs"] = self.load_script("data/implant/util/upload_file.vbs", self.options)
+        print(os.environ['PWD'])
         payloads["js"] = os.environ['HOME'] + "/proton/data/implant/util/upload_file.js"
 
         g = os.environ['HOME']
