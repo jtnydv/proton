@@ -44,8 +44,6 @@ class DownloadFileImplant(core.implant.Implant):
 
 class DownloadFileJob(core.job.Job):
     def report(self, handler, data, sanitize = False):
-        w = os.environ['OLDPWD']
-        os.chdir(w)
         status = handler.get_header("Status", False)
         if status == "NotExist":
             self.notexist = True
@@ -94,9 +92,6 @@ class DownloadFileJob(core.job.Job):
                 data = self.decode_downloaded_data(data, "936")
                 with open(self.save_fname, "wb") as f:
                     f.write(data)
-
-            g = os.environ['HOME']
-            os.chdir(g + "/proton")
 
 
         # with open(self.save_fname, "wb") as f:
