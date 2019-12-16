@@ -45,17 +45,16 @@ class UploadFileImplant(core.implant.Implant):
         self.options.register("FILE", "", "", hidden = True)
 
     def job(self):
+        w = os.environ['OLDPWD']
+        os.chdir(w)
         return UploadFileJob
-
+        g = os.environ['HOME']
+        os.chdir(g + "/proton")
+        
     def run(self):
         payloads = {}  
         
         #payloads["vbs"] = self.load_script("data/implant/util/upload_file.vbs", self.options)
         payloads["js"] = os.environ['HOME'] + "/proton/data/implant/util/upload_file.js"
-        
-        w = os.environ['OLDPWD']
-        os.chdir(w)        
+               
         self.dispatch(payloads, self.job)
-        g = os.environ['HOME']
-        os.chdir(g + "/proton")
-        print(os.environ['PWD'])
