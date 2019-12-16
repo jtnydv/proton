@@ -95,13 +95,11 @@ mv proton etc/.disabled
 mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/implant/upload_file.py modules/implant/util
 cp etc/.disabled/upload_file.py etc/implant
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
 mv etc/implant/download_file.py modules/implant/util
@@ -117,13 +115,11 @@ mv proton etc/.disabled
 mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/implant/upload_file.py modules/implant/util
 cp etc/.disabled/upload_file.py etc/implant
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
 mv etc/implant/download_file.py modules/implant/util
@@ -146,13 +142,11 @@ mv proton etc/.disabled
 mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/implant/upload_file.py modules/implant/util
 cp etc/.disabled/upload_file.py etc/implant
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
 mv etc/implant/download_file.py modules/implant/util
@@ -168,13 +162,11 @@ mv proton etc/.disabled
 mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/implant/upload_file.py modules/implant/util
 cp etc/.disabled/upload_file.py etc/implant
 rm -rf etc/.disabled
-cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
 mv etc/implant/download_file.py modules/implant/util
