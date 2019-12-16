@@ -1,6 +1,7 @@
 import core.job
 import core.implant
 import uuid
+import os
 
 class UploadFileJob(core.job.Job):
     def create(self):
