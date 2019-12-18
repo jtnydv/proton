@@ -112,5 +112,6 @@ cp proton /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/proton
 } &> /dev/null
 
+sleep 1
 echo ""$GNS"[*]"$WHS" Successfully installed!"$CE""
 sleep 1
