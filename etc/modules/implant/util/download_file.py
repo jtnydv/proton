@@ -50,15 +50,19 @@ class DownloadFileJob(core.job.Job):
 
         if not status:
             if not '/' in self.options.get("LPATH"):
-                if self.options.get("LPATH") == "." or self.options.get("LPATH") == "./":
+                if self.options.get("LPATH") == ".":
                     self.save_fname = os.environ['OLDPWD'] + "/" + self.options.get("RFILE").split("\\")[-1]
                     self.save_fname = self.save_fname.replace("//", "/")
                 else:
                     self.save_fname = os.environ['OLDPWD'] + '/' + self.options.get("LPATH") + "/" + self.options.get("RFILE").split("\\")[-1]
                     self.save_fname = self.save_fname.replace("//", "/")
             else:
-                self.save_fname = self.options.get("LPATH") + "/" + self.options.get("RFILE").split("\\")[-1]
-                self.save_fname = self.save_fname.replace("//", "/")
+                if self.options.get("LPATH") == "./":
+                    self.save_fname = os.environ['OLDPWD'] + "/" + self.options.get("RFILE").split("\\")[-1]
+                    self.save_fname = self.save_fname.replace("//", "/")
+                else:
+                    self.save_fname = self.options.get("LPATH") + "/" + self.options.get("RFILE").split("\\")[-1]
+                    self.save_fname = self.save_fname.replace("//", "/")
                 
             while os.path.isfile(self.save_fname):
                 self.save_fname += "."+uuid.uuid4().hex
