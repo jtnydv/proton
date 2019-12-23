@@ -30,7 +30,7 @@
  </a>
 </p>
 
-![proton](https://user-images.githubusercontent.com/54115104/69095595-b3096980-0a63-11ea-89ee-97ac47f64d32.png)
+![proton](https://user-images.githubusercontent.com/54115104/71377218-66660080-25c4-11ea-9dcf-a217887c00d6.png)
 
 ***
 
