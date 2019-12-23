@@ -1,3 +1,7 @@
+import core.job
+import core.implant
+import uuid, os
+
 class UploadFileJob(core.job.Job):
     def create(self):
         last = self.options.get("LFILE").split("/")[-1]
