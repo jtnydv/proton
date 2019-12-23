@@ -49,15 +49,14 @@ class DownloadFileJob(core.job.Job):
             self.notexist = True
 
         if not status:
-            self.save_fname = self.options.get("LPATH") + "/" + self.options.get("RFILE").split("\\")[-1]
-            self.save_fname = self.save_fname.replace("//", "/")
-            
-            if not '/' in self.save_fname:
-                g = os.environ['OLDPWD'] + '/'
+            if not '/' in self.options.get("LPATH"):
+                self.save_fname = os.environ['OLDPWD'] + '/' + self.options.get("LPATH") + "/" + self.options.get("RFILE").split("\\")[-1]
+                self.save_fname = self.save_fname.replace("//", "/")
             else:
-                g = ''
-
-            while os.path.isfile(g + self.save_fname):
+                self.save_fname = self.options.get("LPATH") + "/" + self.options.get("RFILE").split("\\")[-1]
+                self.save_fname = self.save_fname.replace("//", "/")
+                
+            while os.path.isfile(self.save_fname):
                 self.save_fname += "."+uuid.uuid4().hex
 
             i = 0
@@ -65,7 +64,7 @@ class DownloadFileJob(core.job.Job):
             partfiles = []
             datalen = len(data)
             while i < datalen:
-                with open(g + self.save_fname+str(i), "wb") as f:
+                with open(self.save_fname+str(i), "wb") as f:
                     partfiles.append(self.save_fname+str(i))
                     end = i+step
                     if end > datalen:
@@ -85,17 +84,17 @@ class DownloadFileJob(core.job.Job):
                     f.write(pdata)
                 i = end
 
-            with open(g + self.save_fname, "wb+") as f:
+            with open(self.save_fname, "wb+") as f:
                 for p in partfiles:
                     f.write(open(p, "rb").read())
                     os.remove(p)
             self.save_len = len(data)
 
             if self.options.get("CERTUTIL") == "true":
-                with open(g + self.save_fname, "rb") as f:
+                with open(self.save_fname, "rb") as f:
                     data = f.read()
                 data = self.decode_downloaded_data(data, "936")
-                with open(g + self.save_fname, "wb") as f:
+                with open(self.save_fname, "wb") as f:
                     f.write(data)
 
 
