@@ -97,13 +97,13 @@ cp etc/.disabled/proton etc
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
-mv etc/implant/upload_file.py modules/implant/util
-cp etc/.disabled/upload_file.py etc/implant
+mv etc/modules/implant/util/upload_file.py modules/implant/util
+cp etc/.disabled/upload_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
-mv etc/implant/download_file.py modules/implant/util
-cp etc/.disabled/download_file.py etc/implant
+mv etc/modules/implant/util/download_file.py modules/implant/util
+cp etc/.disabled/download_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 } &> /dev/null
 chmod +x proton
@@ -117,13 +117,13 @@ cp etc/.disabled/proton etc
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
-mv etc/implant/upload_file.py modules/implant/util
-cp etc/.disabled/upload_file.py etc/implant
+mv etc/modules/implant/util/upload_file.py modules/implant/util
+cp etc/.disabled/upload_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
-mv etc/implant/download_file.py modules/implant/util
-cp etc/.disabled/download_file.py etc/implant
+mv etc/modules/implant/util/download_file.py modules/implant/util
+cp etc/.disabled/download_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 } &> /dev/null
 else
@@ -143,14 +143,15 @@ mv etc/proton ~/proton
 cp etc/.disabled/proton etc
 rm -rf etc/.disabled
 mkdir etc/.disabled
+mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
-mv etc/implant/upload_file.py modules/implant/util
-cp etc/.disabled/upload_file.py etc/implant
+mv etc/modules/implant/util/upload_file.py modules/implant/util
+cp etc/.disabled/upload_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
-mv etc/implant/download_file.py modules/implant/util
-cp etc/.disabled/download_file.py etc/implant
+mv etc/modules/implant/util/download_file.py modules/implant/util
+cp etc/.disabled/download_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 } &> /dev/null
 chmod +x proton
@@ -164,13 +165,13 @@ cp etc/.disabled/proton etc
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
-mv etc/implant/upload_file.py modules/implant/util
-cp etc/.disabled/upload_file.py etc/implant
+mv etc/modules/implant/util/upload_file.py modules/implant/util
+cp etc/.disabled/upload_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/download_file.py etc/.disabled
-mv etc/implant/download_file.py modules/implant/util
-cp etc/.disabled/download_file.py etc/implant
+mv etc/modules/implant/util/download_file.py modules/implant/util
+cp etc/.disabled/download_file.py etc/modules/implant/util
 rm -rf etc/.disabled
 } &> /dev/null
 else
