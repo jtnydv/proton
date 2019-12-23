@@ -16,7 +16,7 @@ class DownloadFileImplant(core.implant.Implant):
         self.options.register("RFILE", "", "Remote file to get.", required=False)
         self.options.register("RFILELIST", "", "File containing line-seperated file names to download.", required=False)
         self.options.register("RFILEF", "", "", hidden=True)
-        self.options.register("CHUNKSIZE", "10000000", "Size in bytes (kind of) of chunks to save.", required=True)
+        self.options.register("CHUNKSIZE", "10000000", "Size in bytes of chunks to save.", required=True)
         self.options.register("CERTUTIL", "false", "Use certutil to base64 encode the file before downloading.", required=True, boolean=True)
 
     def job(self):
