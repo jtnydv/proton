@@ -5,25 +5,15 @@ import uuid, os
 class UploadFileJob(core.job.Job):
     def create(self):
         last = self.options.get("LFILE").split("/")[-1]
-        
-        #if not '/' in last:
-        #    last = os.environ['OLDPWD'] + '/' + self.options.get("LFILE").split("/")[-1]
-        #else:
-        #    last = self.options.get("LFILE").split("/")[-1]
             
         self.options.set("FILE", last)
         self.options.set("DIRECTORY", self.options.get('DIRECTORY').replace("\\", "\\\\").replace('"', '\\"'))
 
     def report(self, handler, data):
         if handler.get_header('X-UploadFileJob', False):
-            if not '/' in self.options.get("LFILE"):
-                with open(os.environ['OLDPWD'] + '/' + self.options.get("LFILE"), "rb") as f:
-                    fdata = f.read()
-            else:
-                with open(self.options.get("LFILE"), "rb") as f:
-                    fdata = f.read()
+            with open(self.options.get("LFILE"), "rb") as f:
+                fdata = f.read()
             
-
             headers = {}
             headers['Content-Type'] = 'application/octet-stream'
             headers['Content-Length'] = len(fdata)
