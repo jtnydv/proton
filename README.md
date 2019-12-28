@@ -64,7 +64,7 @@
 
 ***
 
-# Proton Framework execution
+# Proton Framework usage
 
 > proton -h
 
