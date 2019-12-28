@@ -35,7 +35,7 @@
 
 # About Proton Framework
 
-    INFO: Proton Framework is a Windows post exploitation framework similar to other penetration 
+    Proton Framework is a Windows post exploitation framework similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is that 
     the Proton Framework does most of its operations using Windows Script Host (a.k.a. JScript/VBScript), 
     with compatibility in the core to support a default installation of Windows 2000 with no service 
@@ -86,14 +86,14 @@ optional arguments:
 
 ![modules](https://user-images.githubusercontent.com/54115104/71378263-76331400-25c7-11ea-849c-0e4d68cd046f.png)
 
-    INFO: There are to kinds of Proton Framework 
-    modules - stagers and implants. Proton stagers hook 
-    target zombies and allow you to use implants. Proton 
+    There are to kinds of Proton Framework modules - 
+    stagers and implants. Proton stagers hook target 
+    zombies and allow you to use implants. Proton 
     implants starts jobs on remote target zombie.
     
-## Proton stagers
+## Proton Framework stagers
 
-    INFO: Proton stagers hook target 
+    Proton Framework stagers hook target 
     zombie and allow you to use implants.
 
 Name | Description
@@ -105,9 +105,9 @@ disk | Serves payloads using files on disk.
 bits | Serves payloads using BitsAdmin.
 wmic | Serves payloads using WMIC XSL.
 
-## Proton implants
+## Proton Framework implants
 
-    INFO: Proton implants starts 
+    Proton Framework implants starts 
     jobs on a remote zombie target.
 
 Name | Description
@@ -177,15 +177,15 @@ upload_file | Uploads a file from the listening server to the target zombies.
     
 ## ProtonScript documentation
 
-    INFO: You can read more about ProtonScript from the 
-    ProtonScript documentation. You can find the ProtonScript 
-    documentation in the Proton Framework script directory. 
+    You can read more about ProtonScript from the ProtonScript 
+    documentation. You can find the ProtonScript documentation 
+    in the Proton Framework script directory. 
    
 ***
     
 # Proton Framework disclaimer
 
-    INFO: Usage of the Proton Framework for attacking targets without prior mutual consent is illegal. 
+    Usage of the Proton Framework for attacking targets without prior mutual consent is illegal. 
     It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
     Developers assume no liability and are not responsible for any misuse or damage caused by this program.
     
