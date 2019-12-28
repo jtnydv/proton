@@ -1,4 +1,4 @@
-# Proton Framework (Remote Command & Control)
+# Proton Framework
 
                                                            _           
                                                ___ ___ ___| |_ ___ ___ 
@@ -208,7 +208,3 @@ upload_file | Uploads a file from the listening server to the target zombies.
     WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
     License for the specific language governing permissions and limitations under
     the License.
-    
-***
-
-# Thats all!
