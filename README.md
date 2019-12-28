@@ -1,4 +1,4 @@
-# Proton Framework (Remote Command & Control)
+# Proton Framework
                                                            _           
                                                ___ ___ ___| |_ ___ ___ 
                                               | . |  _| . |  _| . |   |
