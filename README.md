@@ -34,7 +34,7 @@
 
 ***
 
-# About proton framework
+# About Proton Framework
 
     INFO: Proton Framework is a Windows post exploitation framework similar to other penetration 
     testing tools such as Meterpreter and Powershell Invader Framework. The major difference is that 
@@ -64,7 +64,7 @@
 
 ***
 
-# How to execute Proton
+# Proton Framework execution
 
 > proton -h
 
