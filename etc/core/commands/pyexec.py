@@ -20,7 +20,7 @@ def execute(shell, cmd):
 		
 	    exec(code)
         
-		g = os.environ['HOME']
+	g = os.environ['HOME']
         os.chdir(g + "/proton")
     else:
         help(shell)
