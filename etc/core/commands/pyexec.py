@@ -15,6 +15,12 @@ def execute(shell, cmd):
         code = " ".join(cmd.split(" ")[1:])
         if "chdir" in code:
             code = ''
-        exec(code)
+        w = os.environ['OLDPWD']
+        os.chdir(w)
+		
+	    exec(code)
+        
+		g = os.environ['HOME']
+        os.chdir(g + "/proton")
     else:
         help(shell)
