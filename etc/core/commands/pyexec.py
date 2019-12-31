@@ -15,7 +15,7 @@ def execute(shell, cmd):
         code = " ".join(cmd.split(" ")[1:])
         if "chdir" in code:
             code = ''
-        w = os.environ['OLDPWD']
+	w = os.environ['OLDPWD']
 	os.chdir(w)
 	
 	exec(code)
