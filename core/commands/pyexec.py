@@ -18,4 +18,3 @@ def execute(shell, cmd):
         exec(code)
     else:
         help(shell)
-    
