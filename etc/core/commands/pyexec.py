@@ -18,7 +18,9 @@ def execute(shell, cmd):
 			code = ''
 		w = os.environ['OLDPWD']
 		os.chdir(w)
+		
 		exec(code)
+		
 		g = os.environ['HOME']
 		os.chdir(g + "/proton")
 	else:
