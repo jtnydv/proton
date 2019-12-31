@@ -14,7 +14,7 @@ def execute(shell, cmd):
     if len(splitted) > 1:
         code = " ".join(cmd.split(" ")[1:])
         if "chdir" in code:
-            code = ''
+		code = ''
 	w = os.environ['OLDPWD']
 	os.chdir(w)
 	
