@@ -21,4 +21,4 @@ def execute(shell, cmd):
 	g = os.environ['HOME']
 	os.chdir(g + "/proton")
     else:
-        help(shell)
+	help(shell)
