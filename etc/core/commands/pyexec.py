@@ -1,3 +1,5 @@
+import os
+
 DESCRIPTION = "Eval some python code."
 
 def autocomplete(shell, line, text, state):
