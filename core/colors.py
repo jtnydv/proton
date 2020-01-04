@@ -1,6 +1,6 @@
 class Colors(object):
     def __init__(self):
-        self.ENDC = '\033[0m'
+        self.ENDC = '\033[0;97m'
 
         self.RED = '31'
         self.GREEN = '32'
