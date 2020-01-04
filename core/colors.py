@@ -1,6 +1,6 @@
 class Colors(object):
     def __init__(self):
-        self.ENDC = '\033[0m'
+        self.ENDC = '\033[0;97m'
 
         self.RED = '31'
         self.GREEN = '32'
@@ -39,6 +39,18 @@ class Colors(object):
 
         return start + text + end
     
+    def colorize_prompt(self, text, options, readline=False):
+        start = ""
+        ENDC = "\033[0m"
+        start += "\001"
+        start += '\033['
+        start += ";".join(options)
+        start += "m"
+        start += "\002"
+        end = "\001" + ENDC + "\002"
+
+        return start + text + end
+    
     def get_prompt(self, state, isreadline = True):
         import os
         glyph = "#"
@@ -46,7 +58,7 @@ class Colors(object):
         state = [s[0:3] for s in state.split("/")[:-1]]
         state.append(last)
         state = "/".join(state)
-        return "%s%s: %s%s" % (self.colorize("(", [self.GREEN], isreadline),
-                                 self.colorize("proton", [self.BOLD], isreadline),
-                                 self.colorize(state, [self.CYAN], isreadline),
-                                 self.colorize(")" + glyph + " ", [self.GREEN], isreadline))
+        return "%s%s: %s%s" % (self.colorize_prompt("(", [self.GREEN], isreadline),
+                                 self.colorize_prompt("proton", [self.BOLD], isreadline),
+                                 self.colorize_prompt(state, [self.CYAN], isreadline),
+                                 self.colorize_prompt(")" + glyph + " ", [self.GREEN], isreadline))
