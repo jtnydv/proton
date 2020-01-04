@@ -41,17 +41,13 @@ class Colors(object):
     
     def colorize_prompt(self, text, options, readline=False):
         start = ""
-        ENDC = "\033[0m"
         if readline:
             start += "\001"
         start += '\033['
         start += ";".join(options)
         start += "m"
-        if readline:
-            start += "\002"
-            end = "\001" + ENDC + "\002"
-        else:
-            end = ENDC
+        start += "\002"
+        end = "\001" + "\033[0m" + "\002"
 
         return start + text + end
     
