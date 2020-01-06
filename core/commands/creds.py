@@ -49,7 +49,7 @@ def print_creds(shell, sortcol="Normal", domain="", search=""):
     if sortcol != "Normal":
         colname = [c for c in list(results[0].keys()) if c.lower() == sortcol.lower()]
         if not colname:
-            shell.print_error("Column '"+sortcol+"' does not exist!")
+            shell.print_error("Column '"+sortcol+"' does not exist.")
             return
         results = sorted(results, key=lambda k: k[colname[0]])
 
@@ -133,14 +133,14 @@ def print_creds_detailed(shell, users="*", like_flag=False):
 def print_creds_das(shell, domain):
     domains = [j for i in shell.domain_info for j in i]
     if not domain.lower() in domains:
-        shell.print_error("Supplied domain not known")
+        shell.print_error("Supplied domain not known.")
         return
 
     domain_key = [i for i in shell.domain_info if domain.lower() in i][0]
     alt_domain = [i for i in domain_key if i != domain][0]
 
     if not "Domain Admins" in shell.domain_info[domain_key]:
-        shell.print_error("Domain Admins not gathered for target domain. Please run implant/gather/enum_domain_info.")
+        shell.print_error("Domain Admins not gathered for target domain. Please run enum_domain_info.")
         return
 
     das = shell.domain_info[domain_key]["Domain Admins"]
@@ -249,7 +249,7 @@ def creds_edit_shell(shell):
                 return
 
         if option.lower() == "new":
-            shell.prompt = "new > "
+            shell.prompt = "new> "
             shell.clean_prompt = shell.prompt
             if shell.domain_info:
                 shell.print_plain("Available Domains:")
@@ -479,7 +479,7 @@ def execute(shell, cmd):
                 else:
                     print_creds_das(shell, splitted[2])
             else:
-                shell.print_error("No domain information gathered. Please run implant/gather/enum_domain_info.")
+                shell.print_error("No domain information gathered. Please run enum_domain_info.")
 
         elif splitted[1] == "--sort":
             if len(splitted) < 3:
