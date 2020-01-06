@@ -12,7 +12,7 @@ def help(shell):
 
 def print_all_payloads(shell):
     if len(shell.stagers) == 0 or len([stager for keypair in [endpoint for port,endpoint in shell.stagers.items()] for endpoint, stager in keypair.items() if not stager.killed]) == 0:
-        shell.print_error("No active stagers yet.")
+        shell.print_error("No active stagers yet!")
         return
 
     shell.print_plain("")
@@ -38,7 +38,7 @@ def print_payload(shell, id):
                 shell.print_command(f"{payload}")
                 return
 
-    shell.print_error(f"No such stager: {id}")
+    shell.print_error(f"No such stager!")
 
 def print_listener_options(shell, id):
     for port in shell.stagers:
@@ -72,7 +72,7 @@ def print_listener_options(shell, id):
             shell.print_plain("")
             return
 
-    shell.print_error(f"No such stager: {id}")
+    shell.print_error(f"No such stager!")
 
 def kill_listener(shell, id):
     import os
@@ -142,7 +142,7 @@ def kill_listener(shell, id):
                     shell.print_good("Stager %s: Killed!" % id)
                     return
 
-    shell.print_error("No such stager: %s" % id)
+    shell.print_error("No such stager!")
 
 
 def execute(shell, cmd):
@@ -160,7 +160,7 @@ def execute(shell, cmd):
                 print_listener_options(shell, id)
                 return
             else:
-                shell.print_error("Unknown option '%s'." % flag)
+                shell.print_error("Unrecognized option!")
                 return
         else:
             print_payload(shell, id)
