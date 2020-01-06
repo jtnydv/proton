@@ -24,6 +24,9 @@ class Colors(object):
 
     def status(self, text):
         return self.colorize(text, [self.BLUE, self.BOLD])
+    
+    def other(self, text):
+        return self.colorize(text, [self.WHITE, self.BOLD])
 
     def colorize(self, text, options, readline=False):
         start = ""
