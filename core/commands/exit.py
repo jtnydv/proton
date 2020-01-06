@@ -80,7 +80,7 @@ def execute(shell, cmd):
         sys.exit(0)
         
 
-    conf = input('Exit Proton Framework? y/N: ')
+    conf = input(self.print_input('Exit Proton Framework? y/N: '))
     if conf == "y" or conf == "Y":
         time.sleep(0)
     else:
