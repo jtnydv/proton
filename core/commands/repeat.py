@@ -69,7 +69,7 @@ def execute(shell, cmd):
                 kill_repeatjob(shell, id)
                 return
             else:
-                shell.print_error("Unrecognized option!)
+                shell.print_error("Unrecognized option!")
                 return
 
         else:
