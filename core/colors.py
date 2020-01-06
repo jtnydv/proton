@@ -10,7 +10,7 @@ class Colors(object):
 
         self.NORMAL = '0'
         self.BOLD = '1'
-        self.WHITE = '1;77'
+        self.WHITE = '77'
         self.UNDERLINE = '2'
 
     def error(self, text):
