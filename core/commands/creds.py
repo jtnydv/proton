@@ -19,8 +19,6 @@ def help(shell):
     shell.print_plain('Use "creds -x" to write credentials to a file.')
     shell.print_plain('Use "creds --edit" to edit credentials.')
     shell.print_plain("")
-    shell.print_plain("NOTE: A listing that ends in [+] means extra information is available.")
-    shell.print_plain("")
 
 def print_creds(shell, sortcol="Normal", domain="", search=""):
 
@@ -231,7 +229,7 @@ def creds_edit_shell(shell):
     old_clean_prompt = shell.clean_prompt
 
     shell.print_plain("Choose a Cred ID to edit. Type 'new' to add a credential. Type 'del' to delete a credential:")
-    shell.prompt = "> "
+    shell.prompt = "creds> "
     shell.clean_prompt = shell.prompt
 
     import os
@@ -249,7 +247,7 @@ def creds_edit_shell(shell):
                 return
 
         if option.lower() == "new":
-            shell.prompt = "new> "
+            shell.prompt = "creds(new)> "
             shell.clean_prompt = shell.prompt
             if shell.domain_info:
                 shell.print_plain("Available Domains:")
@@ -299,7 +297,7 @@ def creds_edit_shell(shell):
             shell.creds[new_key] = c
 
         elif option.lower() == "del":
-            shell.prompt = "del > "
+            shell.prompt = "creds(del)> "
             shell.clean_prompt = shell.prompt
             shell.print_plain("Which Cred ID do you want to delete?")
             cred = creds_edit_shell_prompt(shell)
