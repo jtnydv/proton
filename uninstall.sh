@@ -37,14 +37,5 @@ fi
 rm /bin/proton
 rm /usr/local/bin/proton
 rm -rf ~/proton
-rm /etc/proton.conf
 rm /data/data/com.termux/files/usr/bin/proton
-rm /bin/pscript
-rm /usr/local/bin/pscript
-rm /data/data/com.termux/files/usr/bin/pscript
-rm /bin/psenv
-rm /usr/local/bin/psenv
-rm /data/data/com.termux/files/usr/bin/psenv
-rm /usr/share/nano/pscript.nanorc
-rm /usr/local/share/nano/pscript.nanorc
 } &> /dev/null
