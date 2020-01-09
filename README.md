@@ -65,17 +65,10 @@
 
 # Proton Framework execution
 
-> proton -h
+    To execute Proton Framework you 
+    should execute the following command.
 
-```
-usage: proton [-h] [-j FILE] [-u]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -j FILE, --json FILE
-                        A Proton Framework json file.
-  -u, --update          Update Proton Framework.
-```
+> proton
       
 ***
 
