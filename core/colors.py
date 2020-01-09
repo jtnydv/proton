@@ -30,7 +30,7 @@ class Colors(object):
 
     def colorize(self, text, options, readline=False):
         start = ""
-        ENDCC="\033[0;97m"
+        ENDCC="\033[0m"
         if readline:
             start += "\001"
         start += '\033['
