@@ -68,13 +68,10 @@
 > proton -h
 
 ```
-usage: proton [-h] [-r FILE] [-j FILE] [-u]
+usage: proton [-h] [-j FILE] [-u]
 
 optional arguments:
   -h, --help            show this help message and exit
-  -i, --install         Install the ProtonScript.
-  -r FILE, --run FILE
-                        Run a ProtonScript program.
   -j FILE, --json FILE
                         A Proton Framework json file.
   -u, --update          Update Proton Framework.
