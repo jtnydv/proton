@@ -94,11 +94,6 @@ then
 {
 cd ~/proton
 mkdir etc/.disabled
-mv proton etc/.disabled
-mv etc/proton ~/proton
-cp etc/.disabled/proton etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/modules/implant/util/upload_file.py modules/implant/util
 cp etc/.disabled/upload_file.py etc/modules/implant/util
@@ -118,11 +113,6 @@ chmod +x proton
 ./proton $1 $2 $3 $4 $5 $6 $7 $8 $9
 {
 cd ~/proton
-mkdir etc/.disabled
-mv proton etc/.disabled
-mv etc/proton ~/proton
-cp etc/.disabled/proton etc
-rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/modules/implant/util/upload_file.py modules/implant/util
@@ -151,12 +141,6 @@ git clone https://github.com/entynetproject/proton.git
 cd $OLDPWD
 cd ~/proton
 mkdir etc/.disabled
-mv proton etc/.disabled
-mv etc/proton ~/proton
-cp etc/.disabled/proton etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/modules/implant/util/upload_file.py modules/implant/util
 cp etc/.disabled/upload_file.py etc/modules/implant/util
@@ -176,11 +160,6 @@ chmod +x proton
 ./proton $1 $2 $3 $4 $5 $6 $7 $8 $9
 {
 cd ~/proton
-mkdir etc/.disabled
-mv proton etc/.disabled
-mv etc/proton ~/proton
-cp etc/.disabled/proton etc
-rm -rf etc/.disabled
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
 mv etc/modules/implant/util/upload_file.py modules/implant/util
