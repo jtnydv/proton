@@ -158,29 +158,7 @@ upload_file | Uploads a file from the listening server to the target zombies.
     (i.e. malicious.com) with a known Root CA signed 
     certificate. Windows will check its certificate 
     store and will NOT allow a self-signed certificate.
-    
-***
 
-# ProtonScript (Proton Language)
-
-![pscript](https://user-images.githubusercontent.com/54115104/69556144-505d2400-0fb5-11ea-8184-108f3c1c852c.png)
-
-    INFO: ProtonScript is a Proton Framework programming language
-    used to quickly execute Proton commands in the Proton Framework, 
-    you can install the ProtonScript via the Proton Framework.
-    
-## ProtonScript installation
-    
-> proton -i
-
-    (1/1) Installing ProtonScript ..... [ OK ]
-    
-## ProtonScript documentation
-
-    You can read more about ProtonScript from the ProtonScript 
-    documentation. You can find the ProtonScript documentation 
-    in the Proton Framework script directory. 
-   
 ***
     
 # Proton Framework disclaimer
