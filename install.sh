@@ -104,6 +104,7 @@ xbps-install -y python3-pip
 } &> /dev/null
 
 {
+python3 -m pip install setuptools
 python3 -m pip install -r requirements.txt
 } &> /dev/null
 
