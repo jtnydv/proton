@@ -6,6 +6,8 @@ def autocomplete(shell, line, text, state):
 def help(shell):
     shell.print_plain("")
     shell.print_plain('Use "jobs %s" to view job results (if any).' % (shell.colors.colorize("JOB_ID", shell.colors.BOLD)))
+    shell.print_plain('Use "jobs -h %s" to hide/unhide a job.' % (shell.colors.colorize("JOB_ID", shell.colors.BOLD)))
+    shell.print_plain('Use "jobs -h" to view hidden jobs.')
     shell.print_plain("")
 
 def print_job(shell, id):
@@ -13,7 +15,18 @@ def print_job(shell, id):
         if job.id == int(id) and job.status_string() in ["Completed", "Failed"]:
             job.display()
 
-def print_all_jobs(shell):
+def hide_jobs(shell, ids):
+    all_ids = []
+    for id in ids.split(','):
+        if '-' in id:
+            [all_ids.append(i) for i in range(int(id.split('-')[0]), int(id.split('-')[-1])+1)]
+        else:
+            all_ids.append(int(id))
+    for jkey, job in shell.jobs.items():
+        if job.id in all_ids:
+            job.hidden = not job.hidden
+
+def print_all_jobs(shell, hidden=False):
     if shell.jobs == {}:
         shell.print_error("No active jobs yet!")
         return
@@ -38,13 +51,21 @@ def execute(shell, cmd):
 
     splitted = cmd.split()
 
-    if len(splitted) > 1:
+    if len(splitted) > 2:
+        if splitted[1] == '-h':
+            hide_jobs(shell, splitted[2])
+            return
+        else:
+            shell.print_error("Unknown option!")
+    elif len(splitted) > 1 and splitted[1] == '-h':
+        print_all_jobs(shell, True)
+        return
+    elif len(splitted) > 1:
+        id = splitted[1]
         try:
-            id = splitted[1]
             print_job(shell, id)
-            return
         except ValueError:
-            shell.print_error("Expected valid job ID!")
-            return
-        
+            shell.print_error("Unknown option!")
+        return
+
     print_all_jobs(shell)
