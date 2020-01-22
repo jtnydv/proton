@@ -80,7 +80,8 @@ class DynWrapXShellcodeJob(core.job.Job):
                     ret += "\r\n"
 
                 count += 1
-
+        return ret[:-1]
+    
     def done(self):
         self.results = self.mimi_output if self.mimi_output else ""
         self.display()
