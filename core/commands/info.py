@@ -1,4 +1,4 @@
-DESCRIPTION = "Display the current module options."
+DESCRIPTION = "Show the current module options."
 
 def autocomplete(shell, line, text, state):
     return None
