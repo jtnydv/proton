@@ -1,4 +1,4 @@
-DESCRIPTION = "Display Proton Framework logo."
+DESCRIPTION = "Show Proton Framework logo."
 
 def autocomplete(shell, line, text, state):
     return None
