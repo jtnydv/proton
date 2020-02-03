@@ -93,11 +93,11 @@ def execute(shell, cmd):
         if len(splitted) > 2:
             for o in splitted[2:]:
                 if "=" not in o:
-                    shell.print_error("Malformed option: %s" % (o))
+                    shell.print_error("Malformed option!")
                     return
                 option, value = o.split("=")
                 if option.upper() not in [n.upper() for option in plugin.options.options for n in [option.name, option.alias] if n]:
-                    shell.print_error("Fake option: %s" % (option))
+                    shell.print_error("Unrecognized option!")
                     return
 
                 if not plugin.options.set(option, value):
