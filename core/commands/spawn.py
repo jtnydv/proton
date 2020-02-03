@@ -1,6 +1,6 @@
 import core.stager
 
-DESCRIPTION = "Create a stager for the current module."
+DESCRIPTION = "Spawn a stager for the current module."
 
 def autocomplete(shell, line, text, state):
     import readline
