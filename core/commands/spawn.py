@@ -56,11 +56,7 @@ def autocomplete(shell, line, text, state):
 
 def help(shell):
     shell.print_plain("")
-    shell.print_plain("createstager [STAGER_TYPE] [OPTION1=VAL1 OPTION2=VAL2]")
-    shell.print_plain("")
-    shell.print_plain("STAGER_TYPE defaults to stager/js/mshta if not defined")
-    shell.print_plain("Options default to ONESHOT = true, MODULE = the current module and ENDPOINT = 5 random characters")
-    shell.print_plain("Tab-completion available!")
+    shell.print_plain("Usage: spawn [STAGER_TYPE] [OPTION1=VAL1 OPTION2=VAL2]")
     shell.print_plain("")
 
 def save_options(plugin):
