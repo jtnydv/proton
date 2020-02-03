@@ -1,4 +1,4 @@
-DESCRIPTION = "Display info about repeating job."
+DESCRIPTION = "Show repeating job information."
 
 def autocomplete(shell, line, text, state):
     pass
