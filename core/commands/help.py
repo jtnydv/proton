@@ -1,4 +1,4 @@
-DESCRIPTION = "Show help info for a command."
+DESCRIPTION = "Show help information."
 
 
 def autocomplete(shell, line, text, state):
