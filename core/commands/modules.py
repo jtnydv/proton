@@ -1,4 +1,4 @@
-DESCRIPTION = "Display all stagers or all implants."
+DESCRIPTION = "Show all stagers or all implants."
 
 def autocomplete(shell, line, text, state):
     pass
