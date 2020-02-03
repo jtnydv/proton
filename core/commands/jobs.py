@@ -1,4 +1,4 @@
-DESCRIPTION = "Show information about jobs."
+DESCRIPTION = "Show jobs information."
 
 def autocomplete(shell, line, text, state):
     pass
@@ -28,7 +28,7 @@ def hide_jobs(shell, ids):
 
 def print_all_jobs(shell, hidden=False):
     if shell.jobs == {}:
-        shell.print_error("No active jobs yet!")
+        shell.print_error("No active jobs!")
         return
     
     formats = "\t{0:<5}{1:<10}{2:<20}{3:<40}"
