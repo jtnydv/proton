@@ -162,10 +162,10 @@ upload_file | Uploads a file from the listening server to the target zombies.
 # Proton Framework license
 
 ```
-    --------------------------------------------------
-                     Proton Framework                                                                                          
-    --------------------------------------------------
-          Copyright (C) <2019>  <Entynetproject>
+    ---------------------------------------------------
+                     Proton Framework                                                                                                           
+    ---------------------------------------------------
+        Copyright (C) <2019-2020>  <Entynetproject>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
