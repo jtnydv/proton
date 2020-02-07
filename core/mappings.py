@@ -18,8 +18,6 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# this is the mappings of windows-1252 and utf-8 that MSXML warps
-
 mappings = {0: b'\x00',
 1: b'\x01',
 2: b'\x02',
