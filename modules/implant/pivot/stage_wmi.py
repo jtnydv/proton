@@ -23,11 +23,11 @@ import core.implant
 
 class SWbemServicesJob(core.job.Job):
     def done(self):
-        self.results = "PID Start Code: %s" % self.data
+        self.results = "Start Code PID: %s" % self.data
         self.display()
 
     def display(self):
-        self.shell.print_plain("PID Start Code: %s" % self.data)
+        self.shell.print_plain("Start Code PID: %s" % self.data)
 
 class SWbemServicesImplant(core.implant.Implant):
 
