@@ -21,8 +21,6 @@
 import core.job
 import core.implant
 
-# todo: inherit the exec_wmi module's jobs and implant instead of copypasta
-
 class SWbemServicesJob(core.job.Job):
     def done(self):
         self.results = "PID Start Code: %s" % self.data
