@@ -20,7 +20,6 @@
 
 DESCRIPTION = "Show help information."
 
-
 def autocomplete(shell, line, text, state):
 
     # should never go this big...
