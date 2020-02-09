@@ -1,9 +1,6 @@
 # Proton Framework
-                                                           _           
-                                               ___ ___ ___| |_ ___ ___ 
-                                              | . |  _| . |  _| . |   |
-                                              |  _|_| |___|_| |___|_|_|
-                                              |_|                      
+
+![proton](https://user-images.githubusercontent.com/54115104/74107144-2fe94280-4b7e-11ea-8d1e-d187f3e12d7e.jpeg)           
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
