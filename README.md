@@ -1,6 +1,6 @@
 # Proton Framework
 
-![proton](https://user-images.githubusercontent.com/54115104/74107144-2fe94280-4b7e-11ea-8d1e-d187f3e12d7e.jpeg)           
+![proton](https://user-images.githubusercontent.com/54115104/74107508-fa465880-4b81-11ea-9d8b-4dd277e82019.jpeg)
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
