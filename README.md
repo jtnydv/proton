@@ -12,9 +12,6 @@
   <a href="https://wikipedia.org/wiki/Python_(programming_language)">
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
-  <a href="https://github.com/entynetproject/proton">
-    <img src="https://img.shields.io/badge/modules-50-red.svg">
- </a>
   <a href="https://github.com/entynetproject/proton/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/proton.svg">
   </a>
