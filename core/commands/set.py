@@ -96,7 +96,7 @@ def execute(shell, cmd):
             if len(splitted) > 2:
                 value = cmd.split(None, 2)[2]
                 if not env.options.set(key, value):
-                    shell.print_error("That option is invalid!")
+                    shell.print_error("Option is not found!")
                     return
 
             shell.print_good("%s => %s" % (key, value))

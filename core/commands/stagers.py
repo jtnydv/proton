@@ -58,7 +58,7 @@ def print_payload(shell, id):
                 shell.print_command(f"{payload}")
                 return
 
-    shell.print_error(f"No such stager!")
+    shell.print_error(f"Stager is not found!")
 
 def print_listener_options(shell, id):
     for port in shell.stagers:
@@ -92,7 +92,7 @@ def print_listener_options(shell, id):
             shell.print_plain("")
             return
 
-    shell.print_error(f"No such stager!")
+    shell.print_error(f"Stager is not found!")
 
 def kill_listener(shell, id):
     import os
@@ -162,7 +162,7 @@ def kill_listener(shell, id):
                     shell.print_good("Stager %s: Killed!" % id)
                     return
 
-    shell.print_error("No such stager!")
+    shell.print_error("Stager is not found!")
 
 
 def execute(shell, cmd):
