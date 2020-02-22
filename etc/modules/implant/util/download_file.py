@@ -155,4 +155,4 @@ class DownloadFileJob(core.job.Job):
             if self.notexist:
                 self.shell.print_error(self.results)
         except:
-            self.shell.print_good(self.results)
+            self.shell.print_status(self.results)
