@@ -98,12 +98,6 @@ def execute(shell, cmd):
 
         import sys
         sys.exit(0)
-        
-    conf = input('\033[1;77m'+'[?]'+'\033[0m'+' Exit Proton Framework? y/N: '+'\033[0m')
-    if conf == "y" or conf == "Y":
-        time.sleep(0)
-    else:
-        return
 
     restore_map = {}
     restore_map['creds'] = convert_to_parsable(shell.creds)
