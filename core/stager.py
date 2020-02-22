@@ -51,8 +51,8 @@ class StagerWizard(core.plugin.Plugin):
         self.options.register('CERTPATH', '', 'Certificate for TLS communications.', required = False, file = True)
         self.options.register('ENDPOINT', self.random_string(5), 'URL path for callhome operations.', required = True)
         self.options.register('MODULE', '', 'Module to run once zombie is staged.', required = False)
-        self.options.register('ONESHOT', 'false', 'Make this stager oneshot stager.', boolean = True)
-        self.options.register('AUTOFWD', 'true', 'Automatically fix forwarded URLs.', boolean=True, required=True)
+        self.options.register('ONESHOT', 'false', 'Make this stager oneshot stager.', boolean = True, enum=['true', 'false'])
+        self.options.register('AUTOFWD', 'true', 'Automatically fix forwarded URLs.', boolean=True, required=True, enum=['true', 'false'])
 
         # names of query string properties
         jobname = sessionname = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
