@@ -68,12 +68,12 @@
 
 # Why Proton Framework
 
- * A lot of stagers.
+ * A lot of different stagers.
 ```
 There are a lot of stagers in Proton Framework
 such as mshta, disk and wmic stagers.
 ```
- * A lot of implants.
+ * A lot of different implants.
 ```
 There are a lot of implants in Proton Framework such 
 as bypassuac_compdefaults and mimikatz_dotnet implants.
