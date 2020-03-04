@@ -49,7 +49,7 @@ class FodHelperImplant(core.implant.Implant):
 
     def load(self):
         self.options.register("STAGER", "", "Run stagers for a list of IDs.")
-        self.options.register("STAGER_DATA", "", "The actual data.", hidden=True)
+        self.options.register("STAGER_DATA", "", "The actual stager data.", hidden=True)
 
     def job(self):
         return FodHelperJob
