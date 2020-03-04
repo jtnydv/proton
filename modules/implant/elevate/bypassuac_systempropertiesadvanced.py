@@ -39,7 +39,7 @@ class SystemPropertiesAdvancedJob(core.job.Job):
 class SystemPropertiesAdvancedImplant(core.implant.Implant):
 
     NAME = "Bypass UAC  SystemPropertiesAdvanced"
-    DESCRIPTION = "UAC bypass through DLL Hijacking method (systempropertiesadvanced binary)"
+    DESCRIPTION = "UAC bypass through DLL Hijacking method (systempropertiesadvanced binary)."
     AUTHORS = ["Entynetproject"]
     STATE = "implant/elevate/bypassuac_systempropertiesadvanced"
 
