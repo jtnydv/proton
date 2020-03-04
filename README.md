@@ -23,7 +23,7 @@
  </a>
 </p>
 
-![proton](https://user-images.githubusercontent.com/54115104/72079299-b30f4280-330b-11ea-9faa-dac62692bef6.png)
+![proton](https://user-images.githubusercontent.com/54115104/75925393-b0e3e300-5e79-11ea-8381-12cbb7a438d5.png)
 
 ***
 
@@ -88,7 +88,7 @@ for you to master the Arissploit Framework.
 
 # Proton Framework modules
 
-![modules](https://user-images.githubusercontent.com/54115104/72079298-b276ac00-330b-11ea-86e6-868bbba218d0.png)
+![modules](https://user-images.githubusercontent.com/54115104/75925399-b2151000-5e79-11ea-90a3-48d9f86b33a6.png)
 
     There are to kinds of Proton Framework modules - 
     stagers and implants. Proton stagers hook target 
