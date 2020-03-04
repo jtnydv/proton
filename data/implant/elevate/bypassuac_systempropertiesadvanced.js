@@ -12,7 +12,7 @@ try
 }
 catch (e)
 {
-    Proton.work.error(e);
+    proton.work.error(e);
 }
 
-Proton.exit();
+proton.exit();
