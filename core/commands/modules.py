@@ -53,6 +53,8 @@ def execute(shell, cmd):
             print("        ----                        -----------")
             print("        bypassuac_compdefaults      Bypass UAC via registry hijack for ComputerDefaults.exe.")
             print("        bypassuac_compmgmtlauncher  Bypass UAC via registry hijack for CompMgmtLauncher.exe.")
+            print("        bypassuac_sysproadvanced    Bypass UAC via DLL hijack for systempropertiesadvanced.exe.")
+            print("        bypassuac_wsreset           Bypass UAC via registry hijack for wsreset.exe.")
             print("        bypassuac_eventvwr          Uses eventvwr.exe exploit to bypass UAC on Windows 7, 8, and 10.")
             print("        bypassuac_fodhelper         Bypass UAC via registry hijack for fodhelper.exe.")
             print("        bypassuac_sdclt             Uses sdclt.exe exploit to bypass UAC on Windows 10.")
