@@ -70,9 +70,9 @@
 
  * Simple and clear UX/UI.
 ```
-Proton Framework has a simple UX/UI. It is 
-easy to understand and it will be easier 
-for you to master the Arissploit Framework.
+Proton Framework has a simpleand clear UX/UI. 
+It is easy to understand and it will be easier 
+for you to master the Proton Framework.
 ```  
  * A lot of different stagers.
 ```
