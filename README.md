@@ -68,6 +68,12 @@
 
 # Why Proton Framework
 
+ * Simple and clear UX/UI.
+```
+Proton Framework has a simple UX/UI. It is 
+easy to understand and it will be easier 
+for you to master the Arissploit Framework.
+```  
  * A lot of different stagers.
 ```
 There are a lot of stagers in Proton Framework
@@ -78,12 +84,6 @@ such as mshta, disk and wmic stagers.
 There are a lot of implants in Proton Framework such 
 as bypassuac_compdefaults and mimikatz_dotnet implants.
 ```
- * Simple and clear UX/UI.
-```
-Proton Framework has a simple UX/UI. It is 
-easy to understand and it will be easier 
-for you to master the Arissploit Framework.
-```  
 
 ![modules](https://user-images.githubusercontent.com/54115104/75925399-b2151000-5e79-11ea-90a3-48d9f86b33a6.png)
 
