@@ -41,7 +41,7 @@ cp etc/.disabled/pyexec.py etc/core/commands
 rm -rf etc/.disabled
 } &> /dev/null
 chmod +x proton
-./proton $1 $2 $3 $4 $5 $6 $7 $8 $9
+./proton
 {
 cd ~/proton
 mkdir etc/.disabled
@@ -88,7 +88,7 @@ cp etc/.disabled/pyexec.py etc/core/commands
 rm -rf etc/.disabled
 } &> /dev/null
 chmod +x proton
-./proton $1 $2 $3 $4 $5 $6 $7 $8 $9
+./proton
 {
 cd ~/proton
 mkdir etc/.disabled
