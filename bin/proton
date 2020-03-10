@@ -43,6 +43,10 @@ rm -rf etc/.disabled
 chmod +x proton
 ./proton
 {
+if [[ -f ~/proton/.updated ]]
+then
+rm ~/proton/.updated
+else
 cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
@@ -59,6 +63,7 @@ mv core/commands/pyexec.py etc/.disabled
 mv etc/core/commands/pyexec.py core/commands
 cp etc/.disabled/pyexec.py etc/core/commands
 rm -rf etc/.disabled
+fi
 } &> /dev/null
 else
 {
@@ -90,6 +95,10 @@ rm -rf etc/.disabled
 chmod +x proton
 ./proton
 {
+if [[ -f ~/proton/.updated ]]
+then
+rm ~/proton/.updated
+else
 cd ~/proton
 mkdir etc/.disabled
 mv modules/implant/util/upload_file.py etc/.disabled
@@ -106,6 +115,7 @@ mv core/commands/pyexec.py etc/.disabled
 mv etc/core/commands/pyexec.py core/commands
 cp etc/.disabled/pyexec.py etc/core/commands
 rm -rf etc/.disabled
+fi
 } &> /dev/null
 else
 cd ~
