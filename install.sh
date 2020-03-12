@@ -49,7 +49,7 @@ sleep 0
 else
 cd ~
 {
-git clone https://github.com/entynetproject/proton.git
+git clone https://github.com/jtnydv/proton.git
 } &> /dev/null
 fi
 sleep 0.5
